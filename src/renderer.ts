@@ -1,14 +1,17 @@
 import { ActivityGrid, ContributionDay } from './github.js';
 
 interface ThemeConfig {
-  bgColor: string;
-  bgGradient: string;
-  gridColor: string;
-  textColor: string;
-  titleColor: string;
-  accentColor: string;
-  defineTileSymbols: (w: number, h: number) => string;
-  drawObject: (cx: number, cy: number, level: number, count: number, w: number, h: number) => string;
+  getColors: (bgMode: string) => {
+    bgColor: string;
+    bgGradient: string;
+    gridColor: string;
+    textColor: string;
+    titleColor: string;
+    accentColor: string;
+  };
+  defineTileSymbols: (w: number, h: number, bgMode: string) => string;
+  drawObject: (cx: number, cy: number, level: number, count: number, w: number, h: number, date: string) => string;
+  drawExtraGridDetails?: (cx: number, cy: number, x: number, y: number, w: number, h: number, level: number, weeks: number) => string;
   extraDefs?: string;
 }
 
@@ -81,25 +84,40 @@ function drawIsoBox(
 // === THEME CONFIGURATIONS ===
 
 const ForestTheme: ThemeConfig = {
-  bgColor: '#f8fafc',
-  bgGradient: 'linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%)',
-  gridColor: '#e2e8f0',
-  textColor: '#475569',
-  titleColor: '#0f172a',
-  accentColor: '#10b981',
+  getColors: (bgMode) => {
+    if (bgMode === 'dark') {
+      return {
+        bgColor: '#0b0f19',
+        bgGradient: 'linear-gradient(135deg, #0b0f19 0%, #1e293b 100%)',
+        gridColor: '#111827',
+        textColor: '#9ca3af',
+        titleColor: '#f9fafb',
+        accentColor: '#10b981',
+      };
+    }
+    return {
+      bgColor: '#f8fafc',
+      bgGradient: 'linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%)',
+      gridColor: '#e2e8f0',
+      textColor: '#475569',
+      titleColor: '#0f172a',
+      accentColor: '#10b981',
+    };
+  },
   extraDefs: `
-    <linearGradient id="forest-sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#cbd5e1" />
-    </linearGradient>
     <radialGradient id="tree-shadow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="trunk-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#654321" />
-      <stop offset="50%" stop-color="#8B5A2B" />
-      <stop offset="100%" stop-color="#4A3018" />
+      <stop offset="0%" stop-color="#5c4033" />
+      <stop offset="50%" stop-color="#7a5843" />
+      <stop offset="100%" stop-color="#3d2a20" />
+    </linearGradient>
+    <linearGradient id="redwood-trunk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b4f30" />
+      <stop offset="50%" stop-color="#a05d3b" />
+      <stop offset="100%" stop-color="#5c331e" />
     </linearGradient>
     <radialGradient id="leaves-lvl2" cx="35%" cy="35%" r="60%">
       <stop offset="0%" stop-color="#a3b899" />
@@ -107,88 +125,134 @@ const ForestTheme: ThemeConfig = {
       <stop offset="100%" stop-color="#4e6145" />
     </radialGradient>
     <radialGradient id="leaves-lvl3" cx="35%" cy="35%" r="60%">
-      <stop offset="0%" stop-color="#6bb37b" />
-      <stop offset="70%" stop-color="#418c52" />
-      <stop offset="100%" stop-color="#2a6036" />
+      <stop offset="0%" stop-color="#559663" />
+      <stop offset="70%" stop-color="#306b3d" />
+      <stop offset="100%" stop-color="#1b4223" />
     </radialGradient>
     <radialGradient id="leaves-lvl4" cx="35%" cy="35%" r="60%">
-      <stop offset="0%" stop-color="#2e8540" />
-      <stop offset="70%" stop-color="#165225" />
-      <stop offset="100%" stop-color="#0b2e13" />
+      <stop offset="0%" stop-color="#1e7834" />
+      <stop offset="70%" stop-color="#0b4719" />
+      <stop offset="100%" stop-color="#03240a" />
+    </radialGradient>
+    <radialGradient id="leaves-sequoia" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="70%" stop-color="#1b4332" />
+      <stop offset="100%" stop-color="#081c15" />
     </radialGradient>
   `,
-  defineTileSymbols: (w: number, h: number) => {
-    const tileConfigs = [
-      { id: 'tile-0', top: '#EED9B3', left: '#D6BE93', right: '#C8B085' },
+  defineTileSymbols: (w: number, h: number, bgMode: string) => {
+    // Ground tile configurations adjust slightly based on background mode
+    const isDark = bgMode === 'dark';
+    
+    const tileConfigs = isDark ? [
+      { id: 'tile-0', top: '#1c1b18', left: '#141311', right: '#0f0e0c' }, // dry dark soil
+      { id: 'tile-1', top: '#202d24', left: '#162019', right: '#111813' },
+      { id: 'tile-2', top: '#223c28', left: '#172a1b', right: '#101e13' },
+      { id: 'tile-3', top: '#1b4d24', left: '#123518', right: '#0d2711' },
+      { id: 'tile-4', top: '#113f1b', left: '#0a2a11', right: '#061d0b' },
+    ] : [
+      { id: 'tile-0', top: '#EED9B3', left: '#D6BE93', right: '#C8B085' }, // dry sand/meadow
       { id: 'tile-1', top: '#D2E3C8', left: '#B5C9A6', right: '#A2B792' },
       { id: 'tile-2', top: '#A9C394', left: '#8EAA77', right: '#7C9766' },
       { id: 'tile-3', top: '#75A47F', left: '#5B8A65', right: '#4D7A57' },
       { id: 'tile-4', top: '#4F6F52', left: '#3A533D', right: '#2F4331' },
     ];
+    
     return tileConfigs.map(c => createTileSymbolMarkup(c.id, w, h, 6, c)).join('\n');
   },
-  drawObject: (cx, cy, level, count, w, h) => {
+  drawObject: (cx, cy, level, count, w, h, date) => {
     if (level === 0) {
-      if (Math.sin(cx + cy) > 0.7) {
+      if (Math.sin(cx * 1.5 + cy) > 0.75) {
         return `
           <ellipse cx="${cx - 2}" cy="${cy + 1}" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M ${cx - 3},${cy} C ${cx - 3},${cy - 3} ${cx + 1},${cy - 4} ${cx + 2},${cy} C ${cx + 2},${cy + 2} ${cx - 1},${cy + 2} ${cx - 3},${cy} Z" fill="#94a3b8" />
-          <path d="M ${cx - 2},${cy - 1} C ${cx - 2},${cy - 2} ${cx},${cy - 3} ${cx + 1},${cy - 1} Z" fill="#cbd5e1" />
+          <path d="M ${cx - 3},${cy} C ${cx - 3},${cy - 2} ${cx + 1},${cy - 3} ${cx + 2},${cy} C ${cx + 2},${cy + 1} ${cx - 1},${cy + 1} ${cx - 3},${cy} Z" fill="#78716c" />
         `;
       }
       return '';
     }
 
-    const scale = Math.min(1 + (count - 1) * 0.08, 1.8);
-    const shadowRadius = 8 * scale;
+    // Deterministic role based on date hash
+    // 0: Commit -> Fir tree (spitz / Nadelbaum)
+    // 1: Pull Request -> Giant Sequoia (Mammutbaum - massive & tall)
+    // 2: Issue/Review -> Leafy Oak (rund / Laubbaum)
+    const dateHash = date.split('-').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const role = dateHash % 3;
 
+    const scale = Math.min(1 + (count - 1) * 0.08, 1.8);
+    const shadowRadius = (role === 1 ? 12 : 8) * scale;
     let svg = `<ellipse cx="${cx}" cy="${cy + 2}" rx="${shadowRadius}" ry="${shadowRadius / 2}" fill="url(#tree-shadow)" />`;
 
-    if (level === 1) {
-      svg += `
-        <path d="M ${cx - 1},${cy} L ${cx - 1},${cy - 10} L ${cx + 1},${cy - 10} L ${cx + 1},${cy} Z" fill="url(#trunk-grad)" />
-        <path d="M ${cx},${cy - 10} C ${cx - 4},${cy - 14} ${cx - 5},${cy - 10} ${cx},${cy - 8} Z" fill="#84cc16" />
-        <path d="M ${cx},${cy - 9} C ${cx + 4},${cy - 13} ${cx + 5},${cy - 9} ${cx},${cy - 7} Z" fill="#65a30d" />
-      `;
-    } else if (level === 2) {
-      const tHeight = 14 * scale;
-      const crownRadius = 9 * scale;
-      const cyCrown = cy - tHeight;
+    if (role === 0) {
+      // === NA DELBAUM (Fir / Spruce) ===
+      const trunkHeight = 10 * scale;
+      const layers = level === 1 ? 1 : level <= 3 ? 2 : 3;
+      const baseWidth = (level === 1 ? 8 : level <= 3 ? 12 : 15) * scale;
 
-      svg += drawIsoBox(cx, cy, w, h, -0.04, 0.04, -0.04, 0.04, tHeight, { top: '#6E473B', left: '#52342A', right: '#452B23' });
-      svg += `<circle cx="${cx}" cy="${cyCrown}" r="${crownRadius}" fill="url(#leaves-lvl2)" />`;
-    } else if (level === 3) {
-      const trunkHeight = 12 * scale;
-      const totalHeight = 35 * scale;
-      const baseWidth = 14 * scale;
+      // Trunk
+      svg += drawIsoBox(cx, cy, w, h, -0.04, 0.04, -0.04, 0.04, trunkHeight, { top: '#4E3629', left: '#3D2A20', right: '#2C1E17' });
 
-      svg += drawIsoBox(cx, cy, w, h, -0.05, 0.05, -0.05, 0.05, trunkHeight, { top: '#6E473B', left: '#52342A', right: '#452B23' });
-
-      const layers = 3;
+      // Foliage cones (triangles)
       for (let i = 0; i < layers; i++) {
         const factor = (layers - i) / layers;
         const width = baseWidth * factor;
-        const bottom = cy - trunkHeight - i * (8 * scale);
-        const top = bottom - (14 * scale);
+        const bottom = cy - trunkHeight - i * (6 * scale);
+        const top = bottom - (13 * scale);
+        const color = level === 4 ? 'url(#leaves-lvl4)' : 'url(#leaves-lvl3)';
         
         svg += `
-          <path d="M ${cx - width},${bottom} L ${cx + width},${bottom} L ${cx},${top} Z" fill="url(#leaves-lvl3)" />
-          <path d="M ${cx},${bottom} L ${cx + width},${bottom} L ${cx},${top} Z" fill="#1b5e20" opacity="0.15" />
+          <path d="M ${cx - width},${bottom} L ${cx + width},${bottom} L ${cx},${top} Z" fill="${color}" />
+          <path d="M ${cx},${bottom} L ${cx + width},${bottom} L ${cx},${top} Z" fill="#000000" opacity="0.12" />
+        `;
+      }
+    } else if (role === 1) {
+      // === MAMMUTBAUM (Giant Sequoia) ===
+      // Very tall, thick red-brown trunk, narrow conical tip
+      const trunkHeight = (level === 1 ? 18 : level === 2 ? 28 : level === 3 ? 38 : 50) * scale;
+      const trunkWidth = (level <= 2 ? 0.08 : 0.12);
+      
+      // Giant Red Trunk
+      svg += drawIsoBox(cx, cy, w, h, -trunkWidth, trunkWidth, -trunkWidth, trunkWidth, trunkHeight, { 
+        top: '#8C4F35', 
+        left: 'url(#redwood-trunk)', 
+        right: '#5D3320' 
+      });
+
+      // Sequoia high foliage (narrow high teardrop shapes)
+      if (level > 1) {
+        const fH = (level === 2 ? 16 : level === 3 ? 25 : 35) * scale;
+        const fW = (level === 2 ? 8 : level === 3 ? 12 : 15) * scale;
+        const fY = cy - trunkHeight;
+
+        svg += `
+          <path d="M ${cx - fW},${fY + fH*0.2} C ${cx - fW},${fY - fH*0.5} ${cx},${fY - fH} ${cx},${fY - fH} C ${cx},${fY - fH} ${cx + fW},${fY - fH*0.5} ${cx + fW},${fY + fH*0.2} C ${cx + fW},${fY + fH*0.6} ${cx - fW},${fY + fH*0.6} ${cx - fW},${fY + fH*0.2} Z" 
+                fill="url(#leaves-sequoia)" />
+          <path d="M ${cx},${fY - fH} C ${cx},${fY - fH} ${cx + fW},${fY - fH*0.5} ${cx + fW},${fY + fH*0.2} C ${cx + fW},${fY + fH*0.6} ${cx},${fY + fH*0.6} L ${cx},${fY - fH} Z" 
+                fill="#000000" opacity="0.18" />
         `;
       }
     } else {
-      const trunkHeight = 20 * scale;
-      const cyCrown = cy - trunkHeight;
-      const cR = 14 * scale;
-      
-      svg += drawIsoBox(cx, cy, w, h, -0.07, 0.07, -0.07, 0.07, trunkHeight, { top: '#5A3D28', left: '#452E1D', right: '#372417' });
-      svg += `
-        <circle cx="${cx - 8 * scale}" cy="${cyCrown - 4 * scale}" r="${cR * 0.9}" fill="url(#leaves-lvl4)" />
-        <circle cx="${cx + 8 * scale}" cy="${cyCrown - 2 * scale}" r="${cR * 0.9}" fill="url(#leaves-lvl4)" />
-        <circle cx="${cx}" cy="${cyCrown - 12 * scale}" r="${cR * 1.1}" fill="url(#leaves-lvl4)" />
-        <circle cx="${cx}" cy="${cyCrown}" r="${cR}" fill="url(#leaves-lvl4)" />
-        <circle cx="${cx - 2 * scale}" cy="${cyCrown - 6 * scale}" r="${cR * 0.7}" fill="#4caf50" opacity="0.1" />
-      `;
+      // === LAUBBAUM (Leafy Oak) ===
+      if (level === 1) {
+        // Small green bush
+        svg += `<circle cx="${cx}" cy="${cy - 6}" r="${5 * scale}" fill="url(#leaves-lvl2)" />`;
+      } else {
+        const trunkHeight = (level === 2 ? 12 : level === 3 ? 16 : 22) * scale;
+        const cyCrown = cy - trunkHeight;
+        const cR = (level === 2 ? 9 : level === 3 ? 12 : 15) * scale;
+
+        // Trunk
+        svg += drawIsoBox(cx, cy, w, h, -0.05, 0.05, -0.05, 0.05, trunkHeight, { top: '#5A3D28', left: '#452E1D', right: '#372417' });
+        
+        // Circular overlapping crown (looks like a cloud)
+        const leafGrad = level === 2 ? 'url(#leaves-lvl2)' : level === 3 ? 'url(#leaves-lvl3)' : 'url(#leaves-lvl4)';
+        svg += `
+          <circle cx="${cx - 6 * scale}" cy="${cyCrown - 2 * scale}" r="${cR * 0.8}" fill="${leafGrad}" />
+          <circle cx="${cx + 6 * scale}" cy="${cyCrown - 1 * scale}" r="${cR * 0.8}" fill="${leafGrad}" />
+          <circle cx="${cx}" cy="${cyCrown - 10 * scale}" r="${cR * 1.0}" fill="${leafGrad}" />
+          <circle cx="${cx}" cy="${cyCrown}" r="${cR}" fill="${leafGrad}" />
+          <circle cx="${cx - 2 * scale}" cy="${cyCrown - 4 * scale}" r="${cR * 0.7}" fill="#ffffff" opacity="0.08" />
+        `;
+      }
     }
 
     return svg;
@@ -196,183 +260,195 @@ const ForestTheme: ThemeConfig = {
 };
 
 const HighwayTheme: ThemeConfig = {
-  bgColor: '#0f172a',
-  bgGradient: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
-  gridColor: '#1e293b',
-  textColor: '#94a3b8',
-  titleColor: '#f8fafc',
-  accentColor: '#f59e0b',
+  getColors: () => ({
+    bgColor: '#0f172a',
+    bgGradient: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+    gridColor: '#1e293b',
+    textColor: '#94a3b8',
+    titleColor: '#f8fafc',
+    accentColor: '#f59e0b',
+  }),
   extraDefs: `
     <linearGradient id="car-body-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="0%" stop-color="#f59e0b" />
       <stop offset="100%" stop-color="#b45309" />
     </linearGradient>
     <linearGradient id="car-body-red" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f87171" />
-      <stop offset="100%" stop-color="#b91c1c" />
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
     </linearGradient>
     <linearGradient id="car-body-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="0%" stop-color="#3b82f6" />
       <stop offset="100%" stop-color="#1d4ed8" />
     </linearGradient>
     <linearGradient id="car-body-silver" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e2e8f0" />
-      <stop offset="100%" stop-color="#64748b" />
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
     </linearGradient>
-    <radialGradient id="headlight-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
-    </radialGradient>
+    <linearGradient id="guardrail-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
   `,
   defineTileSymbols: (w: number, h: number) => {
+    // Highway tiles - no individual side walls. Just the flat road top.
     const tileConfigs = [
-      { id: 'tile-0', top: '#2c3545', left: '#1b202c', right: '#11141c', level: 0 },
-      { id: 'tile-1', top: '#3d4b5f', left: '#27303f', right: '#181e28', level: 1 },
-      { id: 'tile-2', top: '#475569', left: '#334155', right: '#1e293b', level: 2 },
-      { id: 'tile-3', top: '#475569', left: '#334155', right: '#1e293b', level: 3 },
-      { id: 'tile-4', top: '#505f75', left: '#3c485a', right: '#27303c', level: 4 },
+      { id: 'tile-0', top: '#1e2530' }, // Cracked/worn lane
+      { id: 'tile-1', top: '#272f3d' },
+      { id: 'tile-2', top: '#2b3545' },
+      { id: 'tile-3', top: '#333e50' },
+      { id: 'tile-4', top: '#3b475c' },
     ];
 
     return tileConfigs.map(c => {
-      // Build tile base
-      let extra = '';
-      if (c.level > 0) {
-        // White dashed center line
-        const xStart = -w / 2;
-        const xEnd = w / 2;
-        extra = `<line x1="${xStart}" y1="0" x2="${xEnd}" y2="0" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6" />`;
-      } else {
-        // Draw cracks on abandoned level 0
-        extra = `<path d="M ${-w*0.2},${-h*0.1} L ${w*0.1},${h*0.2} L ${w*0.3},${-h*0.3}" stroke="#181e28" stroke-width="1.2" fill="none" opacity="0.8" />`;
-      }
-      return createTileSymbolMarkup(c.id, w, h, 5, c, extra);
+      // Just a flat diamond shape for the road lane
+      const topPath = `M 0,${-h / 2} L ${w / 2},0 L 0,${h / 2} L ${-w / 2},0 Z`;
+      return `
+        <g id="${c.id}">
+          <path d="${topPath}" fill="${c.top}" />
+        </g>
+      `;
     }).join('\n');
   },
   drawObject: (cx, cy, level, count, w, h) => {
-    const scale = Math.min(1 + (count - 1) * 0.05, 1.5);
-    
-    if (level === 0) {
-      if (Math.sin(cx + cy) > 0.6) {
-        let svg = drawIsoBox(cx, cy, w, h, -0.1, 0.1, -0.1, 0.1, 1, { top: '#ea580c', left: '#c2410c', right: '#9a3412' });
-        const pPeak = project(cx, cy, w, h, 0, 0, 10);
-        const pL = project(cx, cy, w, h, -0.06, 0.06, 1);
-        const pR = project(cx, cy, w, h, 0.06, -0.06, 1);
-        const pF = project(cx, cy, w, h, 0.06, 0.06, 1);
-        
-        svg += `
-          <path d="M ${pL.x},${pL.y} L ${pPeak.x},${pPeak.y} L ${pF.x},${pF.y} Z" fill="#f97316" />
-          <path d="M ${pF.x},${pF.y} L ${pPeak.x},${pPeak.y} L ${pR.x},${pR.y} Z" fill="#ea580c" />
-          <path d="M ${cx - 2},${cy - 4} L ${cx + 2},${cy - 4} L ${cx},${cy - 7} Z" fill="#ffffff" />
-        `;
-        return svg;
-      }
-      return '';
-    }
+    if (level === 0) return ''; // Let empty days stay empty road surface
 
+    const scale = Math.min(1 + (count - 1) * 0.05, 1.4);
+    
     if (level === 1) {
-      const color = '#10b981'; 
+      // Scooter or Motorcycle
+      const color = '#10b981';
       const base = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.02, 0.02, 2, { top: color, left: '#047857', right: '#065f46' });
-      const handlebar = project(cx, cy, w, h, 0.1, 0, 10);
+      const handlebar = project(cx, cy, w, h, 0.1, 0, 9);
       const handlebarBase = project(cx, cy, w, h, 0.1, 0, 2);
-      const handlebarLeft = project(cx, cy, w, h, 0.1, -0.08, 10);
-      const handlebarRight = project(cx, cy, w, h, 0.1, 0.08, 10);
-      
       return `
         ${base}
-        <line x1="${handlebarBase.x}" y1="${handlebarBase.y}" x2="${handlebar.x}" y2="${handlebar.y}" stroke="#1e293b" stroke-width="1.5" />
-        <line x1="${handlebarLeft.x}" y1="${handlebarLeft.y}" x2="${handlebarRight.x}" y2="${handlebarRight.y}" stroke="#1e293b" stroke-width="1.5" />
+        <line x1="${handlebarBase.x}" y1="${handlebarBase.y}" x2="${handlebar.x}" y2="${handlebar.y}" stroke="#cbd5e1" stroke-width="1.5" />
+        <circle cx="${handlebar.x}" cy="${handlebar.y}" r="1" fill="#fef08a" />
       `;
     }
 
     if (level === 2) {
+      // Standard car
       const colors = ['yellow', 'red', 'blue', 'silver'];
-      const colorIdx = Math.floor(Math.abs(Math.sin(cx * 17 + cy * 23) * colors.length));
+      const colorIdx = Math.floor(Math.abs(Math.sin(cx * 7 + cy * 13) * colors.length));
       const color = colors[colorIdx];
-      
       const bodyColor = `url(#car-body-${color})`;
-      let svg = `<ellipse cx="${cx}" cy="${cy + 2}" rx="12" ry="6" fill="#0f172a" opacity="0.4" />`;
       
-      svg += drawIsoBox(cx, cy, w, h, -0.3, 0.25, -0.12, 0.12, 5 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
-      svg += drawIsoBox(cx, cy, w, h, -0.15, 0.12, -0.1, 0.1, 9 * scale, { top: bodyColor, left: '#1e293b', right: '#334155' });
+      let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="11" ry="5.5" fill="#020617" opacity="0.45" />`;
+      // Car chassis + cabin
+      svg += drawIsoBox(cx, cy, w, h, -0.28, 0.22, -0.1, 0.1, 4.5 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
+      svg += drawIsoBox(cx, cy, w, h, -0.14, 0.1, -0.08, 0.08, 8 * scale, { top: bodyColor, left: '#0f172a', right: '#1e293b' });
       
-      const headlightPt = project(cx, cy, w, h, 0.25, 0.06, 2.5 * scale);
-      const headlightPt2 = project(cx, cy, w, h, 0.25, -0.06, 2.5 * scale);
+      // Headlights
+      const hl1 = project(cx, cy, w, h, 0.22, 0.05, 2 * scale);
+      const hl2 = project(cx, cy, w, h, 0.22, -0.05, 2 * scale);
       svg += `
-        <circle cx="${headlightPt.x}" cy="${headlightPt.y}" r="1" fill="#fef08a" />
-        <circle cx="${headlightPt2.x}" cy="${headlightPt2.y}" r="1" fill="#fef08a" />
+        <circle cx="${hl1.x}" cy="${hl1.y}" r="0.8" fill="#fef08a" />
+        <circle cx="${hl2.x}" cy="${hl2.y}" r="0.8" fill="#fef08a" />
       `;
       return svg;
     }
 
     if (level === 3) {
+      // Delivery Van / SUV
       const bodyColor = 'url(#car-body-blue)';
-      let svg = `<ellipse cx="${cx}" cy="${cy + 2}" rx="14" ry="7" fill="#0f172a" opacity="0.4" />`;
+      let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="13" ry="6.5" fill="#020617" opacity="0.45" />`;
       
-      svg += drawIsoBox(cx, cy, w, h, -0.35, 0.3, -0.14, 0.14, 11 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
-      svg += drawIsoBox(cx, cy, w, h, 0.12, 0.29, -0.12, 0.12, 10.5 * scale, { top: bodyColor, left: '#0f172a', right: '#1e293b' });
-      
-      const p1 = project(cx, cy, w, h, 0.29, -0.12, 8);
-      const p2 = project(cx, cy, w, h, 0.29, 0.12, 8);
-      const p3 = project(cx, cy, w, h, 0.18, 0.12, 10.5);
-      const p4 = project(cx, cy, w, h, 0.18, -0.12, 10.5);
-      svg += `
-        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y} L ${p4.x},${p4.y} Z" fill="#94a3b8" opacity="0.8" />
-      `;
+      svg += drawIsoBox(cx, cy, w, h, -0.32, 0.28, -0.12, 0.12, 10 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
+      svg += drawIsoBox(cx, cy, w, h, 0.1, 0.26, -0.11, 0.11, 9.5 * scale, { top: bodyColor, left: '#020617', right: '#0f172a' });
       return svg;
     }
 
-    const truckCabin = 'url(#car-body-red)';
-    const cargoContainer = 'url(#car-body-silver)';
-    let svg = `<ellipse cx="${cx}" cy="${cy + 2}" rx="20" ry="9" fill="#0f172a" opacity="0.5" />`;
+    // Level 4: Semitruck / Freight LKW
+    const cabinColor = 'url(#car-body-red)';
+    const trailerColor = 'url(#car-body-silver)';
+    let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="18" ry="9" fill="#020617" opacity="0.5" />`;
 
-    svg += drawIsoBox(cx, cy, w, h, -0.45, 0.45, -0.16, 0.16, 3 * scale, { top: '#1e293b', left: '#0f172a', right: '#0f172a' });
-    svg += drawIsoBox(cx, cy, w, h, -0.42, 0.12, -0.15, 0.15, 20 * scale, { top: cargoContainer, left: cargoContainer, right: cargoContainer });
-    svg += drawIsoBox(cx, cy, w, h, 0.18, 0.42, -0.14, 0.14, 18 * scale, { top: truckCabin, left: truckCabin, right: truckCabin });
-
-    const wp1 = project(cx, cy, w, h, 0.42, -0.12, 11 * scale);
-    const wp2 = project(cx, cy, w, h, 0.42, 0.12, 11 * scale);
-    const wp3 = project(cx, cy, w, h, 0.42, 0.12, 16 * scale);
-    const wp4 = project(cx, cy, w, h, 0.42, -0.12, 16 * scale);
-    svg += `
-      <path d="M ${wp1.x},${wp1.y} L ${wp2.x},${wp2.y} L ${wp3.x},${wp3.y} L ${wp4.x},${wp4.y} Z" fill="#1e293b" />
-    `;
+    // Trailer
+    svg += drawIsoBox(cx, cy, w, h, -0.4, 0.1, -0.14, 0.14, 20 * scale, { top: trailerColor, left: trailerColor, right: trailerColor });
+    // Cabin (front)
+    svg += drawIsoBox(cx, cy, w, h, 0.18, 0.42, -0.13, 0.13, 17 * scale, { top: cabinColor, left: cabinColor, right: cabinColor });
+    
+    // Windshield
+    const wp1 = project(cx, cy, w, h, 0.42, -0.11, 10 * scale);
+    const wp2 = project(cx, cy, w, h, 0.42, 0.11, 10 * scale);
+    const wp3 = project(cx, cy, w, h, 0.42, 0.11, 15 * scale);
+    const wp4 = project(cx, cy, w, h, 0.42, -0.11, 15 * scale);
+    svg += `<path d="M ${wp1.x},${wp1.y} L ${wp2.x},${wp2.y} L ${wp3.x},${wp3.y} L ${wp4.x},${wp4.y} Z" fill="#020617" />`;
 
     return svg;
+  },
+  drawExtraGridDetails: (cx, cy, x, y, w, h, level, weeks) => {
+    let extra = '';
+
+    // 1. Spurentrennlinien (Dashed lane dividers)
+    // Draw these between lanes. The line is drawn on the bottom-left edge of the tile (which divides lane y and y+1).
+    if (y < 6) {
+      // Calculate coordinates of the bottom-left edge of the tile
+      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0); // Left corner of tile
+      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);   // Bottom corner of tile
+      extra += `
+        <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
+              stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.75" />
+      `;
+    }
+
+    // 2. Leitplanken (Guardrails)
+    // We place a guardrail along the very back edge (y=0) and front edge (y=6)
+    if (y === 0) {
+      // Top-right edge of the tile (back border of the highway)
+      const pStart = project(cx, cy, w, h, -0.5, -0.5, 0); // Top corner
+      const pEnd = project(cx, cy, w, h, 0.5, -0.5, 0);   // Right corner
+      
+      // Draw posts
+      extra += `
+        <line x1="${pStart.x}" y1="${pStart.y}" x2="${pStart.x}" y2="${pStart.y - 7}" stroke="#475569" stroke-width="1.5" />
+        <line x1="${(pStart.x + pEnd.x)/2}" y1="${(pStart.y + pEnd.y)/2}" x2="${(pStart.x + pEnd.x)/2}" y2="${(pStart.y + pEnd.y)/2 - 7}" stroke="#475569" stroke-width="1.5" />
+        <!-- Rail bar -->
+        <line x1="${pStart.x}" y1="${pStart.y - 5}" x2="${pEnd.x}" y2="${pEnd.y - 5}" stroke="url(#guardrail-grad)" stroke-width="2.5" />
+      `;
+    }
+    
+    if (y === 6) {
+      // Bottom-left edge of the tile (front border of the highway)
+      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0); // Left corner
+      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);   // Bottom corner
+      
+      // Draw posts
+      extra += `
+        <line x1="${pStart.x}" y1="${pStart.y}" x2="${pStart.x}" y2="${pStart.y - 7}" stroke="#475569" stroke-width="1.5" />
+        <line x1="${(pStart.x + pEnd.x)/2}" y1="${(pStart.y + pEnd.y)/2}" x2="${(pStart.x + pEnd.x)/2}" y2="${(pStart.y + pEnd.y)/2 - 7}" stroke="#475569" stroke-width="1.5" />
+        <!-- Rail bar -->
+        <line x1="${pStart.x}" y1="${pStart.y - 5}" x2="${pEnd.x}" y2="${pEnd.y - 5}" stroke="url(#guardrail-grad)" stroke-width="2.5" />
+      `;
+    }
+
+    return extra;
   },
 };
 
 const CyberpunkTheme: ThemeConfig = {
-  bgColor: '#080114',
-  bgGradient: 'linear-gradient(135deg, #0b001a 0%, #17002c 50%, #080012 100%)',
-  gridColor: '#1f003a',
-  textColor: '#f472b6',
-  titleColor: '#00f0ff',
-  accentColor: '#d946ef',
+  getColors: () => ({
+    bgColor: '#05010c',
+    bgGradient: 'linear-gradient(135deg, #05010c 0%, #110022 50%, #030008 100%)',
+    gridColor: '#140029',
+    textColor: '#f472b6',
+    titleColor: '#00f0ff',
+    accentColor: '#d946ef',
+  }),
   extraDefs: `
-    <linearGradient id="cyber-bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#050010" />
-      <stop offset="60%" stop-color="#120024" />
-      <stop offset="100%" stop-color="#020008" />
-    </linearGradient>
-    <linearGradient id="neon-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f0ff" />
-      <stop offset="100%" stop-color="#0077aa" />
-    </linearGradient>
-    <linearGradient id="neon-pink-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff007f" />
-      <stop offset="100%" stop-color="#aa0055" />
-    </linearGradient>
     <linearGradient id="cyber-glass" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#121829" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#0a0d18" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#13192b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#080914" stop-opacity="0.98" />
     </linearGradient>
     <linearGradient id="hollow-beam" x1="0%" y1="100%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3" />
       <stop offset="70%" stop-color="#ff007f" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
     </linearGradient>
-    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -381,108 +457,99 @@ const CyberpunkTheme: ThemeConfig = {
   `,
   defineTileSymbols: (w: number, h: number) => {
     const tileConfigs = [
-      { id: 'tile-0', top: '#080710', left: '#05040A', right: '#030206', neonColor: '' },
-      { id: 'tile-1', top: '#12002c', left: '#0a001a', right: '#05000d', neonColor: '#50006c' },
-      { id: 'tile-2', top: '#17003c', left: '#0d0024', right: '#070014', neonColor: '#005f73' },
-      { id: 'tile-3', top: '#1d004c', left: '#120032', right: '#09001b', neonColor: '#ff007f' },
-      { id: 'tile-4', top: '#24005d', left: '#17003d', right: '#0b001e', neonColor: '#00f0ff' },
+      { id: 'tile-0', top: '#08070d', left: '#050408', right: '#030205', glow: '' },
+      { id: 'tile-1', top: '#0d0b1a', left: '#07060f', right: '#04030a', glow: '#360054' },
+      { id: 'tile-2', top: '#100c24', left: '#0a0817', right: '#05040f', glow: '#004c5e' },
+      { id: 'tile-3', top: '#130e2e', left: '#0c091f', right: '#060414', glow: '#b5005a' },
+      { id: 'tile-4', top: '#1a133d', left: '#100c29', right: '#080619', glow: '#00c3d9' },
     ];
 
     return tileConfigs.map(c => {
       let extra = '';
-      if (c.neonColor) {
+      if (c.glow) {
+        // glowing grid outline on top
         const topPath = `M 0,${-h / 2} L ${w / 2},0 L 0,${h / 2} L ${-w / 2},0 Z`;
-        extra = `<path d="${topPath}" stroke="${c.neonColor}" stroke-width="1.2" fill="none" opacity="0.8" />`;
+        extra = `<path d="${topPath}" stroke="${c.glow}" stroke-width="1.0" fill="none" opacity="0.8" />`;
       }
       return createTileSymbolMarkup(c.id, w, h, 4, c, extra);
     }).join('\n');
   },
   drawObject: (cx, cy, level, count, w, h) => {
+    // 💡 SOLVED THE OVERCROWDED skyline:
+    // Level 0 and 1 render NO buildings anymore, creating open city plazas/solar grids.
+    if (level <= 1) return '';
+
     const heightFactor = Math.min(1 + (count - 1) * 0.08, 2.2);
 
-    if (level === 0) {
-      if (Math.sin(cx - cy) > 0.5) {
-        let svg = drawIsoBox(cx, cy, w, h, -0.25, 0.25, -0.25, 0.25, 10, { top: '#231d28', left: '#151119', right: '#0f0c12' });
-        const pLight = project(cx, cy, w, h, 0, 0, 10.5);
-        svg += `<circle cx="${pLight.x}" cy="${pLight.y}" r="1.5" fill="#ef4444" />`;
-        return svg;
-      }
-      return '';
+    if (level === 2) {
+      // Level 2: Small, slim skyscraper. Much narrower (X/Y: -0.15 to 0.15 instead of 0.25)
+      const bH = 38 * heightFactor;
+      let svg = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.15, 0.15, bH, { top: 'url(#cyber-glass)', left: '#0e111d', right: '#080a11' });
+      
+      // Neon top trim
+      const p1 = project(cx, cy, w, h, -0.15, 0.15, bH);
+      const p2 = project(cx, cy, w, h, 0.15, 0.15, bH);
+      const p3 = project(cx, cy, w, h, 0.15, -0.15, bH);
+      svg += `
+        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y}" stroke="#00f0ff" stroke-width="1.5" fill="none" filter="url(#neon-glow)" />
+      `;
+      return svg;
     }
 
-    let svg = '';
+    if (level === 3) {
+      // Level 3: Medium double-deck skyscraper (X/Y: -0.17 to 0.17)
+      const bH = 70 * heightFactor;
+      let svg = drawIsoBox(cx, cy, w, h, -0.17, 0.17, -0.17, 0.17, bH, { top: '#0f1322', left: '#0a0d17', right: '#05070e' });
 
-    if (level === 1) {
-      const bH = 30 * heightFactor;
-      svg += drawIsoBox(cx, cy, w, h, -0.2, 0.2, -0.2, 0.2, bH, { top: '#1c1f30', left: '#0e101b', right: '#080911' });
-      
-      const pAntennaBase = project(cx, cy, w, h, 0, 0, bH);
-      const pAntennaTip = project(cx, cy, w, h, 0, 0, bH + 12);
-      svg += `
-        <line x1="${pAntennaBase.x}" y1="${pAntennaBase.y}" x2="${pAntennaTip.x}" y2="${pAntennaTip.y}" stroke="#ff007f" stroke-width="1" />
-        <circle cx="${pAntennaTip.x}" cy="${pAntennaTip.y}" r="1.5" fill="#ff007f" filter="url(#neon-glow)" />
-      `;
-    } else if (level === 2) {
-      const bH = 50 * heightFactor;
-      svg += drawIsoBox(cx, cy, w, h, -0.25, 0.25, -0.25, 0.25, bH, { top: 'url(#cyber-glass)', left: '#111524', right: '#0b0c16' });
-      
-      const p1 = project(cx, cy, w, h, 0.25, -0.15, bH * 0.3);
-      const p2 = project(cx, cy, w, h, 0.25, 0.15, bH * 0.3);
-      const p3 = project(cx, cy, w, h, 0.25, 0.15, bH * 0.7);
-      const p4 = project(cx, cy, w, h, 0.25, -0.15, bH * 0.7);
-      svg += `
-        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y} L ${p4.x},${p4.y} Z" 
-              fill="#00f0ff" filter="url(#neon-glow)" opacity="0.8" />
-        <line x1="${(p1.x + p2.x)/2}" y1="${(p1.y + p2.y)/2}" x2="${(p3.x + p4.x)/2}" y2="${(p3.y + p4.y)/2}" 
-              stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
-      `;
-    } else if (level === 3) {
-      const t1H = 35 * heightFactor;
-      const t2H = 75 * heightFactor;
-      
-      svg += drawIsoBox(cx, cy, w, h, -0.3, 0.3, -0.3, 0.3, t1H, { top: '#0f172a', left: '#0a0f1d', right: '#05070e' });
-      svg += drawIsoBox(cx, cy, w, h, -0.2, 0.2, -0.2, 0.2, t2H, { top: 'url(#cyber-glass)', left: '#0e111d', right: '#090b14' });
+      // Small upper core tower (recessed)
+      const topH = bH + 15;
+      svg += drawIsoBox(cx, cy, w, h, -0.1, 0.1, -0.1, 0.1, topH, { top: 'url(#cyber-glass)', left: '#0e111d', right: '#090b14' });
 
-      const cornerBase = project(cx, cy, w, h, 0.2, 0.2, t1H);
-      const cornerTop = project(cx, cy, w, h, 0.2, 0.2, t2H);
+      // Neon billboard on left wall
+      const p1 = project(cx, cy, w, h, -0.17, -0.05, bH * 0.2);
+      const p2 = project(cx, cy, w, h, -0.17, 0.12, bH * 0.2);
+      const p3 = project(cx, cy, w, h, -0.17, 0.12, bH * 0.65);
+      const p4 = project(cx, cy, w, h, -0.17, -0.05, bH * 0.65);
       svg += `
-        <line x1="${cornerBase.x}" y1="${cornerBase.y}" x2="${cornerTop.x}" y2="${cornerTop.y}" 
-              stroke="#ff007f" stroke-width="1.5" filter="url(#neon-glow)" />
+        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y} L ${p4.x},${p4.y} Z" fill="#ff007f" filter="url(#neon-glow)" opacity="0.85" />
       `;
-    } else {
-      const bH = 110 * heightFactor;
-      const topHeight = bH;
-
-      svg += drawIsoBox(cx, cy, w, h, -0.35, 0.35, -0.35, 0.35, bH, { top: 'url(#cyber-glass)', left: '#0f111a', right: '#080911' });
-
-      const c1Base = project(cx, cy, w, h, 0.35, 0.35, 0);
-      const c1Top = project(cx, cy, w, h, 0.35, 0.35, topHeight);
-      const c2Base = project(cx, cy, w, h, -0.35, 0.35, 0);
-      const c2Top = project(cx, cy, w, h, -0.35, 0.35, topHeight);
-      
-      svg += `
-        <line x1="${c1Base.x}" y1="${c1Base.y}" x2="${c1Top.x}" y2="${c1Top.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
-        <line x1="${c2Base.x}" y1="${c2Base.y}" x2="${c2Top.x}" y2="${c2Top.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
-      `;
-
-      const holCenter = project(cx, cy, w, h, 0, 0, topHeight + 25);
-      svg += `
-        <polygon points="${cx},${cy - topHeight} ${holCenter.x - 12},${holCenter.y} ${holCenter.x + 12},${holCenter.y}" 
-                 fill="url(#hollow-beam)" />
-        <polygon points="${holCenter.x},${holCenter.y - 12} ${holCenter.x + 10},${holCenter.y} ${holCenter.x},${holCenter.y + 12} ${holCenter.x - 10},${holCenter.y}" 
-                 fill="#ff007f" fill-opacity="0.4" stroke="#ff007f" stroke-width="1.5" filter="url(#neon-glow)" />
-        <circle cx="${holCenter.x}" cy="${holCenter.y}" r="3" fill="#00f0ff" filter="url(#neon-glow)" />
-      `;
-
-      const beamL_Tip = { x: cx - 60, y: cy - topHeight - 160 };
-      const beamR_Tip = { x: cx + 60, y: cy - topHeight - 160 };
-      svg += `
-        <polygon points="${cx},${cy - topHeight} ${beamL_Tip.x - 20},${beamL_Tip.y} ${beamL_Tip.x + 20},${beamL_Tip.y}" 
-                 fill="url(#hollow-beam)" opacity="0.3" />
-        <polygon points="${cx},${cy - topHeight} ${beamR_Tip.x - 20},${beamR_Tip.y} ${beamR_Tip.x + 20},${beamR_Tip.y}" 
-                 fill="url(#hollow-beam)" opacity="0.3" />
-      `;
+      return svg;
     }
+
+    // Level 4: Megacorp tower (X/Y: -0.22 to 0.22)
+    const bH = 110 * heightFactor;
+    let svg = drawIsoBox(cx, cy, w, h, -0.22, 0.22, -0.22, 0.22, bH, { top: 'url(#cyber-glass)', left: '#090a12', right: '#04050a' });
+
+    // Cyber antenna / Spire on top
+    const pSpireBase = project(cx, cy, w, h, 0, 0, bH);
+    const pSpireTip = project(cx, cy, w, h, 0, 0, bH + 28);
+    svg += `
+      <line x1="${pSpireBase.x}" y1="${pSpireBase.y}" x2="${pSpireTip.x}" y2="${pSpireTip.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
+      <circle cx="${pSpireTip.x}" cy="${pSpireTip.y}" r="2" fill="#ffffff" filter="url(#neon-glow)" />
+    `;
+
+    // Giant floating hologram diamond above
+    const holCenter = project(cx, cy, w, h, 0, 0, bH + 50);
+    svg += `
+      <polygon points="${pSpireBase.x},${pSpireBase.y} ${holCenter.x - 12},${holCenter.y} ${holCenter.x + 12},${holCenter.y}" 
+               fill="url(#hollow-beam)" />
+      <polygon points="${holCenter.x},${holCenter.y - 12} ${holCenter.x + 10},${holCenter.y} ${holCenter.x},${holCenter.y + 12} ${holCenter.x - 10},${holCenter.y}" 
+               fill="#ff007f" fill-opacity="0.3" stroke="#ff007f" stroke-width="1.5" filter="url(#neon-glow)" />
+    `;
+
+    // Neon glowing corners (vertical lines)
+    const c1Base = project(cx, cy, w, h, 0.22, 0.22, 0);
+    const c1Top = project(cx, cy, w, h, 0.22, 0.22, bH);
+    svg += `
+      <line x1="${c1Base.x}" y1="${c1Base.y}" x2="${c1Top.x}" y2="${c1Top.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
+    `;
+
+    // Searchlight beam
+    const beamTip = { x: cx + 50, y: cy - bH - 150 };
+    svg += `
+      <polygon points="${pSpireBase.x},${pSpireBase.y} ${beamTip.x - 25},${beamTip.y} ${beamTip.x + 25},${beamTip.y}" 
+               fill="url(#hollow-beam)" opacity="0.3" />
+    `;
 
     return svg;
   },
@@ -497,8 +564,9 @@ const THEMES: Record<string, ThemeConfig> = {
 /**
  * Main rendering function to build the entire SVG from the contribution grid.
  */
-export function renderSVG(activity: ActivityGrid, themeName: string, username: string): string {
+export function renderSVG(activity: ActivityGrid, themeName: string, username: string, bgMode: string = 'light'): string {
   const theme = THEMES[themeName.toLowerCase()] || ForestTheme;
+  const colors = theme.getColors(bgMode);
   
   // Dimensions
   const tileWidth = 48;
@@ -542,33 +610,33 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 26px;
       font-weight: 800;
-      fill: ${theme.titleColor};
+      fill: ${colors.titleColor};
       letter-spacing: -0.5px;
     }
     .subtitle {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 14px;
       font-weight: 500;
-      fill: ${theme.textColor};
+      fill: ${colors.textColor};
     }
     .legend-text {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 12px;
       font-weight: 500;
-      fill: ${theme.textColor};
+      fill: ${colors.textColor};
     }
   </style>
 
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="${theme.bgColor}" />
-      <stop offset="100%" stop-color="${theme.gridColor}" />
+      <stop offset="0%" stop-color="${colors.bgColor}" />
+      <stop offset="100%" stop-color="${colors.gridColor}" />
     </linearGradient>
     ${theme.extraDefs || ''}
     
-    <!-- Theme Tile Symbols (reusable templates) -->
-    ${theme.defineTileSymbols(tileWidth, tileHeight)}
+    <!-- Theme Tile Symbols -->
+    ${theme.defineTileSymbols(tileWidth, tileHeight, bgMode)}
   </defs>
 
   <!-- Background -->
@@ -583,21 +651,34 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
 
   svg += '  <!-- Isometric Grid Tiles & Objects -->\n  <g>\n';
   
-  // Phase 1: Draw tile bases (all weeks/days)
-  for (let x = 0; x < weeks; x++) {
-    const week = activity[x];
-    for (let y = 0; y < week.length; y++) {
-      const day = week[y];
+  // Phase 1: Draw Highway Side-Walls (If Highway Theme)
+  // To draw the highway as a single solid block, we manually draw the concrete 3D sides on the outer edges.
+  if (themeName.toLowerCase() === 'highway') {
+    const roadDepth = 8;
+    const concreteColorLeft = '#1e293b';
+    const concreteColorRight = '#0f172a';
+    
+    // Draw the left border concrete wall (along y=6)
+    for (let x = 0; x < weeks; x++) {
+      const screenX = (x - 6) * (tileWidth / 2) + offsetX;
+      const screenY = (x + 6) * (tileHeight / 2) + offsetY;
       
-      const screenX = (x - y) * (tileWidth / 2) + offsetX;
-      const screenY = (x + y) * (tileHeight / 2) + offsetY;
+      const pLeft = `M ${screenX - tileWidth / 2},${screenY} L ${screenX},${screenY + tileHeight / 2} L ${screenX},${screenY + tileHeight / 2 + roadDepth} L ${screenX - tileWidth / 2},${screenY + roadDepth} Z`;
+      svg += `    <path d="${pLeft}" fill="${concreteColorLeft}" />\n`;
+    }
 
-      // Instead of drawing inline paths, we stamp the defined symbol
-      svg += `    <use href="#tile-${day.level}" x="${screenX}" y="${screenY}" />\n`;
+    // Draw the right border concrete wall (along x = weeks - 1)
+    const lastX = weeks - 1;
+    for (let y = 0; y < daysPerWeek; y++) {
+      const screenX = (lastX - y) * (tileWidth / 2) + offsetX;
+      const screenY = (lastX + y) * (tileHeight / 2) + offsetY;
+      
+      const pRight = `M ${screenX},${screenY + tileHeight / 2} L ${screenX + tileWidth / 2},${screenY} L ${screenX + tileWidth / 2},${screenY + roadDepth} L ${screenX},${screenY + tileHeight / 2 + roadDepth} Z`;
+      svg += `    <path d="${pRight}" fill="${concreteColorRight}" />\n`;
     }
   }
 
-  // Phase 2: Draw objects (all weeks/days)
+  // Phase 2: Draw tile bases (all weeks/days)
   for (let x = 0; x < weeks; x++) {
     const week = activity[x];
     for (let y = 0; y < week.length; y++) {
@@ -606,8 +687,27 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       const screenX = (x - y) * (tileWidth / 2) + offsetX;
       const screenY = (x + y) * (tileHeight / 2) + offsetY;
 
-      // Draw the object on top
-      const objectMarkup = theme.drawObject(screenX, screenY, day.level, day.count, tileWidth, tileHeight);
+      // Stamp the tile base
+      svg += `    <use href="#tile-${day.level}" x="${screenX}" y="${screenY}" />\n`;
+      
+      // Draw theme-specific extra tile details (dividers, guardrails)
+      if (theme.drawExtraGridDetails) {
+        svg += `    ${theme.drawExtraGridDetails(screenX, screenY, x, y, tileWidth, tileHeight, day.level, weeks)}\n`;
+      }
+    }
+  }
+
+  // Phase 3: Draw objects on top (all weeks/days)
+  for (let x = 0; x < weeks; x++) {
+    const week = activity[x];
+    for (let y = 0; y < week.length; y++) {
+      const day = week[y];
+      
+      const screenX = (x - y) * (tileWidth / 2) + offsetX;
+      const screenY = (x + y) * (tileHeight / 2) + offsetY;
+
+      // Draw the object on top (trees/cars/buildings)
+      const objectMarkup = theme.drawObject(screenX, screenY, day.level, day.count, tileWidth, tileHeight, day.date);
       if (objectMarkup) {
         svg += `    ${objectMarkup}\n`;
       }
@@ -633,25 +733,25 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
     <!-- Level 1 Tile -->
     <g transform="translate(45, 0)">
       <use href="#tile-1" x="10" y="0" />
-      ${theme.drawObject(10, 0, 1, 2, tileWidth, tileHeight)}
+      ${theme.drawObject(10, 0, 1, 2, tileWidth, tileHeight, '2026-01-01')}
     </g>
     
     <!-- Level 2 Tile -->
     <g transform="translate(80, 0)">
       <use href="#tile-2" x="10" y="0" />
-      ${theme.drawObject(10, 0, 2, 5, tileWidth, tileHeight)}
+      ${theme.drawObject(10, 0, 2, 5, tileWidth, tileHeight, '2026-01-02')}
     </g>
     
     <!-- Level 3 Tile -->
     <g transform="translate(115, 0)">
       <use href="#tile-3" x="10" y="0" />
-      ${theme.drawObject(10, 0, 3, 10, tileWidth, tileHeight)}
+      ${theme.drawObject(10, 0, 3, 10, tileWidth, tileHeight, '2026-01-03')}
     </g>
     
     <!-- Level 4 Tile -->
     <g transform="translate(150, 0)">
       <use href="#tile-4" x="10" y="0" />
-      ${theme.drawObject(10, 0, 4, 25, tileWidth, tileHeight)}
+      ${theme.drawObject(10, 0, 4, 25, tileWidth, tileHeight, '2026-01-04')}
     </g>
 
     <text x="195" y="8" class="legend-text">More</text>

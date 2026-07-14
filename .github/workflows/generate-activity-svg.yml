@@ -29,8 +29,9 @@ jobs:
 
       - name: Generate Activity SVGs
         run: |
-          # Generates all three themes
-          node dist/index.js -u ${{ github.repository_owner }} -t forest -o ./github-activity-forest.svg -k ${{ secrets.GITHUB_TOKEN }}
+          # Generates all three themes (including light and dark for forest)
+          node dist/index.js -u ${{ github.repository_owner }} -t forest -b light -o ./github-activity-forest.svg -k ${{ secrets.GITHUB_TOKEN }}
+          node dist/index.js -u ${{ github.repository_owner }} -t forest -b dark -o ./github-activity-forest-dark.svg -k ${{ secrets.GITHUB_TOKEN }}
           node dist/index.js -u ${{ github.repository_owner }} -t highway -o ./github-activity-highway.svg -k ${{ secrets.GITHUB_TOKEN }}
           node dist/index.js -u ${{ github.repository_owner }} -t cyberpunk -o ./github-activity-cyberpunk.svg -k ${{ secrets.GITHUB_TOKEN }}
 

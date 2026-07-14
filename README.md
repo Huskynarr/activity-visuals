@@ -11,36 +11,47 @@ Statt der üblichen flachen 2D-Matrix oder standardmäßiger Balken übersetzt d
 Jedes Theme übersetzt die 53 Wochen (X-Achse, links-nach-rechts) und 7 Wochentage (Y-Achse, oben-nach-unten) in ein isometrisches Gitternetz.
 
 ### A) 🌲 Wiese & Wald (`forest`)
-*Eine lebendige Lichtung, die bei Aktivität zuwächst.*
-* **Level 0 (Keine Aktivität):** Sandig-trockener Wüstenboden, ab und zu ein kleiner Kieselstein.
-* **Level 1 (Geringe Aktivität):** Zarte, grüne Grassprösslinge.
-* **Level 2 (Mittlere Aktivität):** Kleine, junge Laubbäume mit weicher Krone.
-* **Level 3 (Hohe Aktivität):** Dichte Nadelbäume/Tannen (isometrisch geschichtet).
-* **Level 4 (Sehr hohe Aktivität):** Riesige, majestätische Laubbäume mit reichhaltigem, schattiertem Blätterdach (Cloud-Foliage) und 3D-Bodenplatten.
+*Eine lebendige Lichtung mit Hell- und Dunkelmodus, deren Bäume sich je nach Art deiner Arbeit verändern.*
+* **Hintergrund:** Kann über `-b light` (hell) oder `-b dark` (atmosphärisches Nacht-Layout) angepasst werden.
+* **Baumarten nach Contribution-Typ:**
+  - **Commits ($\sim$ 60%):** Spitze, isometrisch geschichtete Fichten/Nadelbäume.
+  - **Pull Requests ($\sim$ 20%):** Gewaltige, hochgewachsene Mammutbäume (Sequoias) mit dicken roten Stämmen.
+  - **Issues & Reviews ($\sim$ 20%):** Runde, buschige Laubbäume/Eichen mit weichem Blätterdach.
+* **Level 0 (Keine Aktivität):** Sandig-trockener Waldboden mit kleinen Kieselsteinen.
+* **Level 1-4:** Zunehmend dichter Mischwald, wobei die Bäume proportional zur exakten Beitragsanzahl stufenlos in die Höhe wachsen.
 
-<img src="examples/forest.svg" width="100%" alt="Forest Theme Preview" />
+**Vorschau (Hell):**
+<img src="examples/forest.svg" width="100%" alt="Forest Theme Light Preview" />
+
+**Vorschau (Dunkel / Nacht):**
+<img src="examples/forest-dark.svg" width="100%" alt="Forest Theme Dark Preview" />
 
 
-### B) 🛡️ Straße & Autobahn (`highway`)
-*Vom verwaisten Asphalt hin zur geschäftigen Verkehrsader.*
-* **Level 0 (Keine Aktivität):** Rissiger, verlassener Asphalt mit gelegentlichen orangefarbenen Baustellen-Pylonen.
-* **Level 1 (Geringe Aktivität):** Saubere Fahrbahn mit gestrichelten Linien und E-Scootern oder Fahrrädern.
-* **Level 2 (Mittlere Aktivität):** Bunte Kompaktwagen (Zufallsfarben mit Scheinwerfern).
-* **Level 3 (Hohe Aktivität):** SUVs und Lieferwagen.
-* **Level 4 (Sehr hohe Aktivität):** Große rote Sattelschlepper/LKWs mit silbernen Containern, die über die Autobahn rollen.
 
+### B) 🛣️ Straße & Autobahn (`highway`)
+*Die gesamte Strecke ist als zusammenhängende 7-spurige Autobahn visualisiert, auf der der Verkehr deine Aktivitätsdichte widerspiegelt.*
+* **Aufbau:** Keine Fugen mehr! Das gesamte Jahr bildet eine einzige, erhabene 3D-Autobahnplatte mit Leitplanken und Pfosten an den Rändern sowie gestrichelten Fahrbahntrennlinien zwischen den Spuren.
+* **Level 0 (Keine Aktivität):** Eine leere Spur an dem jeweiligen Tag.
+* **Level 1 (Geringe Aktivität):** Ein kleiner E-Scooter oder Motorrad mit Frontlicht auf der Spur.
+* **Level 2 (Mittlere Aktivität):** Bunte Kompaktwagen in verschiedenen Farben mit leuchtenden Scheinwerfern.
+* **Level 3 (Hohe Aktivität):** Große SUVs oder blaue Lieferwagen.
+* **Level 4 (Sehr hohe Aktivität):** Riesige rote Sattelschlepper/Güter-LKWs mit silbernen Frachtcontainern.
+
+**Vorschau:**
 <img src="examples/highway.svg" width="100%" alt="Highway Theme Preview" />
 
 
-### C) 🌆 Cyberpunk-Stadt (`cyberpunk`)
-*Vom heruntergekommenen Außenposten zur futuristischen Megacity.*
-* **Level 0 (Keine Aktivität):** Kleine, rostige Blechhütten (Cyber-Slums) mit spärlichen Lichtpunkten.
-* **Level 1 (Geringe Aktivität):** Zweistöckige Wohnhäuser mit blinkenden Antennen.
-* **Level 2 (Mittlere Aktivität):** Dreistöckige Gebäude mit leuchtenden Neon-Werbetafeln.
-* **Level 3 (Hohe Aktivität):** Hohe, gestufte Wolkenkratzer mit vertikalen Leuchtstreifen und holografischen Symbolen.
-* **Level 4 (Sehr hohe Aktivität):** Gigantische Megacorp-Zentralen mit mächtigen Scheinwerferstrahlen, die in den Himmel leuchten, und schwebenden, transparenten 3D-Hologrammen.
 
+### C) 🌆 Cyberpunk-Stadt (`cyberpunk`)
+*Eine aufgelockerte, futuristische Skyline mit leuchtenden Plätzen und hoch aufragenden Wolkenkratzern.*
+* **Aufgeräumtes Design:** Um Überladung zu vermeiden, erzeugen Level 0 und 1 **keine Gebäude** mehr. Sie fungieren als dunkle Plätze, Solarfelder oder flache Grid-Pfade mit Neonschein. Erst ab Level 2 entstehen schlanke Gebäude, wodurch die Skyline atmet.
+* **Level 2 (Mittlere Aktivität):** Schlanke, zweistöckige Gebäude mit leuchtenden Neon-Dachtrims.
+* **Level 3 (Hohe Aktivität):** Größere, gestufte Wolkenkratzer mit leuchtenden Neon-Werbebannern an den Wänden.
+* **Level 4 (Sehr hohe Aktivität):** Gigantische Megacorp-Skyscraper mit blinkenden Antennen, leuchtenden Kanten und schwebenden, rotierenden 3D-Hologrammen (z. B. leuchtenden Diamanten), die von Scheinwerfern angestrahlt werden.
+
+**Vorschau:**
 <img src="examples/cyberpunk.svg" width="100%" alt="Cyberpunk Theme Preview" />
+
 
 
 ---
@@ -87,9 +98,11 @@ Du kannst die erzeugten SVG-Dateien einfach per Doppelklick in deinem Webbrowser
 | :--- | :--- | :--- | :--- |
 | `-u` | `--user` | **GitHub-Username** (erforderlich) | *keiner* |
 | `-t` | `--theme` | Theme: `forest`, `highway`, `cyberpunk` | `forest` |
+| `-b` | `--bg` | Hintergrund-Modus: `light` oder `dark` | Theme-abhängig (`light` bei Forest, sonst `dark`) |
 | `-o` | `--out` | Pfad für die Ausgabedatei | `github-activity-[theme].svg` |
 | `-k` | `--token` | GitHub GraphQL API Token (oder via `.env` / Env-Var `GITHUB_TOKEN`) | *optional (nutzt sonst Mockdaten)* |
 | `-h` | `--help` | Zeigt die Hilfe an | *N/A* |
+
 
 ---
 
@@ -104,8 +117,11 @@ Um deine echten Aktivitätsdaten automatisch jeden Tag zu aktualisieren, haben w
    Füge einfach folgenden Markdown-Code in dein Profil-README ein:
 
 ```markdown
-### 🌲 Mein GitHub Aktivitäts-Wald
+### 🌲 Mein GitHub Aktivitäts-Wald (Hell)
 <img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-forest.svg" width="100%" />
+
+### 🌲 Mein GitHub Aktivitäts-Wald (Dunkel)
+<img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-forest-dark.svg" width="100%" />
 
 ### 🛣️ Meine GitHub Aktivitäts-Autobahn
 <img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-highway.svg" width="100%" />

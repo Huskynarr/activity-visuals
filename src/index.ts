@@ -15,12 +15,13 @@ Nutzung:
 Optionen:
   -u, --user <name>     GitHub-Username (erforderlich)
   -t, --theme <theme>   Visualisierungs-Theme: 'forest', 'highway', 'cyberpunk' (Standard: 'forest')
+  -b, --bg <mode>       Hintergrund-Modus: 'light' oder 'dark' (Standard: passend zum Theme)
   -o, --out <pfad>      Ausgabepfad für das SVG-Bild (Standard: github-activity-[theme].svg)
   -k, --token <token>   GitHub Personal Access Token (GraphQL API)
   -h, --help            Zeigt diese Hilfe an
 
 Beispiel:
-  npm run start -- -u Huskynarr -t cyberpunk -o profile-city.svg
+  npm run start -- -u Huskynarr -t forest -b dark -o profile-forest-dark.svg
 `);
 }
 
@@ -34,6 +35,7 @@ async function main() {
 
   let username = '';
   let theme = 'forest';
+  let bgMode = '';
   let outputPath = '';
   let token = '';
 
@@ -44,6 +46,8 @@ async function main() {
       username = args[++i];
     } else if (arg === '-t' || arg === '--theme') {
       theme = args[++i];
+    } else if (arg === '-b' || arg === '--bg') {
+      bgMode = args[++i];
     } else if (arg === '-o' || arg === '--out') {
       outputPath = args[++i];
     } else if (arg === '-k' || arg === '--token') {
@@ -66,12 +70,26 @@ async function main() {
 
   theme = theme.toLowerCase();
 
+  // Validate background mode
+  if (bgMode) {
+    bgMode = bgMode.toLowerCase();
+    if (bgMode !== 'light' && bgMode !== 'dark') {
+      console.warn(`⚠️ Warnung: Ungültiger Hintergrund-Modus "${bgMode}". Erwartet wird 'light' oder 'dark'.`);
+      bgMode = ''; // Use default based on theme
+    }
+  }
+
+  // Default bgMode based on theme if not specified
+  if (!bgMode) {
+    bgMode = (theme === 'forest') ? 'light' : 'dark';
+  }
+
   if (!outputPath) {
     outputPath = `github-activity-${theme}.svg`;
   }
 
   console.log(`\n🎨 Starte GitHub-Visualisierung für @${username}...`);
-  console.log(`Theme:  ${theme.toUpperCase()}`);
+  console.log(`Theme:  ${theme.toUpperCase()} (${bgMode.toUpperCase()} mode)`);
   console.log(`Output: ${path.resolve(outputPath)}`);
 
   // 1. Fetch data
@@ -80,7 +98,7 @@ async function main() {
   
   // 2. Render SVG
   console.log('✏️ Generiere isometrisches 3D-Modell (SVG)...');
-  const svgContent = renderSVG(activity, theme, username);
+  const svgContent = renderSVG(activity, theme, username, bgMode);
 
   // 3. Save File
   try {
