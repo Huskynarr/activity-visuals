@@ -10,7 +10,7 @@ interface ThemeConfig {
     accentColor: string;
   };
   defineTileSymbols: (w: number, h: number, bgMode: string) => string;
-  drawObject: (cx: number, cy: number, level: number, count: number, w: number, h: number, date: string) => string;
+  drawObject: (cx: number, cy: number, level: number, count: number, w: number, h: number, date: string, y: number) => string;
   drawExtraGridDetails?: (cx: number, cy: number, x: number, y: number, w: number, h: number, level: number, weeks: number) => string;
   extraDefs?: string;
 }
@@ -200,15 +200,11 @@ const ForestTheme: ThemeConfig = {
       const trunkHeight = (level === 1 ? 18 : level === 2 ? 28 : level === 3 ? 38 : 50) * scale;
       const trunkWidth = (level <= 2 ? 0.08 : 0.12);
       
-      svg += drawIsoBox(cx, cy, w, h, -chunkWidth(level), chunkWidth(level), -chunkWidth(level), chunkWidth(level), trunkHeight, { 
+      svg += drawIsoBox(cx, cy, w, h, -trunkWidth, trunkWidth, -trunkWidth, trunkWidth, trunkHeight, { 
         top: '#8C4F35', 
         left: 'url(#redwood-trunk)', 
         right: '#5D3320' 
       });
-
-      function chunkWidth(lvl: number) {
-        return (lvl <= 2 ? 0.08 : 0.12);
-      }
 
       if (level > 1) {
         const fH = (level === 2 ? 16 : level === 3 ? 25 : 35) * scale;
@@ -280,7 +276,7 @@ const HighwayTheme: ThemeConfig = {
   `,
   defineTileSymbols: (w: number, h: number) => {
     const tileConfigs = [
-      { id: 'tile-0', top: '#1e2530' },
+      { id: 'tile-0', top: '#1c222e' }, // emergency shoulder / darker asphalt
       { id: 'tile-1', top: '#272f3d' },
       { id: 'tile-2', top: '#2b3545' },
       { id: 'tile-3', top: '#333e50' },
@@ -296,78 +292,127 @@ const HighwayTheme: ThemeConfig = {
       `;
     }).join('\n');
   },
-  drawObject: (cx, cy, level, count, w, h) => {
+  drawObject: (cx, cy, level, count, w, h, date, y) => {
     if (level === 0) return '';
 
     const scale = Math.min(1 + (count - 1) * 0.05, 1.4);
     
+    // Check if it is the shoulder (Sunday=0, Saturday=6)
+    const isShoulder = y === 0 || y === 6;
+
+    // Translation offset for emergency shoulder parking (shifting toward the guardrail)
+    const shiftOffset = isShoulder ? (y === 0 ? -0.16 : 0.16) : 0;
+    
+    // Calculate physical SVG offsets from the isometric coordinate shift
+    const dx = -shiftOffset * (w / 2);
+    const dy = shiftOffset * (h / 2);
+
+    let vehicleSvg = '';
+
     if (level === 1) {
-      const color = '#10b981';
-      const base = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.02, 0.02, 2, { top: color, left: '#047857', right: '#065f46' });
+      const color = isShoulder ? '#ef4444' : '#10b981'; // Red for shoulder, green for active lane
+      const base = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.02, 0.02, 2, { top: color, left: '#991b1b', right: '#7f1d1d' });
       const handlebar = project(cx, cy, w, h, 0.1, 0, 9);
       const handlebarBase = project(cx, cy, w, h, 0.1, 0, 2);
-      return `
+      vehicleSvg += `
         ${base}
         <line x1="${handlebarBase.x}" y1="${handlebarBase.y}" x2="${handlebar.x}" y2="${handlebar.y}" stroke="#cbd5e1" stroke-width="1.5" />
         <circle cx="${handlebar.x}" cy="${handlebar.y}" r="1" fill="#fef08a" />
       `;
-    }
-
-    if (level === 2) {
+    } else if (level === 2) {
       const colors = ['yellow', 'red', 'blue', 'silver'];
       const colorIdx = Math.floor(Math.abs(Math.sin(cx * 7 + cy * 13) * colors.length));
       const color = colors[colorIdx];
       const bodyColor = `url(#car-body-${color})`;
       
-      let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="11" ry="5.5" fill="#020617" opacity="0.45" />`;
-      svg += drawIsoBox(cx, cy, w, h, -0.28, 0.22, -0.1, 0.1, 4.5 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
-      svg += drawIsoBox(cx, cy, w, h, -0.14, 0.1, -0.08, 0.08, 8 * scale, { top: bodyColor, left: '#0f172a', right: '#1e293b' });
+      let car = `<ellipse cx="${cx}" cy="${cy + 1}" rx="11" ry="5.5" fill="#020617" opacity="0.45" />`;
+      car += drawIsoBox(cx, cy, w, h, -0.28, 0.22, -0.1, 0.1, 4.5 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
+      car += drawIsoBox(cx, cy, w, h, -0.14, 0.1, -0.08, 0.08, 8 * scale, { top: bodyColor, left: '#0f172a', right: '#1e293b' });
       
       const hl1 = project(cx, cy, w, h, 0.22, 0.05, 2 * scale);
       const hl2 = project(cx, cy, w, h, 0.22, -0.05, 2 * scale);
-      svg += `
+      car += `
         <circle cx="${hl1.x}" cy="${hl1.y}" r="0.8" fill="#fef08a" />
         <circle cx="${hl2.x}" cy="${hl2.y}" r="0.8" fill="#fef08a" />
       `;
-      return svg;
-    }
-
-    if (level === 3) {
+      vehicleSvg += car;
+    } else if (level === 3) {
       const bodyColor = 'url(#car-body-blue)';
-      let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="13" ry="6.5" fill="#020617" opacity="0.45" />`;
+      let van = `<ellipse cx="${cx}" cy="${cy + 1}" rx="13" ry="6.5" fill="#020617" opacity="0.45" />`;
+      van += drawIsoBox(cx, cy, w, h, -0.32, 0.28, -0.12, 0.12, 10 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
+      van += drawIsoBox(cx, cy, w, h, 0.1, 0.26, -0.11, 0.11, 9.5 * scale, { top: bodyColor, left: '#020617', right: '#0f172a' });
+      vehicleSvg += van;
+    } else {
+      const cabinColor = 'url(#car-body-red)';
+      const trailerColor = 'url(#car-body-silver)';
+      let truck = `<ellipse cx="${cx}" cy="${cy + 1}" rx="18" ry="9" fill="#020617" opacity="0.5" />`;
+      truck += drawIsoBox(cx, cy, w, h, -0.4, 0.1, -0.14, 0.14, 20 * scale, { top: trailerColor, left: trailerColor, right: trailerColor });
+      truck += drawIsoBox(cx, cy, w, h, 0.18, 0.42, -0.13, 0.13, 17 * scale, { top: cabinColor, left: cabinColor, right: cabinColor });
       
-      svg += drawIsoBox(cx, cy, w, h, -0.32, 0.28, -0.12, 0.12, 10 * scale, { top: bodyColor, left: bodyColor, right: bodyColor });
-      svg += drawIsoBox(cx, cy, w, h, 0.1, 0.26, -0.11, 0.11, 9.5 * scale, { top: bodyColor, left: '#020617', right: '#0f172a' });
-      return svg;
+      const wp1 = project(cx, cy, w, h, 0.42, -0.11, 10 * scale);
+      const wp2 = project(cx, cy, w, h, 0.42, 0.11, 10 * scale);
+      const wp3 = project(cx, cy, w, h, 0.42, 0.11, 15 * scale);
+      const wp4 = project(cx, cy, w, h, 0.42, -0.11, 15 * scale);
+      truck += `<path d="M ${wp1.x},${wp1.y} L ${wp2.x},${wp2.y} L ${wp3.x},${wp3.y} L ${wp4.x},${wp4.y} Z" fill="#020617" />`;
+      vehicleSvg += truck;
     }
 
-    const cabinColor = 'url(#car-body-red)';
-    const trailerColor = 'url(#car-body-silver)';
-    let svg = `<ellipse cx="${cx}" cy="${cy + 1}" rx="18" ry="9" fill="#020617" opacity="0.5" />`;
+    let finalSvg = '';
 
-    svg += drawIsoBox(cx, cy, w, h, -0.4, 0.1, -0.14, 0.14, 20 * scale, { top: trailerColor, left: trailerColor, right: trailerColor });
-    svg += drawIsoBox(cx, cy, w, h, 0.18, 0.42, -0.13, 0.13, 17 * scale, { top: cabinColor, left: cabinColor, right: cabinColor });
-    
-    const wp1 = project(cx, cy, w, h, 0.42, -0.11, 10 * scale);
-    const wp2 = project(cx, cy, w, h, 0.42, 0.11, 10 * scale);
-    const wp3 = project(cx, cy, w, h, 0.42, 0.11, 15 * scale);
-    const wp4 = project(cx, cy, w, h, 0.42, -0.11, 15 * scale);
-    svg += `<path d="M ${wp1.x},${wp1.y} L ${wp2.x},${wp2.y} L ${wp3.x},${wp3.y} L ${wp4.x},${wp4.y} Z" fill="#020617" />`;
+    if (isShoulder) {
+      // 🚨 PARKED PANNENFAHRZEUG (Emergency shoulder scenario)
+      // Group the vehicle under a translated tag to position it offset on the shoulder
+      finalSvg += `<g transform="translate(${dx}, ${dy})">${vehicleSvg}</g>`;
 
-    return svg;
+      // Add emergency hazard blinkers (orange circles)
+      // We place blinkers at the front-right/front-left or rear edges of the shifted car position
+      const blinkerL = project(cx + dx, cy + dy, w, h, -0.28, -0.1, 4 * scale);
+      const blinkerR = project(cx + dx, cy + dy, w, h, -0.28, 0.1, 4 * scale);
+      finalSvg += `
+        <circle cx="${blinkerL.x}" cy="${blinkerL.y}" r="1.5" fill="#f59e0b" opacity="0.85" />
+        <circle cx="${blinkerR.x}" cy="${blinkerR.y}" r="1.5" fill="#f59e0b" opacity="0.85" />
+      `;
+
+      // Draw a small red warning triangle (Warndreieck) placed on the road behind the vehicle
+      // The car ends around isoX = -0.3, so we put the triangle at isoX = -0.48
+      const pTriangle = project(cx + dx, cy + dy, w, h, -0.48, 0, 0);
+      finalSvg += `
+        <polygon points="${pTriangle.x},${pTriangle.y - 6} ${pTriangle.x - 3.5},${pTriangle.y} ${pTriangle.x + 3.5},${pTriangle.y}" 
+                 fill="#ef4444" stroke="#ffffff" stroke-width="0.6" />
+        <circle cx="${pTriangle.x}" cy="${pTriangle.y - 2}" r="0.8" fill="#ffffff" />
+      `;
+    } else {
+      // Regular active lane vehicle
+      finalSvg += vehicleSvg;
+    }
+
+    return finalSvg;
   },
   drawExtraGridDetails: (cx, cy, x, y, w, h, level, weeks) => {
     let extra = '';
 
+    // Lane dividers
     if (y < 6) {
-      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0);
-      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);
-      extra += `
-        <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
-              stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.75" />
-      `;
+      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0); // Left corner of tile
+      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);   // Bottom corner of tile
+      
+      // Sunday is lane 0, Saturday is lane 6. 
+      // The line dividing lane 0 & 1, and lane 5 & 6 are SOLID white lines (Pannenstreifenabgrenzung)
+      if (y === 0 || y === 5) {
+        extra += `
+          <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
+                stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
+        `;
+      } else {
+        // Regular lanes 1..5 are separated by dashed lines
+        extra += `
+          <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
+                stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
+        `;
+      }
     }
 
+    // Guardrails on outer edges
     if (y === 0) {
       const pStart = project(cx, cy, w, h, -0.5, -0.5, 0);
       const pEnd = project(cx, cy, w, h, 0.5, -0.5, 0);
@@ -635,8 +680,10 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       const screenX = (x - y) * (tileWidth / 2) + offsetX;
       const screenY = (x + y) * (tileHeight / 2) + offsetY;
 
+      // Stamp the tile base
       svg += `    <use href="#tile-${day.level}" x="${screenX}" y="${screenY}" />\n`;
       
+      // Draw theme-specific extra tile details (dividers, guardrails)
       if (theme.drawExtraGridDetails) {
         svg += `    ${theme.drawExtraGridDetails(screenX, screenY, x, y, tileWidth, tileHeight, day.level, weeks)}\n`;
       }
@@ -652,7 +699,8 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       const screenX = (x - y) * (tileWidth / 2) + offsetX;
       const screenY = (x + y) * (tileHeight / 2) + offsetY;
 
-      const objectMarkup = theme.drawObject(screenX, screenY, day.level, day.count, tileWidth, tileHeight, day.date);
+      // Draw the object on top (trees/cars/buildings)
+      const objectMarkup = theme.drawObject(screenX, screenY, day.level, day.count, tileWidth, tileHeight, day.date, y);
       if (objectMarkup) {
         svg += `    ${objectMarkup}\n`;
       }
@@ -676,22 +724,22 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
     
     <g transform="translate(45, 0)">
       <use href="#tile-1" x="10" y="0" />
-      ${theme.drawObject(10, 0, 1, 2, tileWidth, tileHeight, '2026-01-01')}
+      ${theme.drawObject(10, 0, 1, 2, tileWidth, tileHeight, '2026-01-01', 3)}
     </g>
     
     <g transform="translate(80, 0)">
       <use href="#tile-2" x="10" y="0" />
-      ${theme.drawObject(10, 0, 2, 5, tileWidth, tileHeight, '2026-01-02')}
+      ${theme.drawObject(10, 0, 2, 5, tileWidth, tileHeight, '2026-01-02', 3)}
     </g>
     
     <g transform="translate(115, 0)">
       <use href="#tile-3" x="10" y="0" />
-      ${theme.drawObject(10, 0, 3, 10, tileWidth, tileHeight, '2026-01-03')}
+      ${theme.drawObject(10, 0, 3, 10, tileWidth, tileHeight, '2026-01-03', 3)}
     </g>
     
     <g transform="translate(150, 0)">
       <use href="#tile-4" x="10" y="0" />
-      ${theme.drawObject(10, 0, 4, 25, tileWidth, tileHeight, '2026-01-04')}
+      ${theme.drawObject(10, 0, 4, 25, tileWidth, tileHeight, '2026-01-04', 3)}
     </g>
 
     <text x="195" y="8" class="legend-text">More</text>
@@ -707,23 +755,43 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
     <!-- Commits (Fir Tree / Nadelbaum) -->
     <g transform="translate(10, 0)">
       <use href="#tile-2" x="10" y="0" />
-      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-01')}
+      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-01', 3)}
     </g>
     <text x="35" y="8" class="legend-text">Commits (Nadelbaum)</text>
 
     <!-- Pull Requests (Sequoia / Mammutbaum) -->
     <g transform="translate(210, 0)">
       <use href="#tile-2" x="10" y="0" />
-      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-02')}
+      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-02', 3)}
     </g>
     <text x="235" y="8" class="legend-text">Pull Requests (Mammutbaum)</text>
 
     <!-- Issues & Reviews (Oak / Laubbaum) -->
     <g transform="translate(450, 0)">
       <use href="#tile-2" x="10" y="0" />
-      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-03')}
+      ${theme.drawObject(10, 0, 3, 8, tileWidth, tileHeight, '2026-01-03', 3)}
     </g>
     <text x="475" y="8" class="legend-text">Issues &amp; Reviews (Laubbaum)</text>
+  </g>
+`;
+  }
+
+  // Draw Highway-Specific Legend in the bottom left corner
+  if (themeName.toLowerCase() === 'highway') {
+    const highwayLegendY = svgHeight - 55;
+    svg += `
+  <!-- Highway-Specific Lanes Legend -->
+  <g transform="translate(60, ${highwayLegendY})">
+    <circle cx="12" cy="4" r="5" fill="#ffffff" opacity="0.9" />
+    <circle cx="12" cy="4" r="3" fill="#0f172a" />
+    <text x="25" y="8" class="legend-text">Werktage (Spuren 1-5)</text>
+
+    <g transform="translate(180, 0)">
+      <!-- Mini Warning Triangle -->
+      <polygon points="12,0 8,8 16,8" fill="#ef4444" stroke="#ffffff" stroke-width="0.5" />
+      <circle cx="12" cy="6" r="0.8" fill="#ffffff" />
+    </g>
+    <text x="205" y="8" class="legend-text">Wochenende (Pannenstreifen, Spur 0 &amp; 6)</text>
   </g>
 `;
   }
