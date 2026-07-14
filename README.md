@@ -18,13 +18,19 @@ Jedes Theme übersetzt die 53 Wochen (X-Achse, links-nach-rechts) und 7 Wochenta
 * **Level 3 (Hohe Aktivität):** Dichte Nadelbäume/Tannen (isometrisch geschichtet).
 * **Level 4 (Sehr hohe Aktivität):** Riesige, majestätische Laubbäume mit reichhaltigem, schattiertem Blätterdach (Cloud-Foliage) und 3D-Bodenplatten.
 
-### B) 🛣️ Straße & Autobahn (`highway`)
+<img src="examples/forest.svg" width="100%" alt="Forest Theme Preview" />
+
+
+### B) 🛡️ Straße & Autobahn (`highway`)
 *Vom verwaisten Asphalt hin zur geschäftigen Verkehrsader.*
 * **Level 0 (Keine Aktivität):** Rissiger, verlassener Asphalt mit gelegentlichen orangefarbenen Baustellen-Pylonen.
 * **Level 1 (Geringe Aktivität):** Saubere Fahrbahn mit gestrichelten Linien und E-Scootern oder Fahrrädern.
 * **Level 2 (Mittlere Aktivität):** Bunte Kompaktwagen (Zufallsfarben mit Scheinwerfern).
 * **Level 3 (Hohe Aktivität):** SUVs und Lieferwagen.
 * **Level 4 (Sehr hohe Aktivität):** Große rote Sattelschlepper/LKWs mit silbernen Containern, die über die Autobahn rollen.
+
+<img src="examples/highway.svg" width="100%" alt="Highway Theme Preview" />
+
 
 ### C) 🌆 Cyberpunk-Stadt (`cyberpunk`)
 *Vom heruntergekommenen Außenposten zur futuristischen Megacity.*
@@ -33,6 +39,9 @@ Jedes Theme übersetzt die 53 Wochen (X-Achse, links-nach-rechts) und 7 Wochenta
 * **Level 2 (Mittlere Aktivität):** Dreistöckige Gebäude mit leuchtenden Neon-Werbetafeln.
 * **Level 3 (Hohe Aktivität):** Hohe, gestufte Wolkenkratzer mit vertikalen Leuchtstreifen und holografischen Symbolen.
 * **Level 4 (Sehr hohe Aktivität):** Gigantische Megacorp-Zentralen mit mächtigen Scheinwerferstrahlen, die in den Himmel leuchten, und schwebenden, transparenten 3D-Hologrammen.
+
+<img src="examples/cyberpunk.svg" width="100%" alt="Cyberpunk Theme Preview" />
+
 
 ---
 
