@@ -14,14 +14,14 @@ Nutzung:
 
 Optionen:
   -u, --user <name>     GitHub-Username (erforderlich)
-  -t, --theme <theme>   Visualisierungs-Theme: 'forest', 'highway', 'cyberpunk' (Standard: 'forest')
+  -t, --theme <theme>   Visualisierungs-Theme: 'forest', 'highway', 'island' (Standard: 'forest')
   -b, --bg <mode>       Hintergrund-Modus: 'light' oder 'dark' (Standard: passend zum Theme)
   -o, --out <pfad>      Ausgabepfad für das SVG-Bild (Standard: github-activity-[theme].svg)
   -k, --token <token>   GitHub Personal Access Token (GraphQL API)
   -h, --help            Zeigt diese Hilfe an
 
 Beispiel:
-  npm run start -- -u Huskynarr -t forest -b dark -o profile-forest-dark.svg
+  npm run start -- -u Huskynarr -t island -b light -o profile-islands.svg
 `);
 }
 
@@ -62,7 +62,7 @@ async function main() {
   }
 
   // Validate theme
-  const validThemes = ['forest', 'highway', 'cyberpunk'];
+  const validThemes = ['forest', 'highway', 'island'];
   if (!validThemes.includes(theme.toLowerCase())) {
     console.warn(`⚠️ Warnung: Theme "${theme}" ist ungültig. Verwende Standard-Theme "forest". (Gültig: ${validThemes.join(', ')})`);
     theme = 'forest';
@@ -80,8 +80,9 @@ async function main() {
   }
 
   // Default bgMode based on theme if not specified
+  // Both forest and island default to light mode, highway defaults to dark
   if (!bgMode) {
-    bgMode = (theme === 'forest') ? 'light' : 'dark';
+    bgMode = (theme === 'highway') ? 'dark' : 'light';
   }
 
   if (!outputPath) {

@@ -276,7 +276,7 @@ const HighwayTheme: ThemeConfig = {
   `,
   defineTileSymbols: (w: number, h: number) => {
     const tileConfigs = [
-      { id: 'tile-0', top: '#1c222e' }, // emergency shoulder / darker asphalt
+      { id: 'tile-0', top: '#1c222e' },
       { id: 'tile-1', top: '#272f3d' },
       { id: 'tile-2', top: '#2b3545' },
       { id: 'tile-3', top: '#333e50' },
@@ -296,21 +296,16 @@ const HighwayTheme: ThemeConfig = {
     if (level === 0) return '';
 
     const scale = Math.min(1 + (count - 1) * 0.05, 1.4);
-    
-    // Check if it is the shoulder (Sunday=0, Saturday=6)
     const isShoulder = y === 0 || y === 6;
-
-    // Translation offset for emergency shoulder parking (shifting toward the guardrail)
     const shiftOffset = isShoulder ? (y === 0 ? -0.16 : 0.16) : 0;
     
-    // Calculate physical SVG offsets from the isometric coordinate shift
     const dx = -shiftOffset * (w / 2);
     const dy = shiftOffset * (h / 2);
 
     let vehicleSvg = '';
 
     if (level === 1) {
-      const color = isShoulder ? '#ef4444' : '#10b981'; // Red for shoulder, green for active lane
+      const color = isShoulder ? '#ef4444' : '#10b981';
       const base = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.02, 0.02, 2, { top: color, left: '#991b1b', right: '#7f1d1d' });
       const handlebar = project(cx, cy, w, h, 0.1, 0, 9);
       const handlebarBase = project(cx, cy, w, h, 0.1, 0, 2);
@@ -360,12 +355,8 @@ const HighwayTheme: ThemeConfig = {
     let finalSvg = '';
 
     if (isShoulder) {
-      // 🚨 PARKED PANNENFAHRZEUG (Emergency shoulder scenario)
-      // Group the vehicle under a translated tag to position it offset on the shoulder
       finalSvg += `<g transform="translate(${dx}, ${dy})">${vehicleSvg}</g>`;
 
-      // Add emergency hazard blinkers (orange circles)
-      // We place blinkers at the front-right/front-left or rear edges of the shifted car position
       const blinkerL = project(cx + dx, cy + dy, w, h, -0.28, -0.1, 4 * scale);
       const blinkerR = project(cx + dx, cy + dy, w, h, -0.28, 0.1, 4 * scale);
       finalSvg += `
@@ -373,8 +364,6 @@ const HighwayTheme: ThemeConfig = {
         <circle cx="${blinkerR.x}" cy="${blinkerR.y}" r="1.5" fill="#f59e0b" opacity="0.85" />
       `;
 
-      // Draw a small red warning triangle (Warndreieck) placed on the road behind the vehicle
-      // The car ends around isoX = -0.3, so we put the triangle at isoX = -0.48
       const pTriangle = project(cx + dx, cy + dy, w, h, -0.48, 0, 0);
       finalSvg += `
         <polygon points="${pTriangle.x},${pTriangle.y - 6} ${pTriangle.x - 3.5},${pTriangle.y} ${pTriangle.x + 3.5},${pTriangle.y}" 
@@ -382,7 +371,6 @@ const HighwayTheme: ThemeConfig = {
         <circle cx="${pTriangle.x}" cy="${pTriangle.y - 2}" r="0.8" fill="#ffffff" />
       `;
     } else {
-      // Regular active lane vehicle
       finalSvg += vehicleSvg;
     }
 
@@ -391,20 +379,16 @@ const HighwayTheme: ThemeConfig = {
   drawExtraGridDetails: (cx, cy, x, y, w, h, level, weeks) => {
     let extra = '';
 
-    // Lane dividers
     if (y < 6) {
-      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0); // Left corner of tile
-      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);   // Bottom corner of tile
+      const pStart = project(cx, cy, w, h, -0.5, 0.5, 0);
+      const pEnd = project(cx, cy, w, h, 0.5, 0.5, 0);
       
-      // Sunday is lane 0, Saturday is lane 6. 
-      // The line dividing lane 0 & 1, and lane 5 & 6 are SOLID white lines (Pannenstreifenabgrenzung)
       if (y === 0 || y === 5) {
         extra += `
           <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
                 stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
         `;
       } else {
-        // Regular lanes 1..5 are separated by dashed lines
         extra += `
           <line x1="${pStart.x}" y1="${pStart.y}" x2="${pEnd.x}" y2="${pEnd.y}" 
                 stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
@@ -412,7 +396,6 @@ const HighwayTheme: ThemeConfig = {
       }
     }
 
-    // Guardrails on outer edges
     if (y === 0) {
       const pStart = project(cx, cy, w, h, -0.5, -0.5, 0);
       const pEnd = project(cx, cy, w, h, 0.5, -0.5, 0);
@@ -439,115 +422,222 @@ const HighwayTheme: ThemeConfig = {
   },
 };
 
-const CyberpunkTheme: ThemeConfig = {
-  getColors: () => ({
-    bgColor: '#05010c',
-    bgGradient: 'linear-gradient(135deg, #05010c 0%, #110022 50%, #030008 100%)',
-    gridColor: '#140029',
-    textColor: '#f472b6',
-    titleColor: '#00f0ff',
-    accentColor: '#d946ef',
-  }),
+const IslandTheme: ThemeConfig = {
+  getColors: (bgMode) => {
+    if (bgMode === 'dark') {
+      return {
+        bgColor: '#082f49', // sky-900
+        bgGradient: 'linear-gradient(135deg, #075985 0%, #0c4a6e 50%, #082f49 100%)',
+        gridColor: '#0c4a6e',
+        textColor: '#7dd3fc',
+        titleColor: '#f0f9ff',
+        accentColor: '#38bdf8',
+      };
+    }
+    return {
+      bgColor: '#e0f2fe', // sky-100
+      bgGradient: 'linear-gradient(135deg, #f0f9ff 0%, #bae6fd 100%)',
+      gridColor: '#bae6fd',
+      textColor: '#0369a1',
+      titleColor: '#0c4a6e',
+      accentColor: '#0ea5e9',
+    };
+  },
   extraDefs: `
-    <linearGradient id="cyber-glass" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#13192b" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#080914" stop-opacity="0.98" />
+    <radialGradient id="island-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="island-shadow-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0c4a6e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0c4a6e" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="lighthouse-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#f87171" />
+      <stop offset="100%" stop-color="#991b1b" />
     </linearGradient>
-    <linearGradient id="hollow-beam" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3" />
-      <stop offset="70%" stop-color="#ff007f" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
+    <linearGradient id="lighthouse-white" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
     </linearGradient>
-    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <linearGradient id="beam-light" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.35" />
+      <stop offset="80%" stop-color="#fef08a" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
   `,
-  defineTileSymbols: (w: number, h: number) => {
-    const tileConfigs = [
-      { id: 'tile-0', top: '#08070d', left: '#050408', right: '#030205', glow: '' },
-      { id: 'tile-1', top: '#0d0b1a', left: '#07060f', right: '#04030a', glow: '#360054' },
-      { id: 'tile-2', top: '#100c24', left: '#0a0817', right: '#05040f', glow: '#004c5e' },
-      { id: 'tile-3', top: '#130e2e', left: '#0c091f', right: '#060414', glow: '#b5005a' },
-      { id: 'tile-4', top: '#1a133d', left: '#100c29', right: '#080619', glow: '#00c3d9' },
+  defineTileSymbols: (w: number, h: number, bgMode: string) => {
+    const isDark = bgMode === 'dark';
+    
+    // Level 0 is crystal clear water (takes no vertical space / thin floor)
+    // Level 1-4 are sandy islands (getting greener/richer)
+    const tileConfigs = isDark ? [
+      { id: 'tile-0', top: '#0369a1', left: '#025a8b', right: '#014c77', d: 3 }, // deep water
+      { id: 'tile-1', top: '#ca8a04', left: '#a16207', right: '#854d0e', d: 5 }, // sand bank
+      { id: 'tile-2', top: '#15803d', left: '#a16207', right: '#854d0e', d: 6 }, // grass on sand base
+      { id: 'tile-3', top: '#166534', left: '#854d0e', right: '#713f12', d: 7 },
+      { id: 'tile-4', top: '#14532d', left: '#713f12', right: '#5c310c', d: 8 },
+    ] : [
+      { id: 'tile-0', top: '#0284c7', left: '#0274af', right: '#016497', d: 3 }, // tropical water
+      { id: 'tile-1', top: '#fef08a', left: '#eab308', right: '#ca8a04', d: 5 }, // sandy shoal
+      { id: 'tile-2', top: '#86efac', left: '#eab308', right: '#ca8a04', d: 6 }, // sandy island with green top
+      { id: 'tile-3', top: '#4ade80', left: '#ca8a04', right: '#a16207', d: 7 },
+      { id: 'tile-4', top: '#22c55e', left: '#a16207', right: '#854d0e', d: 8 },
     ];
 
     return tileConfigs.map(c => {
+      // For level 2, 3, 4 we draw a beautiful sand rim on top
       let extra = '';
-      if (c.glow) {
-        const topPath = `M 0,${-h / 2} L ${w / 2},0 L 0,${h / 2} L ${-w / 2},0 Z`;
-        extra = `<path d="${topPath}" stroke="${c.glow}" stroke-width="1.0" fill="none" opacity="0.8" />`;
+      if (c.id !== 'tile-0' && c.id !== 'tile-1') {
+        const sandColor = isDark ? '#ca8a04' : '#fef08a';
+        // Inner smaller grass ring to simulate beach border
+        const sW = w * 0.85;
+        const sH = h * 0.85;
+        const topPathInner = `M 0,${-sH / 2} L ${sW / 2},0 L 0,${sH / 2} L ${-sW / 2},0 Z`;
+        
+        // Draw the base tile, but overwrite the top with sand first, then draw the grass inside
+        const topPathBase = `M 0,${-h / 2} L ${w / 2},0 L 0,${h / 2} L ${-w / 2},0 Z`;
+        return `
+          <g id="${c.id}">
+            <path d="M ${-w / 2},0 L 0,${h / 2} L 0,${h / 2 + c.d} L ${-w / 2},${c.d} Z" fill="${c.left}" />
+            <path d="M 0,${h / 2} L ${w / 2},0 L ${w / 2},${c.d} L 0,${h / 2 + c.d} Z" fill="${c.right}" />
+            <path d="${topPathBase}" fill="${sandColor}" />
+            <path d="${topPathInner}" fill="${c.top}" />
+          </g>
+        `;
       }
-      return createTileSymbolMarkup(c.id, w, h, 4, c, extra);
+      return createTileSymbolMarkup(c.id, w, h, c.d, c);
     }).join('\n');
   },
-  drawObject: (cx, cy, level, count, w, h) => {
-    if (level <= 1) return '';
+  drawObject: (cx, cy, level, count, w, h, date, y) => {
+    // Level 0: Pure water, render simple sea waves occasionally
+    if (level === 0) {
+      if (Math.sin(cx * 1.7 + cy * 1.1) > 0.8) {
+        const p1 = project(cx, cy, w, h, -0.2, -0.1, 0);
+        const p2 = project(cx, cy, w, h, 0.1, 0.1, 0);
+        return `
+          <path d="M ${p1.x},${p1.y} C ${p1.x + 3},${p1.y - 2} ${p1.x + 6},${p1.y - 2} ${p1.x + 9},${p1.y} M ${p2.x},${p2.y} C ${p2.x + 3},${p2.y - 2} ${p2.x + 6},${p2.y - 2} ${p2.x + 9},${p2.y}" 
+                stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
+        `;
+      }
+      return '';
+    }
 
-    const heightFactor = Math.min(1 + (count - 1) * 0.08, 2.2);
+    const scale = Math.min(1 + (count - 1) * 0.07, 1.6);
+    let svg = '';
+    
+    // helper to draw a tiny palm tree
+    const drawPalm = (px: number, py: number, pScale: number) => {
+      const stemH = 15 * pScale;
+      // Curved stem path
+      const pBase = { x: px, y: py };
+      const pMid = { x: px - 3 * pScale, y: py - stemH * 0.5 };
+      const pTip = { x: px - 5 * pScale, y: py - stemH };
+
+      let palm = `
+        <!-- Trunk -->
+        <path d="M ${pBase.x - 1},${pBase.y} Q ${pMid.x},${pMid.y} ${pTip.x},${pTip.y} L ${pTip.x + 1},${pTip.y} Q ${pMid.x + 1},${pMid.y} ${pBase.x + 1},${pBase.y} Z" fill="#854d0e" />
+        <!-- Leaves -->
+        <g stroke="#166534" stroke-width="1.2" fill="none">
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x - 8 * pScale},${pTip.y + 2 * pScale} ${pTip.x - 10 * pScale},${pTip.y + 6 * pScale}" />
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x + 8 * pScale},${pTip.y + 2 * pScale} ${pTip.x + 10 * pScale},${pTip.y + 6 * pScale}" />
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x - 4 * pScale},${pTip.y - 6 * pScale} ${pTip.x - 6 * pScale},${pTip.y - 10 * pScale}" fill="#22c55e" fill-opacity="0.1" />
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x + 4 * pScale},${pTip.y - 6 * pScale} ${pTip.x + 6 * pScale},${pTip.y - 10 * pScale}" fill="#22c55e" fill-opacity="0.1" />
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x - 9 * pScale},${pTip.y - 2 * pScale} ${pTip.x - 12 * pScale},${pTip.y - 4 * pScale}" />
+          <path d="M ${pTip.x},${pTip.y} Q ${pTip.x + 9 * pScale},${pTip.y - 2 * pScale} ${pTip.x + 12 * pScale},${pTip.y - 4 * pScale}" />
+        </g>
+      `;
+      return palm;
+    };
+
+    if (level === 1) {
+      // Level 1: Tiny sandbar with starfish or message in a bottle
+      if (Math.sin(cx - cy) > 0) {
+        // Red starfish
+        return `<path d="M ${cx},${cy - 2} L ${cx + 1},${cy} L ${cx + 3},${cy} L ${cx + 1.5},${cy + 1.2} L ${cx + 2},${cy + 3} L ${cx},${cy + 1.8} L ${cx - 2},${cy + 3} L ${cx - 1.5},${cy + 1.2} L ${cx - 3},${cy} L ${cx - 1},${cy} Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />`;
+      }
+      return '';
+    }
 
     if (level === 2) {
-      const bH = 38 * heightFactor;
-      let svg = drawIsoBox(cx, cy, w, h, -0.15, 0.15, -0.15, 0.15, bH, { top: 'url(#cyber-glass)', left: '#0e111d', right: '#080a11' });
-      
-      const p1 = project(cx, cy, w, h, -0.15, 0.15, bH);
-      const p2 = project(cx, cy, w, h, 0.15, 0.15, bH);
-      const p3 = project(cx, cy, w, h, 0.15, -0.15, bH);
-      svg += `
-        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y}" stroke="#00f0ff" stroke-width="1.5" fill="none" filter="url(#neon-glow)" />
-      `;
+      // Level 2: Small island with a single palm tree
+      svg += `<ellipse cx="${cx}" cy="${cy + 1}" rx="8" ry="4" fill="url(#island-shadow)" opacity="0.3" />`;
+      svg += drawPalm(cx, cy, scale);
       return svg;
     }
 
     if (level === 3) {
-      const bH = 70 * heightFactor;
-      let svg = drawIsoBox(cx, cy, w, h, -0.17, 0.17, -0.17, 0.17, bH, { top: '#0f1322', left: '#0a0d17', right: '#05070e' });
-
-      const topH = bH + 15;
-      svg += drawIsoBox(cx, cy, w, h, -0.1, 0.1, -0.1, 0.1, topH, { top: 'url(#cyber-glass)', left: '#0e111d', right: '#090b14' });
-
-      const p1 = project(cx, cy, w, h, -0.17, -0.05, bH * 0.2);
-      const p2 = project(cx, cy, w, h, -0.17, 0.12, bH * 0.2);
-      const p3 = project(cx, cy, w, h, -0.17, 0.12, bH * 0.65);
-      const p4 = project(cx, cy, w, h, -0.17, -0.05, bH * 0.65);
+      // Level 3: Beach shack + 2 palms
+      svg += `<ellipse cx="${cx}" cy="${cy + 2}" rx="14" ry="7" fill="url(#island-shadow)" opacity="0.35" />`;
+      
+      // Hütte (Shack)
+      const sSize = 6 * scale;
+      const shY = cy - 3;
+      svg += drawIsoBox(cx + 4, shY, w, h, -0.15, 0.15, -0.15, 0.15, 6 * scale, { top: '#b45309', left: '#78350f', right: '#451a03' });
+      // Straw Roof (pyramid)
+      const pPeak = project(cx + 4, shY, w, h, 0, 0, 11 * scale);
+      const pL = project(cx + 4, shY, w, h, -0.17, 0.17, 6 * scale);
+      const pR = project(cx + 4, shY, w, h, 0.17, -0.17, 6 * scale);
+      const pF = project(cx + 4, shY, w, h, 0.17, 0.17, 6 * scale);
       svg += `
-        <path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y} L ${p4.x},${p4.y} Z" fill="#ff007f" filter="url(#neon-glow)" opacity="0.85" />
+        <path d="M ${pL.x},${pL.y} L ${pPeak.x},${pPeak.y} L ${pF.x},${pF.y} Z" fill="#fef08a" />
+        <path d="M ${pF.x},${pF.y} L ${pPeak.x},${pPeak.y} L ${pR.x},${pR.y} Z" fill="#facc15" />
       `;
+
+      // 2 Palms
+      svg += drawPalm(cx - 5, cy + 2, scale * 0.95);
+      svg += drawPalm(cx + 1, cy + 4, scale * 0.7);
+
       return svg;
     }
 
-    const bH = 110 * heightFactor;
-    let svg = drawIsoBox(cx, cy, w, h, -0.22, 0.22, -0.22, 0.22, bH, { top: 'url(#cyber-glass)', left: '#090a12', right: '#04050a' });
+    // Level 4: Majestic lighthouse island!
+    svg += `<ellipse cx="${cx}" cy="${cy + 2}" rx="18" ry="9" fill="url(#island-shadow)" opacity="0.4" />`;
+    
+    // Lighthouse building coordinates
+    const lhBaseY = cy - 2;
+    const lH = 42 * scale; // Lighthouse height
+    
+    // Render the stripes (alternating red and white cylinders/boxes)
+    const segments = 4;
+    for (let i = 0; i < segments; i++) {
+      const startZ = (lH / segments) * i;
+      const endZ = (lH / segments) * (i + 1);
+      const segW = (0.12 - (i * 0.015)) * scale;
+      const color = i % 2 === 0 ? { top: '#ffffff', left: 'url(#lighthouse-white)', right: '#cbd5e1' } : { top: '#ef4444', left: 'url(#lighthouse-red)', right: '#b91c1c' };
+      
+      svg += drawIsoBox(cx, lhBaseY, w, h, -segW, segW, -segW, segW, endZ, color);
+    }
 
-    const pSpireBase = project(cx, cy, w, h, 0, 0, bH);
-    const pSpireTip = project(cx, cy, w, h, 0, 0, bH + 28);
+    // Lighthouse gallery deck & glass dome
+    const deckZ = lH;
+    const domeZ = lH + 8 * scale;
+    const domeW = 0.08 * scale;
+    svg += drawIsoBox(cx, lhBaseY, w, h, -domeW - 0.02, domeW + 0.02, -domeW - 0.02, domeW + 0.02, deckZ + 1.5 * scale, { top: '#1e293b', left: '#0f172a', right: '#020617' }); // balcony
+    svg += drawIsoBox(cx, lhBaseY, w, h, -domeW, domeW, -domeW, domeW, domeZ, { top: '#fef08a', left: '#fbbf24', right: '#d97706' }); // light chamber
+    svg += drawIsoBox(cx, lhBaseY, w, h, -domeW - 0.01, domeW + 0.01, -domeW - 0.01, domeW + 0.01, domeZ + 2 * scale, { top: '#1e293b', left: '#0f172a', right: '#020617' }); // roof dome
+
+    // Yellow shining searchlight beam sweeps outwards to the upper right
+    const pLightCenter = project(cx, lhBaseY, w, h, 0, 0, lH + 4 * scale);
+    const beamR_Tip = { x: pLightCenter.x + 140, y: pLightCenter.y - 120 };
     svg += `
-      <line x1="${pSpireBase.x}" y1="${pSpireBase.y}" x2="${pSpireTip.x}" y2="${pSpireTip.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
-      <circle cx="${pSpireTip.x}" cy="${pSpireTip.y}" r="2" fill="#ffffff" filter="url(#neon-glow)" />
+      <polygon points="${pLightCenter.x},${pLightCenter.y} ${beamR_Tip.x - 30},${beamTipY(beamR_Tip.y)} ${beamR_Tip.x + 30},${beamTipY(beamR_Tip.y)}" 
+               fill="url(#beam-light)" opacity="0.5" />
+      <circle cx="${pLightCenter.x}" cy="${pLightCenter.y}" r="3" fill="#ffffff" filter="url(#neon-glow)" />
     `;
 
-    const holCenter = project(cx, cy, w, h, 0, 0, bH + 50);
-    svg += `
-      <polygon points="${pSpireBase.x},${pSpireBase.y} ${holCenter.x - 12},${holCenter.y} ${holCenter.x + 12},${holCenter.y}" 
-               fill="url(#hollow-beam)" />
-      <polygon points="${holCenter.x},${holCenter.y - 12} ${holCenter.x + 10},${holCenter.y} ${holCenter.x},${holCenter.y + 12} ${holCenter.x - 10},${holCenter.y}" 
-               fill="#ff007f" fill-opacity="0.3" stroke="#ff007f" stroke-width="1.5" filter="url(#neon-glow)" />
-    `;
+    function beamTipY(by: number) {
+      return by;
+    }
 
-    const c1Base = project(cx, cy, w, h, 0.22, 0.22, 0);
-    const c1Top = project(cx, cy, w, h, 0.22, 0.22, bH);
-    svg += `
-      <line x1="${c1Base.x}" y1="${c1Base.y}" x2="${c1Top.x}" y2="${c1Top.y}" stroke="#00f0ff" stroke-width="2" filter="url(#neon-glow)" />
-    `;
+    // 1 palm on the side
+    svg += drawPalm(cx - 8, cy + 3, scale * 1.1);
 
-    const beamTip = { x: cx + 50, y: cy - bH - 150 };
-    svg += `
-      <polygon points="${pSpireBase.x},${pSpireBase.y} ${beamTip.x - 25},${beamTip.y} ${beamTip.x + 25},${beamTip.y}" 
-               fill="url(#hollow-beam)" opacity="0.3" />
-    `;
+    // Tiny chest
+    const pChest = project(cx + 6, cy + 3, w, h, 0, 0, 0);
+    svg += drawIsoBox(cx + 6, cy + 3, w, h, -0.06, 0.06, -0.06, 0.06, 3, { top: '#78350f', left: '#ca8a04', right: '#451a03' });
 
     return svg;
   },
@@ -556,7 +646,7 @@ const CyberpunkTheme: ThemeConfig = {
 const THEMES: Record<string, ThemeConfig> = {
   forest: ForestTheme,
   highway: HighwayTheme,
-  cyberpunk: CyberpunkTheme,
+  island: IslandTheme,
 };
 
 /**
@@ -649,7 +739,7 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
 
   svg += '  <!-- Isometric Grid Tiles & Objects -->\n  <g>\n';
   
-  // Phase 1: Draw Highway Side-Walls
+  // Phase 1: Draw Highway Side-Walls (If Highway Theme)
   if (themeName.toLowerCase() === 'highway') {
     const roadDepth = 8;
     const concreteColorLeft = '#1e293b';
@@ -683,7 +773,7 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       // Stamp the tile base
       svg += `    <use href="#tile-${day.level}" x="${screenX}" y="${screenY}" />\n`;
       
-      // Draw theme-specific extra tile details (dividers, guardrails)
+      // Draw theme-specific extra tile details
       if (theme.drawExtraGridDetails) {
         svg += `    ${theme.drawExtraGridDetails(screenX, screenY, x, y, tileWidth, tileHeight, day.level, weeks)}\n`;
       }
@@ -699,7 +789,6 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
       const screenX = (x - y) * (tileWidth / 2) + offsetX;
       const screenY = (x + y) * (tileHeight / 2) + offsetY;
 
-      // Draw the object on top (trees/cars/buildings)
       const objectMarkup = theme.drawObject(screenX, screenY, day.level, day.count, tileWidth, tileHeight, day.date, y);
       if (objectMarkup) {
         svg += `    ${objectMarkup}\n`;
@@ -787,11 +876,35 @@ export function renderSVG(activity: ActivityGrid, themeName: string, username: s
     <text x="25" y="8" class="legend-text">Werktage (Spuren 1-5)</text>
 
     <g transform="translate(180, 0)">
-      <!-- Mini Warning Triangle -->
       <polygon points="12,0 8,8 16,8" fill="#ef4444" stroke="#ffffff" stroke-width="0.5" />
       <circle cx="12" cy="6" r="0.8" fill="#ffffff" />
     </g>
     <text x="205" y="8" class="legend-text">Wochenende (Pannenstreifen, Spur 0 &amp; 6)</text>
+  </g>
+`;
+  }
+
+  // Draw Island-Specific Legend in the bottom left corner
+  if (themeName.toLowerCase() === 'island') {
+    const islandLegendY = svgHeight - 55;
+    svg += `
+  <!-- Island-Specific Legend -->
+  <g transform="translate(60, ${islandLegendY})">
+    <g transform="translate(10, 0)">
+      <use href="#tile-0" x="10" y="0" />
+    </g>
+    <text x="35" y="8" class="legend-text">Meerwasser (Level 0)</text>
+
+    <g transform="translate(190, 0)">
+      <use href="#tile-1" x="10" y="0" />
+    </g>
+    <text x="215" y="8" class="legend-text">Sandbänke (Level 1)</text>
+
+    <g transform="translate(370, 0)">
+      <use href="#tile-2" x="10" y="0" />
+      ${theme.drawObject(10, 0, 2, 5, tileWidth, tileHeight, '2026-01-01', 3)}
+    </g>
+    <text x="395" y="8" class="legend-text">Inseln mit Palmen/Gebäuden (Level 2-4)</text>
   </g>
 `;
   }

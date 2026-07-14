@@ -42,15 +42,21 @@ Jedes Theme übersetzt die 53 Wochen (X-Achse, links-nach-rechts) und 7 Wochenta
 
 
 
-### C) 🌆 Cyberpunk-Stadt (`cyberpunk`)
-*Eine aufgelockerte, futuristische Skyline mit leuchtenden Plätzen und hoch aufragenden Wolkenkratzern.*
-* **Aufgeräumtes Design:** Um Überladung zu vermeiden, erzeugen Level 0 und 1 **keine Gebäude** mehr. Sie fungieren als dunkle Plätze, Solarfelder oder flache Grid-Pfade mit Neonschein. Erst ab Level 2 entstehen schlanke Gebäude, wodurch die Skyline atmet.
-* **Level 2 (Mittlere Aktivität):** Schlanke, zweistöckige Gebäude mit leuchtenden Neon-Dachtrims.
-* **Level 3 (Hohe Aktivität):** Größere, gestufte Wolkenkratzer mit leuchtenden Neon-Werbebannern an den Wänden.
-* **Level 4 (Sehr hohe Aktivität):** Gigantische Megacorp-Skyscraper mit blinkenden Antennen, leuchtenden Kanten und schwebenden, rotierenden 3D-Hologrammen (z. B. leuchtenden Diamanten), die von Scheinwerfern angestrahlt werden.
+### C) 🌴 Das Insel-Archipel (`island`)
+*Das Jahr wird als ein wunderschönes, ruhiges tropisches Ozean-Archipel dargestellt.*
+* **Hintergrund:** Kann über `-b light` (heller, sonniger Tag über dem Meer) oder `-b dark` (atmosphärisches, tiefblaues Nachtmeer) angepasst werden.
+* **Freiraum (Atemraum):** Level 0 Kacheln werden als flaches Ozeanwasser dargestellt. Da keine Gebäude in die Höhe ragen, entspannt sich das Auge an inaktiven Tagen.
+* **Level 1 (Geringe Aktivität):** Eine winzige, flache Sandbank (z. B. mit einem kleinen roten Seestern).
+* **Level 2 (Mittlere Aktivität):** Eine kleine Sandinsel mit einer Palme (Zufallswachstum je nach Beitragszahl).
+* **Level 3 (Hohe Aktivität):** Eine tropische Insel mit zwei Palmen und einer kleinen gemütlichen Strandhütte.
+* **Level 4 (Sehr hohe Aktivität):** Eine größere Insel mit einem rot-weißen Leuchtturm, dessen gelber Scheinwerferstrahl in den Himmel leuchtet, einer Schatztruhe und einer Palme.
 
-**Vorschau:**
-<img src="examples/cyberpunk.svg" width="100%" alt="Cyberpunk Theme Preview" />
+**Vorschau (Hell / Tag):**
+<img src="examples/island.svg" width="100%" alt="Island Theme Light Preview" />
+
+**Vorschau (Dunkel / Nacht):**
+<img src="examples/island-dark.svg" width="100%" alt="Island Theme Dark Preview" />
+
 
 
 
@@ -84,8 +90,8 @@ node dist/index.js -u Huskynarr -t forest -o test-forest.svg
 # Generiere das Autobahn-Theme
 node dist/index.js -u Huskynarr -t highway -o test-highway.svg
 
-# Generiere das Cyberpunk-Theme
-node dist/index.js -u Huskynarr -t cyberpunk -o test-cyberpunk.svg
+# Generiere das Insel-Theme
+node dist/index.js -u Huskynarr -t island -o test-island.svg
 ```
 
 Du kannst die erzeugten SVG-Dateien einfach per Doppelklick in deinem Webbrowser (Chrome, Firefox, Safari) öffnen, um das Ergebnis in voller Vektorauflösung zu bewundern!
@@ -97,8 +103,8 @@ Du kannst die erzeugten SVG-Dateien einfach per Doppelklick in deinem Webbrowser
 | Flag | Langform | Beschreibung | Standard |
 | :--- | :--- | :--- | :--- |
 | `-u` | `--user` | **GitHub-Username** (erforderlich) | *keiner* |
-| `-t` | `--theme` | Theme: `forest`, `highway`, `cyberpunk` | `forest` |
-| `-b` | `--bg` | Hintergrund-Modus: `light` oder `dark` | Theme-abhängig (`light` bei Forest, sonst `dark`) |
+| `-t` | `--theme` | Theme: `forest`, `highway`, `island` | `forest` |
+| `-b` | `--bg` | Hintergrund-Modus: `light` oder `dark` | Theme-abhängig (`dark` bei Highway, sonst `light`) |
 | `-o` | `--out` | Pfad für die Ausgabedatei | `github-activity-[theme].svg` |
 | `-k` | `--token` | GitHub GraphQL API Token (oder via `.env` / Env-Var `GITHUB_TOKEN`) | *optional (nutzt sonst Mockdaten)* |
 | `-h` | `--help` | Zeigt die Hilfe an | *N/A* |
@@ -126,8 +132,11 @@ Um deine echten Aktivitätsdaten automatisch jeden Tag zu aktualisieren, haben w
 ### 🛣️ Meine GitHub Aktivitäts-Autobahn
 <img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-highway.svg" width="100%" />
 
-### 🌆 Meine GitHub Cyberpunk-Stadt
-<img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-cyberpunk.svg" width="100%" />
+### 🌴 Mein GitHub Insel-Archipel (Hell)
+<img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-island.svg" width="100%" />
+
+### 🌴 Mein GitHub Insel-Archipel (Dunkel)
+<img src="https://raw.githubusercontent.com/Huskynarr/activity-visuals/main/github-activity-island-dark.svg" width="100%" />
 ```
 *(Hinweis: Diese Links funktionieren, sobald der erste Workflow erfolgreich auf GitHub durchgelaufen ist und die Dateien generiert wurden!)*
 
