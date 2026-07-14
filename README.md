@@ -124,3 +124,13 @@ Um deine echten Aktivitätsdaten automatisch jeden Tag zu aktualisieren, haben w
 - [src/renderer.ts](file:///home/huskynarr/github-activity/src/renderer.ts) — Isometrische Render-Engine mit Theme-Spezifikationen und SVG-Komprimierung mittels Symbol-Wiederverwendung.
 - [.github/workflows/generate-activity-svg.yml](file:///home/huskynarr/github-activity/.github/workflows/generate-activity-svg.yml) — GitHub Actions Workflow zur automatischen Generierung.
 - [tsconfig.json](file:///home/huskynarr/github-activity/tsconfig.json) & [package.json](file:///home/huskynarr/github-activity/package.json) — Projektkonfigurationen.
+
+---
+
+## 🤝 Beitragen
+
+Beiträge, Fehlerberichte und Feature-Wünsche sind herzlich willkommen! Schau gerne in die [CONTRIBUTING.md](file:///home/huskynarr/github-activity/CONTRIBUTING.md) für Details zum Entwicklungsprozess und Richtlinien für neue Themes.
+
+## 📄 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz** — Details findest du in der [LICENSE](file:///home/huskynarr/github-activity/LICENSE) Datei.
