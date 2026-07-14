@@ -1,0 +1,30 @@
+{
+  "name": "github-activity-visualizer",
+  "version": "1.0.0",
+  "description": "Generates 3D isometric SVGs of GitHub contribution history with creative themes.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [
+    "github",
+    "activity",
+    "visualizer",
+    "isometric",
+    "svg",
+    "github-action"
+  ],
+  "author": "Huskynarr",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  }
+}

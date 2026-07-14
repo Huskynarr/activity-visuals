@@ -1,0 +1,43 @@
+name: Generate GitHub Activity SVGs
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at midnight UTC
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+permissions:
+  contents: write # Required to push the SVGs back to the repository
+
+jobs:
+  generate-svg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Build TypeScript compiler
+        run: npm run build
+
+      - name: Generate Activity SVGs
+        run: |
+          # Generates all three themes
+          node dist/index.js -u ${{ github.repository_owner }} -t forest -o ./github-activity-forest.svg -k ${{ secrets.GITHUB_TOKEN }}
+          node dist/index.js -u ${{ github.repository_owner }} -t highway -o ./github-activity-highway.svg -k ${{ secrets.GITHUB_TOKEN }}
+          node dist/index.js -u ${{ github.repository_owner }} -t cyberpunk -o ./github-activity-cyberpunk.svg -k ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push SVGs
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add github-activity-*.svg
+          # Commit only if there are changes (prevents workflow failures when no commits occurred)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update 3D activity visualizations" && git push)
