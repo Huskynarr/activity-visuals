@@ -106,7 +106,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Island • Total Contributions: 2,253 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Island • Total Contributions: 2,255 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -474,7 +474,8 @@
     <use href="#tile-0" x="1342" y="920" />
     <use href="#tile-1" x="1318" y="932" />
     <use href="#tile-1" x="1294" y="944" />
-    <use href="#tile-0" x="1462" y="884" />
+    <use href="#tile-1" x="1462" y="884" />
+    <use href="#tile-0" x="1438" y="896" />
     
           <path d="M 139.6,292.4 C 142.6,290.4 145.6,290.4 148.6,292.4 M 142,298.4 C 145,296.4 148,296.4 151,298.4" 
                 stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
@@ -1162,10 +1163,6 @@
                 stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
         
     <path d="M 1318,930 L 1319,932 L 1321,932 L 1319.5,933.2 L 1320,935 L 1318,933.8 L 1316,935 L 1316.5,933.2 L 1315,932 L 1317,932 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
-    
-          <path d="M 1459.6,880.4 C 1462.6,878.4 1465.6,878.4 1468.6,880.4 M 1462,886.4 C 1465,884.4 1468,884.4 1471,886.4" 
-                stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
-        
   </g>
 
   <!-- Legend (Activity Level) -->
