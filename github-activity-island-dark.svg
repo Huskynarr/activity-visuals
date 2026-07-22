@@ -477,6 +477,7 @@
     <use href="#tile-1" x="1462" y="884" />
     <use href="#tile-0" x="1438" y="896" />
     <use href="#tile-0" x="1414" y="908" />
+    <use href="#tile-0" x="1390" y="920" />
     
           <path d="M 139.6,292.4 C 142.6,290.4 145.6,290.4 148.6,292.4 M 142,298.4 C 145,296.4 148,296.4 151,298.4" 
                 stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
@@ -1164,6 +1165,10 @@
                 stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
         
     <path d="M 1318,930 L 1319,932 L 1321,932 L 1319.5,933.2 L 1320,935 L 1318,933.8 L 1316,935 L 1316.5,933.2 L 1315,932 L 1317,932 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
+    
+          <path d="M 1387.6,916.4 C 1390.6,914.4 1393.6,914.4 1396.6,916.4 M 1390,922.4 C 1393,920.4 1396,920.4 1399,922.4" 
+                stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
+        
   </g>
 
   <!-- Legend (Activity Level) -->
