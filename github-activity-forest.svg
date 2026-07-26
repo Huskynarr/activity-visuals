@@ -117,30 +117,30 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 2,267 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 2,293 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
-    <use href="#tile-0" x="214" y="260" />
+    <use href="#tile-1" x="214" y="260" />
     <use href="#tile-0" x="190" y="272" />
     <use href="#tile-0" x="166" y="284" />
     <use href="#tile-0" x="142" y="296" />
     <use href="#tile-0" x="118" y="308" />
     <use href="#tile-0" x="94" y="320" />
-    <use href="#tile-1" x="70" y="332" />
+    <use href="#tile-0" x="70" y="332" />
     <use href="#tile-1" x="238" y="272" />
     <use href="#tile-0" x="214" y="284" />
     <use href="#tile-0" x="190" y="296" />
     <use href="#tile-0" x="166" y="308" />
     <use href="#tile-0" x="142" y="320" />
-    <use href="#tile-0" x="118" y="332" />
+    <use href="#tile-1" x="118" y="332" />
     <use href="#tile-0" x="94" y="344" />
-    <use href="#tile-1" x="262" y="284" />
+    <use href="#tile-0" x="262" y="284" />
     <use href="#tile-0" x="238" y="296" />
     <use href="#tile-0" x="214" y="308" />
     <use href="#tile-0" x="190" y="320" />
     <use href="#tile-0" x="166" y="332" />
-    <use href="#tile-1" x="142" y="344" />
+    <use href="#tile-0" x="142" y="344" />
     <use href="#tile-0" x="118" y="356" />
     <use href="#tile-0" x="286" y="296" />
     <use href="#tile-0" x="262" y="308" />
@@ -167,32 +167,32 @@
     <use href="#tile-0" x="334" y="344" />
     <use href="#tile-0" x="310" y="356" />
     <use href="#tile-0" x="286" y="368" />
-    <use href="#tile-0" x="262" y="380" />
+    <use href="#tile-1" x="262" y="380" />
     <use href="#tile-0" x="238" y="392" />
     <use href="#tile-0" x="214" y="404" />
-    <use href="#tile-0" x="382" y="344" />
+    <use href="#tile-1" x="382" y="344" />
     <use href="#tile-0" x="358" y="356" />
-    <use href="#tile-0" x="334" y="368" />
+    <use href="#tile-1" x="334" y="368" />
     <use href="#tile-0" x="310" y="380" />
-    <use href="#tile-1" x="286" y="392" />
+    <use href="#tile-0" x="286" y="392" />
     <use href="#tile-0" x="262" y="404" />
     <use href="#tile-0" x="238" y="416" />
-    <use href="#tile-1" x="406" y="356" />
-    <use href="#tile-0" x="382" y="368" />
-    <use href="#tile-1" x="358" y="380" />
+    <use href="#tile-0" x="406" y="356" />
+    <use href="#tile-1" x="382" y="368" />
+    <use href="#tile-0" x="358" y="380" />
     <use href="#tile-0" x="334" y="392" />
     <use href="#tile-0" x="310" y="404" />
     <use href="#tile-0" x="286" y="416" />
     <use href="#tile-0" x="262" y="428" />
     <use href="#tile-0" x="430" y="368" />
-    <use href="#tile-1" x="406" y="380" />
-    <use href="#tile-0" x="382" y="392" />
-    <use href="#tile-0" x="358" y="404" />
-    <use href="#tile-0" x="334" y="416" />
+    <use href="#tile-0" x="406" y="380" />
+    <use href="#tile-1" x="382" y="392" />
+    <use href="#tile-1" x="358" y="404" />
+    <use href="#tile-1" x="334" y="416" />
     <use href="#tile-0" x="310" y="428" />
     <use href="#tile-0" x="286" y="440" />
     <use href="#tile-0" x="454" y="380" />
-    <use href="#tile-0" x="430" y="392" />
+    <use href="#tile-1" x="430" y="392" />
     <use href="#tile-1" x="406" y="404" />
     <use href="#tile-1" x="382" y="416" />
     <use href="#tile-1" x="358" y="428" />
@@ -200,271 +200,271 @@
     <use href="#tile-0" x="310" y="452" />
     <use href="#tile-0" x="478" y="392" />
     <use href="#tile-1" x="454" y="404" />
-    <use href="#tile-1" x="430" y="416" />
-    <use href="#tile-1" x="406" y="428" />
+    <use href="#tile-0" x="430" y="416" />
+    <use href="#tile-0" x="406" y="428" />
     <use href="#tile-1" x="382" y="440" />
     <use href="#tile-0" x="358" y="452" />
     <use href="#tile-0" x="334" y="464" />
     <use href="#tile-0" x="502" y="404" />
     <use href="#tile-1" x="478" y="416" />
-    <use href="#tile-0" x="454" y="428" />
+    <use href="#tile-1" x="454" y="428" />
     <use href="#tile-0" x="430" y="440" />
     <use href="#tile-1" x="406" y="452" />
-    <use href="#tile-0" x="382" y="464" />
-    <use href="#tile-0" x="358" y="476" />
-    <use href="#tile-0" x="526" y="416" />
-    <use href="#tile-1" x="502" y="428" />
+    <use href="#tile-1" x="382" y="464" />
+    <use href="#tile-1" x="358" y="476" />
+    <use href="#tile-1" x="526" y="416" />
+    <use href="#tile-0" x="502" y="428" />
     <use href="#tile-1" x="478" y="440" />
     <use href="#tile-0" x="454" y="452" />
     <use href="#tile-1" x="430" y="464" />
-    <use href="#tile-1" x="406" y="476" />
-    <use href="#tile-1" x="382" y="488" />
+    <use href="#tile-0" x="406" y="476" />
+    <use href="#tile-0" x="382" y="488" />
     <use href="#tile-1" x="550" y="428" />
-    <use href="#tile-0" x="526" y="440" />
+    <use href="#tile-2" x="526" y="440" />
     <use href="#tile-1" x="502" y="452" />
-    <use href="#tile-0" x="478" y="464" />
+    <use href="#tile-1" x="478" y="464" />
     <use href="#tile-1" x="454" y="476" />
-    <use href="#tile-0" x="430" y="488" />
-    <use href="#tile-0" x="406" y="500" />
-    <use href="#tile-1" x="574" y="440" />
-    <use href="#tile-2" x="550" y="452" />
-    <use href="#tile-1" x="526" y="464" />
+    <use href="#tile-4" x="430" y="488" />
+    <use href="#tile-3" x="406" y="500" />
+    <use href="#tile-0" x="574" y="440" />
+    <use href="#tile-1" x="550" y="452" />
+    <use href="#tile-0" x="526" y="464" />
     <use href="#tile-1" x="502" y="476" />
-    <use href="#tile-1" x="478" y="488" />
-    <use href="#tile-4" x="454" y="500" />
-    <use href="#tile-3" x="430" y="512" />
+    <use href="#tile-0" x="478" y="488" />
+    <use href="#tile-1" x="454" y="500" />
+    <use href="#tile-1" x="430" y="512" />
     <use href="#tile-0" x="598" y="452" />
-    <use href="#tile-1" x="574" y="464" />
+    <use href="#tile-0" x="574" y="464" />
     <use href="#tile-0" x="550" y="476" />
     <use href="#tile-1" x="526" y="488" />
-    <use href="#tile-0" x="502" y="500" />
+    <use href="#tile-1" x="502" y="500" />
     <use href="#tile-1" x="478" y="512" />
-    <use href="#tile-1" x="454" y="524" />
+    <use href="#tile-0" x="454" y="524" />
     <use href="#tile-0" x="622" y="464" />
     <use href="#tile-0" x="598" y="476" />
     <use href="#tile-0" x="574" y="488" />
     <use href="#tile-1" x="550" y="500" />
-    <use href="#tile-1" x="526" y="512" />
-    <use href="#tile-1" x="502" y="524" />
+    <use href="#tile-0" x="526" y="512" />
+    <use href="#tile-0" x="502" y="524" />
     <use href="#tile-0" x="478" y="536" />
     <use href="#tile-0" x="646" y="476" />
-    <use href="#tile-0" x="622" y="488" />
-    <use href="#tile-0" x="598" y="500" />
+    <use href="#tile-2" x="622" y="488" />
+    <use href="#tile-2" x="598" y="500" />
     <use href="#tile-1" x="574" y="512" />
-    <use href="#tile-0" x="550" y="524" />
-    <use href="#tile-0" x="526" y="536" />
-    <use href="#tile-0" x="502" y="548" />
-    <use href="#tile-0" x="670" y="488" />
-    <use href="#tile-2" x="646" y="500" />
-    <use href="#tile-2" x="622" y="512" />
+    <use href="#tile-1" x="550" y="524" />
+    <use href="#tile-1" x="526" y="536" />
+    <use href="#tile-1" x="502" y="548" />
+    <use href="#tile-2" x="670" y="488" />
+    <use href="#tile-1" x="646" y="500" />
+    <use href="#tile-1" x="622" y="512" />
     <use href="#tile-1" x="598" y="524" />
     <use href="#tile-1" x="574" y="536" />
-    <use href="#tile-1" x="550" y="548" />
-    <use href="#tile-1" x="526" y="560" />
-    <use href="#tile-2" x="694" y="500" />
-    <use href="#tile-1" x="670" y="512" />
-    <use href="#tile-1" x="646" y="524" />
-    <use href="#tile-1" x="622" y="536" />
+    <use href="#tile-0" x="550" y="548" />
+    <use href="#tile-0" x="526" y="560" />
+    <use href="#tile-0" x="694" y="500" />
+    <use href="#tile-0" x="670" y="512" />
+    <use href="#tile-0" x="646" y="524" />
+    <use href="#tile-0" x="622" y="536" />
     <use href="#tile-1" x="598" y="548" />
     <use href="#tile-0" x="574" y="560" />
-    <use href="#tile-0" x="550" y="572" />
+    <use href="#tile-1" x="550" y="572" />
     <use href="#tile-0" x="718" y="512" />
-    <use href="#tile-0" x="694" y="524" />
+    <use href="#tile-2" x="694" y="524" />
     <use href="#tile-0" x="670" y="536" />
     <use href="#tile-0" x="646" y="548" />
-    <use href="#tile-1" x="622" y="560" />
+    <use href="#tile-0" x="622" y="560" />
     <use href="#tile-0" x="598" y="572" />
-    <use href="#tile-1" x="574" y="584" />
+    <use href="#tile-0" x="574" y="584" />
     <use href="#tile-0" x="742" y="524" />
-    <use href="#tile-2" x="718" y="536" />
+    <use href="#tile-0" x="718" y="536" />
     <use href="#tile-0" x="694" y="548" />
     <use href="#tile-0" x="670" y="560" />
-    <use href="#tile-0" x="646" y="572" />
-    <use href="#tile-0" x="622" y="584" />
+    <use href="#tile-1" x="646" y="572" />
+    <use href="#tile-1" x="622" y="584" />
     <use href="#tile-0" x="598" y="596" />
-    <use href="#tile-0" x="766" y="536" />
-    <use href="#tile-0" x="742" y="548" />
-    <use href="#tile-0" x="718" y="560" />
-    <use href="#tile-0" x="694" y="572" />
-    <use href="#tile-1" x="670" y="584" />
+    <use href="#tile-1" x="766" y="536" />
+    <use href="#tile-1" x="742" y="548" />
+    <use href="#tile-1" x="718" y="560" />
+    <use href="#tile-1" x="694" y="572" />
+    <use href="#tile-0" x="670" y="584" />
     <use href="#tile-1" x="646" y="596" />
     <use href="#tile-0" x="622" y="608" />
     <use href="#tile-1" x="790" y="548" />
     <use href="#tile-1" x="766" y="560" />
-    <use href="#tile-1" x="742" y="572" />
+    <use href="#tile-0" x="742" y="572" />
     <use href="#tile-1" x="718" y="584" />
     <use href="#tile-0" x="694" y="596" />
     <use href="#tile-1" x="670" y="608" />
     <use href="#tile-0" x="646" y="620" />
-    <use href="#tile-1" x="814" y="560" />
+    <use href="#tile-0" x="814" y="560" />
     <use href="#tile-1" x="790" y="572" />
-    <use href="#tile-0" x="766" y="584" />
-    <use href="#tile-1" x="742" y="596" />
+    <use href="#tile-3" x="766" y="584" />
+    <use href="#tile-0" x="742" y="596" />
     <use href="#tile-0" x="718" y="608" />
     <use href="#tile-1" x="694" y="620" />
-    <use href="#tile-0" x="670" y="632" />
+    <use href="#tile-1" x="670" y="632" />
     <use href="#tile-0" x="838" y="572" />
-    <use href="#tile-1" x="814" y="584" />
-    <use href="#tile-3" x="790" y="596" />
+    <use href="#tile-0" x="814" y="584" />
+    <use href="#tile-1" x="790" y="596" />
     <use href="#tile-0" x="766" y="608" />
     <use href="#tile-0" x="742" y="620" />
-    <use href="#tile-1" x="718" y="632" />
+    <use href="#tile-0" x="718" y="632" />
     <use href="#tile-1" x="694" y="644" />
     <use href="#tile-0" x="862" y="584" />
     <use href="#tile-0" x="838" y="596" />
-    <use href="#tile-1" x="814" y="608" />
+    <use href="#tile-0" x="814" y="608" />
     <use href="#tile-0" x="790" y="620" />
-    <use href="#tile-0" x="766" y="632" />
+    <use href="#tile-1" x="766" y="632" />
     <use href="#tile-0" x="742" y="644" />
     <use href="#tile-1" x="718" y="656" />
     <use href="#tile-0" x="886" y="596" />
-    <use href="#tile-0" x="862" y="608" />
-    <use href="#tile-0" x="838" y="620" />
-    <use href="#tile-0" x="814" y="632" />
-    <use href="#tile-1" x="790" y="644" />
-    <use href="#tile-0" x="766" y="656" />
+    <use href="#tile-1" x="862" y="608" />
+    <use href="#tile-1" x="838" y="620" />
+    <use href="#tile-2" x="814" y="632" />
+    <use href="#tile-0" x="790" y="644" />
+    <use href="#tile-3" x="766" y="656" />
     <use href="#tile-1" x="742" y="668" />
-    <use href="#tile-0" x="910" y="608" />
-    <use href="#tile-1" x="886" y="620" />
-    <use href="#tile-1" x="862" y="632" />
-    <use href="#tile-2" x="838" y="644" />
-    <use href="#tile-0" x="814" y="656" />
-    <use href="#tile-3" x="790" y="668" />
-    <use href="#tile-1" x="766" y="680" />
-    <use href="#tile-2" x="934" y="620" />
+    <use href="#tile-2" x="910" y="608" />
+    <use href="#tile-0" x="886" y="620" />
+    <use href="#tile-2" x="862" y="632" />
+    <use href="#tile-1" x="838" y="644" />
+    <use href="#tile-2" x="814" y="656" />
+    <use href="#tile-1" x="790" y="668" />
+    <use href="#tile-2" x="766" y="680" />
+    <use href="#tile-0" x="934" y="620" />
     <use href="#tile-0" x="910" y="632" />
-    <use href="#tile-2" x="886" y="644" />
-    <use href="#tile-1" x="862" y="656" />
-    <use href="#tile-2" x="838" y="668" />
+    <use href="#tile-0" x="886" y="644" />
+    <use href="#tile-0" x="862" y="656" />
+    <use href="#tile-1" x="838" y="668" />
     <use href="#tile-1" x="814" y="680" />
-    <use href="#tile-2" x="790" y="692" />
-    <use href="#tile-0" x="958" y="632" />
+    <use href="#tile-0" x="790" y="692" />
+    <use href="#tile-1" x="958" y="632" />
     <use href="#tile-0" x="934" y="644" />
     <use href="#tile-0" x="910" y="656" />
     <use href="#tile-0" x="886" y="668" />
-    <use href="#tile-1" x="862" y="680" />
-    <use href="#tile-1" x="838" y="692" />
-    <use href="#tile-0" x="814" y="704" />
-    <use href="#tile-1" x="982" y="644" />
+    <use href="#tile-0" x="862" y="680" />
+    <use href="#tile-0" x="838" y="692" />
+    <use href="#tile-1" x="814" y="704" />
+    <use href="#tile-0" x="982" y="644" />
     <use href="#tile-0" x="958" y="656" />
-    <use href="#tile-0" x="934" y="668" />
+    <use href="#tile-1" x="934" y="668" />
     <use href="#tile-0" x="910" y="680" />
     <use href="#tile-0" x="886" y="692" />
-    <use href="#tile-0" x="862" y="704" />
+    <use href="#tile-1" x="862" y="704" />
     <use href="#tile-1" x="838" y="716" />
-    <use href="#tile-0" x="1006" y="656" />
+    <use href="#tile-1" x="1006" y="656" />
     <use href="#tile-0" x="982" y="668" />
     <use href="#tile-1" x="958" y="680" />
     <use href="#tile-0" x="934" y="692" />
-    <use href="#tile-0" x="910" y="704" />
-    <use href="#tile-1" x="886" y="716" />
+    <use href="#tile-1" x="910" y="704" />
+    <use href="#tile-0" x="886" y="716" />
     <use href="#tile-1" x="862" y="728" />
     <use href="#tile-1" x="1030" y="668" />
-    <use href="#tile-0" x="1006" y="680" />
-    <use href="#tile-1" x="982" y="692" />
-    <use href="#tile-0" x="958" y="704" />
+    <use href="#tile-1" x="1006" y="680" />
+    <use href="#tile-0" x="982" y="692" />
+    <use href="#tile-1" x="958" y="704" />
     <use href="#tile-1" x="934" y="716" />
-    <use href="#tile-0" x="910" y="728" />
-    <use href="#tile-1" x="886" y="740" />
+    <use href="#tile-2" x="910" y="728" />
+    <use href="#tile-4" x="886" y="740" />
     <use href="#tile-1" x="1054" y="680" />
-    <use href="#tile-1" x="1030" y="692" />
+    <use href="#tile-0" x="1030" y="692" />
     <use href="#tile-0" x="1006" y="704" />
-    <use href="#tile-1" x="982" y="716" />
-    <use href="#tile-1" x="958" y="728" />
-    <use href="#tile-2" x="934" y="740" />
-    <use href="#tile-4" x="910" y="752" />
+    <use href="#tile-0" x="982" y="716" />
+    <use href="#tile-0" x="958" y="728" />
+    <use href="#tile-0" x="934" y="740" />
+    <use href="#tile-1" x="910" y="752" />
     <use href="#tile-1" x="1078" y="692" />
     <use href="#tile-0" x="1054" y="704" />
-    <use href="#tile-0" x="1030" y="716" />
+    <use href="#tile-1" x="1030" y="716" />
     <use href="#tile-0" x="1006" y="728" />
     <use href="#tile-0" x="982" y="740" />
     <use href="#tile-0" x="958" y="752" />
-    <use href="#tile-1" x="934" y="764" />
-    <use href="#tile-1" x="1102" y="704" />
+    <use href="#tile-0" x="934" y="764" />
+    <use href="#tile-0" x="1102" y="704" />
     <use href="#tile-0" x="1078" y="716" />
-    <use href="#tile-1" x="1054" y="728" />
-    <use href="#tile-0" x="1030" y="740" />
+    <use href="#tile-0" x="1054" y="728" />
+    <use href="#tile-1" x="1030" y="740" />
     <use href="#tile-0" x="1006" y="752" />
     <use href="#tile-0" x="982" y="764" />
     <use href="#tile-0" x="958" y="776" />
     <use href="#tile-0" x="1126" y="716" />
     <use href="#tile-0" x="1102" y="728" />
-    <use href="#tile-0" x="1078" y="740" />
+    <use href="#tile-1" x="1078" y="740" />
     <use href="#tile-1" x="1054" y="752" />
     <use href="#tile-0" x="1030" y="764" />
     <use href="#tile-0" x="1006" y="776" />
-    <use href="#tile-0" x="982" y="788" />
+    <use href="#tile-1" x="982" y="788" />
     <use href="#tile-0" x="1150" y="728" />
     <use href="#tile-0" x="1126" y="740" />
-    <use href="#tile-1" x="1102" y="752" />
-    <use href="#tile-1" x="1078" y="764" />
+    <use href="#tile-0" x="1102" y="752" />
+    <use href="#tile-0" x="1078" y="764" />
     <use href="#tile-0" x="1054" y="776" />
     <use href="#tile-0" x="1030" y="788" />
-    <use href="#tile-1" x="1006" y="800" />
+    <use href="#tile-0" x="1006" y="800" />
     <use href="#tile-0" x="1174" y="740" />
     <use href="#tile-0" x="1150" y="752" />
     <use href="#tile-0" x="1126" y="764" />
-    <use href="#tile-0" x="1102" y="776" />
-    <use href="#tile-0" x="1078" y="788" />
-    <use href="#tile-0" x="1054" y="800" />
+    <use href="#tile-1" x="1102" y="776" />
+    <use href="#tile-1" x="1078" y="788" />
+    <use href="#tile-1" x="1054" y="800" />
     <use href="#tile-0" x="1030" y="812" />
     <use href="#tile-0" x="1198" y="752" />
-    <use href="#tile-0" x="1174" y="764" />
-    <use href="#tile-0" x="1150" y="776" />
-    <use href="#tile-1" x="1126" y="788" />
-    <use href="#tile-1" x="1102" y="800" />
-    <use href="#tile-1" x="1078" y="812" />
+    <use href="#tile-1" x="1174" y="764" />
+    <use href="#tile-1" x="1150" y="776" />
+    <use href="#tile-0" x="1126" y="788" />
+    <use href="#tile-0" x="1102" y="800" />
+    <use href="#tile-0" x="1078" y="812" />
     <use href="#tile-0" x="1054" y="824" />
     <use href="#tile-0" x="1222" y="764" />
-    <use href="#tile-1" x="1198" y="776" />
+    <use href="#tile-0" x="1198" y="776" />
     <use href="#tile-1" x="1174" y="788" />
-    <use href="#tile-0" x="1150" y="800" />
-    <use href="#tile-0" x="1126" y="812" />
-    <use href="#tile-0" x="1102" y="824" />
-    <use href="#tile-0" x="1078" y="836" />
-    <use href="#tile-0" x="1246" y="776" />
-    <use href="#tile-0" x="1222" y="788" />
+    <use href="#tile-1" x="1150" y="800" />
+    <use href="#tile-1" x="1126" y="812" />
+    <use href="#tile-1" x="1102" y="824" />
+    <use href="#tile-1" x="1078" y="836" />
+    <use href="#tile-1" x="1246" y="776" />
+    <use href="#tile-1" x="1222" y="788" />
     <use href="#tile-1" x="1198" y="800" />
     <use href="#tile-1" x="1174" y="812" />
     <use href="#tile-1" x="1150" y="824" />
     <use href="#tile-1" x="1126" y="836" />
-    <use href="#tile-1" x="1102" y="848" />
+    <use href="#tile-0" x="1102" y="848" />
     <use href="#tile-1" x="1270" y="788" />
     <use href="#tile-1" x="1246" y="800" />
-    <use href="#tile-1" x="1222" y="812" />
-    <use href="#tile-1" x="1198" y="824" />
-    <use href="#tile-1" x="1174" y="836" />
+    <use href="#tile-4" x="1222" y="812" />
+    <use href="#tile-4" x="1198" y="824" />
+    <use href="#tile-0" x="1174" y="836" />
     <use href="#tile-1" x="1150" y="848" />
-    <use href="#tile-0" x="1126" y="860" />
-    <use href="#tile-1" x="1294" y="800" />
+    <use href="#tile-1" x="1126" y="860" />
+    <use href="#tile-0" x="1294" y="800" />
     <use href="#tile-1" x="1270" y="812" />
-    <use href="#tile-4" x="1246" y="824" />
-    <use href="#tile-4" x="1222" y="836" />
-    <use href="#tile-0" x="1198" y="848" />
-    <use href="#tile-1" x="1174" y="860" />
+    <use href="#tile-1" x="1246" y="824" />
+    <use href="#tile-1" x="1222" y="836" />
+    <use href="#tile-1" x="1198" y="848" />
+    <use href="#tile-0" x="1174" y="860" />
     <use href="#tile-1" x="1150" y="872" />
-    <use href="#tile-0" x="1318" y="812" />
+    <use href="#tile-2" x="1318" y="812" />
     <use href="#tile-1" x="1294" y="824" />
     <use href="#tile-1" x="1270" y="836" />
-    <use href="#tile-1" x="1246" y="848" />
+    <use href="#tile-2" x="1246" y="848" />
     <use href="#tile-1" x="1222" y="860" />
-    <use href="#tile-0" x="1198" y="872" />
-    <use href="#tile-1" x="1174" y="884" />
-    <use href="#tile-2" x="1342" y="824" />
+    <use href="#tile-1" x="1198" y="872" />
+    <use href="#tile-2" x="1174" y="884" />
+    <use href="#tile-1" x="1342" y="824" />
     <use href="#tile-1" x="1318" y="836" />
-    <use href="#tile-1" x="1294" y="848" />
-    <use href="#tile-2" x="1270" y="860" />
+    <use href="#tile-0" x="1294" y="848" />
+    <use href="#tile-0" x="1270" y="860" />
     <use href="#tile-1" x="1246" y="872" />
-    <use href="#tile-1" x="1222" y="884" />
-    <use href="#tile-2" x="1198" y="896" />
-    <use href="#tile-1" x="1366" y="836" />
+    <use href="#tile-0" x="1222" y="884" />
+    <use href="#tile-0" x="1198" y="896" />
+    <use href="#tile-0" x="1366" y="836" />
     <use href="#tile-1" x="1342" y="848" />
-    <use href="#tile-0" x="1318" y="860" />
-    <use href="#tile-0" x="1294" y="872" />
+    <use href="#tile-1" x="1318" y="860" />
+    <use href="#tile-1" x="1294" y="872" />
     <use href="#tile-1" x="1270" y="884" />
-    <use href="#tile-0" x="1246" y="896" />
-    <use href="#tile-0" x="1222" y="908" />
-    <use href="#tile-0" x="1390" y="848" />
+    <use href="#tile-1" x="1246" y="896" />
+    <use href="#tile-1" x="1222" y="908" />
+    <use href="#tile-1" x="1390" y="848" />
     <use href="#tile-1" x="1366" y="860" />
     <use href="#tile-1" x="1342" y="872" />
     <use href="#tile-1" x="1318" y="884" />
@@ -475,51 +475,40 @@
     <use href="#tile-1" x="1390" y="872" />
     <use href="#tile-1" x="1366" y="884" />
     <use href="#tile-1" x="1342" y="896" />
-    <use href="#tile-1" x="1318" y="908" />
+    <use href="#tile-0" x="1318" y="908" />
     <use href="#tile-1" x="1294" y="920" />
     <use href="#tile-1" x="1270" y="932" />
     <use href="#tile-1" x="1438" y="872" />
-    <use href="#tile-1" x="1414" y="884" />
-    <use href="#tile-1" x="1390" y="896" />
-    <use href="#tile-1" x="1366" y="908" />
+    <use href="#tile-0" x="1414" y="884" />
+    <use href="#tile-0" x="1390" y="896" />
+    <use href="#tile-0" x="1366" y="908" />
     <use href="#tile-0" x="1342" y="920" />
     <use href="#tile-1" x="1318" y="932" />
     <use href="#tile-1" x="1294" y="944" />
     <use href="#tile-1" x="1462" y="884" />
-    <use href="#tile-0" x="1438" y="896" />
-    <use href="#tile-0" x="1414" y="908" />
-    <use href="#tile-0" x="1390" y="920" />
-    <use href="#tile-0" x="1366" y="932" />
-    <use href="#tile-1" x="1342" y="944" />
-    <use href="#tile-0" x="1318" y="956" />
+    <ellipse cx="214" cy="262" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 210.16,260 L 214,261.92 L 214,229.52 L 210.16,227.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 214,261.92 L 217.84,260 L 217.84,227.6 L 214,229.52 Z" fill="#5D3320" />
+    <path d="M 214,225.67999999999998 L 217.84,227.6 L 214,229.52 L 210.16,227.6 Z" fill="#8C4F35" />
+  
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 115,308 C 115,306 119,305 120,308 C 120,309 117,309 115,308 Z" fill="#78716c" />
         
-    <ellipse cx="70" cy="334" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 66.16,332 L 70,333.92 L 70,301.52000000000004 L 66.16,299.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 70,333.92 L 73.84,332 L 73.84,299.6 L 70,301.52000000000004 Z" fill="#5D3320" />
-    <path d="M 70,297.68 L 73.84,299.6 L 70,301.52000000000004 L 66.16,299.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="238" cy="274" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 234.16,272 L 238,273.92 L 238,241.52 L 234.16,239.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 238,273.92 L 241.84,272 L 241.84,239.6 L 238,241.52 Z" fill="#5D3320" />
-    <path d="M 238,237.67999999999998 L 241.84,239.6 L 238,241.52 L 234.16,239.6 Z" fill="#8C4F35" />
-  
+    <ellipse cx="238" cy="274" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="238" cy="266" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="212" cy="285" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 211,284 C 211,282 215,281 216,284 C 216,285 213,285 211,284 Z" fill="#78716c" />
         
+    <ellipse cx="118" cy="334" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="118" cy="326" r="5" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="92" cy="345" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 91,344 C 91,342 95,341 96,344 C 96,345 93,345 91,344 Z" fill="#78716c" />
         
-    <ellipse cx="262" cy="286" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="262" cy="278" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="188" cy="321" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 187,320 C 187,318 191,317 192,320 C 192,321 189,321 187,320 Z" fill="#78716c" />
         
-    <ellipse cx="142" cy="346" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="142" cy="338" r="5" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="164" cy="357" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 163,356 C 163,354 167,353 168,356 C 168,357 165,357 163,356 Z" fill="#78716c" />
@@ -536,38 +525,39 @@
           <ellipse cx="356" cy="333" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 355,332 C 355,330 359,329 360,332 C 360,333 357,333 355,332 Z" fill="#78716c" />
         
+    <ellipse cx="262" cy="382" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
+    <path d="M 260.08,380 L 262,380.96 L 262,363.76 L 260.08,362.8 Z" fill="#3D2A20" />
+    <path d="M 262,380.96 L 263.92,380 L 263.92,362.8 L 262,363.76 Z" fill="#2C1E17" />
+    <path d="M 262,361.84000000000003 L 263.92,362.8 L 262,363.76 L 260.08,362.8 Z" fill="#4E3629" />
+  
+          <path d="M 248.24,362.8 L 275.76,362.8 L 262,340.44 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 262,362.8 L 275.76,362.8 L 262,340.44 Z" fill="#000000" opacity="0.12" />
+        
     
           <ellipse cx="236" cy="393" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 235,392 C 235,390 239,389 240,392 C 240,393 237,393 235,392 Z" fill="#78716c" />
         
-    
-          <ellipse cx="332" cy="369" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 331,368 C 331,366 335,365 336,368 C 336,369 333,369 331,368 Z" fill="#78716c" />
-        
-    <ellipse cx="286" cy="394" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
-    <path d="M 284.08,392 L 286,392.96 L 286,375.76 L 284.08,374.8 Z" fill="#3D2A20" />
-    <path d="M 286,392.96 L 287.92,392 L 287.92,374.8 L 286,375.76 Z" fill="#2C1E17" />
-    <path d="M 286,373.84000000000003 L 287.92,374.8 L 286,375.76 L 284.08,374.8 Z" fill="#4E3629" />
+    <ellipse cx="382" cy="346" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 380.08,344 L 382,344.96 L 382,334.96 L 380.08,334 Z" fill="#3D2A20" />
+    <path d="M 382,344.96 L 383.92,344 L 383.92,334 L 382,334.96 Z" fill="#2C1E17" />
+    <path d="M 382,333.04 L 383.92,334 L 382,334.96 L 380.08,334 Z" fill="#4E3629" />
   
-          <path d="M 272.24,374.8 L 299.76,374.8 L 286,352.44 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 286,374.8 L 299.76,374.8 L 286,352.44 Z" fill="#000000" opacity="0.12" />
+          <path d="M 374,334 L 390,334 L 382,321 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 382,334 L 390,334 L 382,321 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="406" cy="358" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 404.08,356 L 406,356.96 L 406,346.96 L 404.08,346 Z" fill="#3D2A20" />
-    <path d="M 406,356.96 L 407.92,356 L 407.92,346 L 406,346.96 Z" fill="#2C1E17" />
-    <path d="M 406,345.04 L 407.92,346 L 406,346.96 L 404.08,346 Z" fill="#4E3629" />
+    <ellipse cx="334" cy="370" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 332.08,368 L 334,368.96 L 334,350.96 L 332.08,350 Z" fill="#3D2A20" />
+    <path d="M 334,368.96 L 335.92,368 L 335.92,350 L 334,350.96 Z" fill="#2C1E17" />
+    <path d="M 334,349.04 L 335.92,350 L 334,350.96 L 332.08,350 Z" fill="#4E3629" />
   
-          <path d="M 398,346 L 414,346 L 406,333 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 406,346 L 414,346 L 406,333 Z" fill="#000000" opacity="0.12" />
+          <path d="M 319.6,350 L 348.4,350 L 334,326.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 334,350 L 348.4,350 L 334,326.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="358" cy="382" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 356.08,380 L 358,380.96 L 358,362.96 L 356.08,362 Z" fill="#3D2A20" />
-    <path d="M 358,380.96 L 359.92,380 L 359.92,362 L 358,362.96 Z" fill="#2C1E17" />
-    <path d="M 358,361.04 L 359.92,362 L 358,362.96 L 356.08,362 Z" fill="#4E3629" />
+    <ellipse cx="382" cy="370" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
+    <path d="M 378.16,368 L 382,369.92 L 382,349.04 L 378.16,347.12 Z" fill="url(#redwood-trunk)" />
+    <path d="M 382,369.92 L 385.84,368 L 385.84,347.12 L 382,349.04 Z" fill="#5D3320" />
+    <path d="M 382,345.2 L 385.84,347.12 L 382,349.04 L 378.16,347.12 Z" fill="#8C4F35" />
   
-          <path d="M 343.6,362 L 372.4,362 L 358,338.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 358,362 L 372.4,362 L 358,338.6 Z" fill="#000000" opacity="0.12" />
-        
     
           <ellipse cx="308" cy="405" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 307,404 C 307,402 311,401 312,404 C 312,405 309,405 307,404 Z" fill="#78716c" />
@@ -576,299 +566,291 @@
           <ellipse cx="428" cy="369" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 427,368 C 427,366 431,365 432,368 C 432,369 429,369 427,368 Z" fill="#78716c" />
         
-    <ellipse cx="406" cy="382" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
-    <path d="M 402.16,380 L 406,381.92 L 406,361.04 L 402.16,359.12 Z" fill="url(#redwood-trunk)" />
-    <path d="M 406,381.92 L 409.84,380 L 409.84,359.12 L 406,361.04 Z" fill="#5D3320" />
-    <path d="M 406,357.2 L 409.84,359.12 L 406,361.04 L 402.16,359.12 Z" fill="#8C4F35" />
+    <ellipse cx="382" cy="394" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="382" cy="386" r="5.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="358" cy="406" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 356.08,404 L 358,404.96 L 358,394.96 L 356.08,394 Z" fill="#3D2A20" />
+    <path d="M 358,404.96 L 359.92,404 L 359.92,394 L 358,394.96 Z" fill="#2C1E17" />
+    <path d="M 358,393.04 L 359.92,394 L 358,394.96 L 356.08,394 Z" fill="#4E3629" />
   
+          <path d="M 350,394 L 366,394 L 358,381 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 358,394 L 366,394 L 358,381 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="334" cy="418" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
+    <path d="M 332.08,416 L 334,416.96 L 334,402.96 L 332.08,402 Z" fill="#3D2A20" />
+    <path d="M 334,416.96 L 335.92,416 L 335.92,402 L 334,402.96 Z" fill="#2C1E17" />
+    <path d="M 334,401.04 L 335.92,402 L 334,402.96 L 332.08,402 Z" fill="#4E3629" />
+  
+          <path d="M 322.8,402 L 345.2,402 L 334,383.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 334,402 L 345.2,402 L 334,383.8 Z" fill="#000000" opacity="0.12" />
+        
     
           <ellipse cx="284" cy="441" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 283,440 C 283,438 287,437 288,440 C 288,441 285,441 283,440 Z" fill="#78716c" />
         
-    <ellipse cx="406" cy="406" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="406" cy="398" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="382" cy="418" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 380.08,416 L 382,416.96 L 382,406.96 L 380.08,406 Z" fill="#3D2A20" />
-    <path d="M 382,416.96 L 383.92,416 L 383.92,406 L 382,406.96 Z" fill="#2C1E17" />
-    <path d="M 382,405.04 L 383.92,406 L 382,406.96 L 380.08,406 Z" fill="#4E3629" />
+    <ellipse cx="430" cy="394" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
+    <path d="M 428.08,392 L 430,392.96 L 430,378.15999999999997 L 428.08,377.2 Z" fill="#3D2A20" />
+    <path d="M 430,392.96 L 431.92,392 L 431.92,377.2 L 430,378.15999999999997 Z" fill="#2C1E17" />
+    <path d="M 430,376.24 L 431.92,377.2 L 430,378.15999999999997 L 428.08,377.2 Z" fill="#4E3629" />
   
-          <path d="M 374,406 L 390,406 L 382,393 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 382,406 L 390,406 L 382,393 Z" fill="#000000" opacity="0.12" />
+          <path d="M 418.16,377.2 L 441.84,377.2 L 430,357.96 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 430,377.2 L 441.84,377.2 L 430,357.96 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="358" cy="430" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
-    <path d="M 356.08,428 L 358,428.96 L 358,414.96 L 356.08,414 Z" fill="#3D2A20" />
-    <path d="M 358,428.96 L 359.92,428 L 359.92,414 L 358,414.96 Z" fill="#2C1E17" />
-    <path d="M 358,413.04 L 359.92,414 L 358,414.96 L 356.08,414 Z" fill="#4E3629" />
+    <ellipse cx="406" cy="406" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 404.08,404 L 406,404.96 L 406,394.96 L 404.08,394 Z" fill="#3D2A20" />
+    <path d="M 406,404.96 L 407.92,404 L 407.92,394 L 406,394.96 Z" fill="#2C1E17" />
+    <path d="M 406,393.04 L 407.92,394 L 406,394.96 L 404.08,394 Z" fill="#4E3629" />
   
-          <path d="M 346.8,414 L 369.2,414 L 358,395.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 358,414 L 369.2,414 L 358,395.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 398,394 L 414,394 L 406,381 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 406,394 L 414,394 L 406,381 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="454" cy="406" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
-    <path d="M 452.08,404 L 454,404.96 L 454,390.15999999999997 L 452.08,389.2 Z" fill="#3D2A20" />
-    <path d="M 454,404.96 L 455.92,404 L 455.92,389.2 L 454,390.15999999999997 Z" fill="#2C1E17" />
-    <path d="M 454,388.24 L 455.92,389.2 L 454,390.15999999999997 L 452.08,389.2 Z" fill="#4E3629" />
+    <ellipse cx="382" cy="418" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
+    <path d="M 380.08,416 L 382,416.96 L 382,404.56 L 380.08,403.6 Z" fill="#3D2A20" />
+    <path d="M 382,416.96 L 383.92,416 L 383.92,403.6 L 382,404.56 Z" fill="#2C1E17" />
+    <path d="M 382,402.64000000000004 L 383.92,403.6 L 382,404.56 L 380.08,403.6 Z" fill="#4E3629" />
   
-          <path d="M 442.16,389.2 L 465.84,389.2 L 454,369.96 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 454,389.2 L 465.84,389.2 L 454,369.96 Z" fill="#000000" opacity="0.12" />
+          <path d="M 372.08,403.6 L 391.92,403.6 L 382,387.48 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 382,403.6 L 391.92,403.6 L 382,387.48 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="430" cy="418" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 428.08,416 L 430,416.96 L 430,406.96 L 428.08,406 Z" fill="#3D2A20" />
-    <path d="M 430,416.96 L 431.92,416 L 431.92,406 L 430,406.96 Z" fill="#2C1E17" />
-    <path d="M 430,405.04 L 431.92,406 L 430,406.96 L 428.08,406 Z" fill="#4E3629" />
+    <ellipse cx="358" cy="430" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 356.08,428 L 358,428.96 L 358,417.35999999999996 L 356.08,416.4 Z" fill="#3D2A20" />
+    <path d="M 358,428.96 L 359.92,428 L 359.92,416.4 L 358,417.35999999999996 Z" fill="#2C1E17" />
+    <path d="M 358,415.44 L 359.92,416.4 L 358,417.35999999999996 L 356.08,416.4 Z" fill="#4E3629" />
   
-          <path d="M 422,406 L 438,406 L 430,393 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 430,406 L 438,406 L 430,393 Z" fill="#000000" opacity="0.12" />
+          <path d="M 348.72,416.4 L 367.28,416.4 L 358,401.32 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 358,416.4 L 367.28,416.4 L 358,401.32 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="406" cy="430" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
-    <path d="M 404.08,428 L 406,428.96 L 406,416.56 L 404.08,415.6 Z" fill="#3D2A20" />
-    <path d="M 406,428.96 L 407.92,428 L 407.92,415.6 L 406,416.56 Z" fill="#2C1E17" />
-    <path d="M 406,414.64000000000004 L 407.92,415.6 L 406,416.56 L 404.08,415.6 Z" fill="#4E3629" />
+    <ellipse cx="454" cy="406" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
+    <path d="M 450.16,404 L 454,405.92 L 454,385.04 L 450.16,383.12 Z" fill="url(#redwood-trunk)" />
+    <path d="M 454,405.92 L 457.84,404 L 457.84,383.12 L 454,385.04 Z" fill="#5D3320" />
+    <path d="M 454,381.2 L 457.84,383.12 L 454,385.04 L 450.16,383.12 Z" fill="#8C4F35" />
   
-          <path d="M 396.08,415.6 L 415.92,415.6 L 406,399.48 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 406,415.6 L 415.92,415.6 L 406,399.48 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="382" cy="442" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 380.08,440 L 382,440.96 L 382,429.35999999999996 L 380.08,428.4 Z" fill="#3D2A20" />
-    <path d="M 382,440.96 L 383.92,440 L 383.92,428.4 L 382,429.35999999999996 Z" fill="#2C1E17" />
-    <path d="M 382,427.44 L 383.92,428.4 L 382,429.35999999999996 L 380.08,428.4 Z" fill="#4E3629" />
+    <ellipse cx="382" cy="442" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 378.16,440 L 382,441.92 L 382,423.92 L 378.16,422 Z" fill="url(#redwood-trunk)" />
+    <path d="M 382,441.92 L 385.84,440 L 385.84,422 L 382,423.92 Z" fill="#5D3320" />
+    <path d="M 382,420.08 L 385.84,422 L 382,423.92 L 378.16,422 Z" fill="#8C4F35" />
   
-          <path d="M 372.72,428.4 L 391.28,428.4 L 382,413.32 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 382,428.4 L 391.28,428.4 L 382,413.32 Z" fill="#000000" opacity="0.12" />
-        
     
           <ellipse cx="500" cy="405" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 499,404 C 499,402 503,401 504,404 C 504,405 501,405 499,404 Z" fill="#78716c" />
         
-    <ellipse cx="478" cy="418" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
-    <path d="M 474.16,416 L 478,417.92 L 478,397.04 L 474.16,395.12 Z" fill="url(#redwood-trunk)" />
-    <path d="M 478,417.92 L 481.84,416 L 481.84,395.12 L 478,397.04 Z" fill="#5D3320" />
-    <path d="M 478,393.2 L 481.84,395.12 L 478,397.04 L 474.16,395.12 Z" fill="#8C4F35" />
-  
-    <ellipse cx="406" cy="454" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 402.16,452 L 406,453.92 L 406,435.92 L 402.16,434 Z" fill="url(#redwood-trunk)" />
-    <path d="M 406,453.92 L 409.84,452 L 409.84,434 L 406,435.92 Z" fill="#5D3320" />
-    <path d="M 406,432.08 L 409.84,434 L 406,435.92 L 402.16,434 Z" fill="#8C4F35" />
-  
-    
-          <ellipse cx="356" cy="477" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 355,476 C 355,474 359,473 360,476 C 360,477 357,477 355,476 Z" fill="#78716c" />
-        
-    <ellipse cx="502" cy="430" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="502" cy="422" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="478" cy="442" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="478" cy="434" r="7.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="478" cy="418" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="478" cy="410" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="454" cy="430" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="454" cy="422" r="7.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="406" cy="454" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="406" cy="446" r="5.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="382" cy="466" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="382" cy="458" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
+    <ellipse cx="358" cy="478" rx="12.48" ry="6.24" fill="url(#tree-shadow)" /><circle cx="358" cy="470" r="7.800000000000001" fill="url(#leaves-lvl2)" />
+    <ellipse cx="526" cy="418" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="526" cy="410" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="478" cy="442" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="478" cy="434" r="9" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="452" cy="453" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 451,452 C 451,450 455,449 456,452 C 456,453 453,453 451,452 Z" fill="#78716c" />
         
-    <ellipse cx="430" cy="466" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="430" cy="458" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="406" cy="478" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="406" cy="470" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
-    <ellipse cx="382" cy="490" rx="12.48" ry="6.24" fill="url(#tree-shadow)" /><circle cx="382" cy="482" r="7.800000000000001" fill="url(#leaves-lvl2)" />
-    <ellipse cx="550" cy="430" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="550" cy="422" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="502" cy="454" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="502" cy="446" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="454" cy="478" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 452.08,476 L 454,476.96 L 454,458.96 L 452.08,458 Z" fill="#3D2A20" />
-    <path d="M 454,476.96 L 455.92,476 L 455.92,458 L 454,458.96 Z" fill="#2C1E17" />
-    <path d="M 454,457.04 L 455.92,458 L 454,458.96 L 452.08,458 Z" fill="#4E3629" />
+    <ellipse cx="430" cy="466" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 428.08,464 L 430,464.96 L 430,446.96 L 428.08,446 Z" fill="#3D2A20" />
+    <path d="M 430,464.96 L 431.92,464 L 431.92,446 L 430,446.96 Z" fill="#2C1E17" />
+    <path d="M 430,445.04 L 431.92,446 L 430,446.96 L 428.08,446 Z" fill="#4E3629" />
   
-          <path d="M 439.6,458 L 468.4,458 L 454,434.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 454,458 L 468.4,458 L 454,434.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 415.6,446 L 444.4,446 L 430,422.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 430,446 L 444.4,446 L 430,422.6 Z" fill="#000000" opacity="0.12" />
         
-    
-          <ellipse cx="428" cy="489" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 427,488 C 427,486 431,485 432,488 C 432,489 429,489 427,488 Z" fill="#78716c" />
-        
-    <ellipse cx="574" cy="442" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 572.08,440 L 574,440.96 L 574,430.96 L 572.08,430 Z" fill="#3D2A20" />
-    <path d="M 574,440.96 L 575.92,440 L 575.92,430 L 574,430.96 Z" fill="#2C1E17" />
-    <path d="M 574,429.04 L 575.92,430 L 574,430.96 L 572.08,430 Z" fill="#4E3629" />
+    <ellipse cx="550" cy="430" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 548.08,428 L 550,428.96 L 550,418.96 L 548.08,418 Z" fill="#3D2A20" />
+    <path d="M 550,428.96 L 551.92,428 L 551.92,418 L 550,418.96 Z" fill="#2C1E17" />
+    <path d="M 550,417.04 L 551.92,418 L 550,418.96 L 548.08,418 Z" fill="#4E3629" />
   
-          <path d="M 566,430 L 582,430 L 574,417 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 574,430 L 582,430 L 574,417 Z" fill="#000000" opacity="0.12" />
+          <path d="M 542,418 L 558,418 L 550,405 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 550,418 L 558,418 L 550,405 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="550" cy="454" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 548.08,452 L 550,452.96 L 550,434.96 L 548.08,434 Z" fill="#3D2A20" />
-    <path d="M 550,452.96 L 551.92,452 L 551.92,434 L 550,434.96 Z" fill="#2C1E17" />
-    <path d="M 550,433.04 L 551.92,434 L 550,434.96 L 548.08,434 Z" fill="#4E3629" />
+    <ellipse cx="526" cy="442" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 524.08,440 L 526,440.96 L 526,422.96 L 524.08,422 Z" fill="#3D2A20" />
+    <path d="M 526,440.96 L 527.92,440 L 527.92,422 L 526,422.96 Z" fill="#2C1E17" />
+    <path d="M 526,421.04 L 527.92,422 L 526,422.96 L 524.08,422 Z" fill="#4E3629" />
   
-          <path d="M 528.4,434 L 571.6,434 L 550,410.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 550,434 L 571.6,434 L 550,410.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 504.4,422 L 547.6,422 L 526,398.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 526,422 L 547.6,422 L 526,398.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 539.2,423.2 L 560.8,423.2 L 550,399.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 550,423.2 L 560.8,423.2 L 550,399.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 515.2,411.2 L 536.8,411.2 L 526,387.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 526,411.2 L 536.8,411.2 L 526,387.8 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="526" cy="466" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 524.08,464 L 526,464.96 L 526,453.35999999999996 L 524.08,452.4 Z" fill="#3D2A20" />
-    <path d="M 526,464.96 L 527.92,464 L 527.92,452.4 L 526,453.35999999999996 Z" fill="#2C1E17" />
-    <path d="M 526,451.44 L 527.92,452.4 L 526,453.35999999999996 L 524.08,452.4 Z" fill="#4E3629" />
+    <ellipse cx="502" cy="454" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 500.08,452 L 502,452.96 L 502,441.35999999999996 L 500.08,440.4 Z" fill="#3D2A20" />
+    <path d="M 502,452.96 L 503.92,452 L 503.92,440.4 L 502,441.35999999999996 Z" fill="#2C1E17" />
+    <path d="M 502,439.44 L 503.92,440.4 L 502,441.35999999999996 L 500.08,440.4 Z" fill="#4E3629" />
   
-          <path d="M 516.72,452.4 L 535.28,452.4 L 526,437.32 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 526,452.4 L 535.28,452.4 L 526,437.32 Z" fill="#000000" opacity="0.12" />
+          <path d="M 492.72,440.4 L 511.28,440.4 L 502,425.32 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 502,440.4 L 511.28,440.4 L 502,425.32 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="502" cy="478" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
-    <path d="M 500.08,476 L 502,476.96 L 502,463.76 L 500.08,462.8 Z" fill="#3D2A20" />
-    <path d="M 502,476.96 L 503.92,476 L 503.92,462.8 L 502,463.76 Z" fill="#2C1E17" />
-    <path d="M 502,461.84000000000003 L 503.92,462.8 L 502,463.76 L 500.08,462.8 Z" fill="#4E3629" />
+    <ellipse cx="478" cy="466" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
+    <path d="M 476.08,464 L 478,464.96 L 478,451.76 L 476.08,450.8 Z" fill="#3D2A20" />
+    <path d="M 478,464.96 L 479.92,464 L 479.92,450.8 L 478,451.76 Z" fill="#2C1E17" />
+    <path d="M 478,449.84000000000003 L 479.92,450.8 L 478,451.76 L 476.08,450.8 Z" fill="#4E3629" />
   
-          <path d="M 491.44,462.8 L 512.56,462.8 L 502,445.64 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 502,462.8 L 512.56,462.8 L 502,445.64 Z" fill="#000000" opacity="0.12" />
+          <path d="M 467.44,450.8 L 488.56,450.8 L 478,433.64 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 478,450.8 L 488.56,450.8 L 478,433.64 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="478" cy="490" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 476.08,488 L 478,488.96 L 478,477.35999999999996 L 476.08,476.4 Z" fill="#3D2A20" />
-    <path d="M 478,488.96 L 479.92,488 L 479.92,476.4 L 478,477.35999999999996 Z" fill="#2C1E17" />
-    <path d="M 478,475.44 L 479.92,476.4 L 478,477.35999999999996 L 476.08,476.4 Z" fill="#4E3629" />
+    <ellipse cx="454" cy="478" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 452.08,476 L 454,476.96 L 454,465.35999999999996 L 452.08,464.4 Z" fill="#3D2A20" />
+    <path d="M 454,476.96 L 455.92,476 L 455.92,464.4 L 454,465.35999999999996 Z" fill="#2C1E17" />
+    <path d="M 454,463.44 L 455.92,464.4 L 454,465.35999999999996 L 452.08,464.4 Z" fill="#4E3629" />
   
-          <path d="M 468.72,476.4 L 487.28,476.4 L 478,461.32 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 478,476.4 L 487.28,476.4 L 478,461.32 Z" fill="#000000" opacity="0.12" />
+          <path d="M 444.72,464.4 L 463.28,464.4 L 454,449.32 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 454,464.4 L 463.28,464.4 L 454,449.32 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="454" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 452.08,500 L 454,500.96 L 454,482.96 L 452.08,482 Z" fill="#3D2A20" />
-    <path d="M 454,500.96 L 455.92,500 L 455.92,482 L 454,482.96 Z" fill="#2C1E17" />
-    <path d="M 454,481.04 L 455.92,482 L 454,482.96 L 452.08,482 Z" fill="#4E3629" />
+    <ellipse cx="430" cy="490" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 428.08,488 L 430,488.96 L 430,470.96 L 428.08,470 Z" fill="#3D2A20" />
+    <path d="M 430,488.96 L 431.92,488 L 431.92,470 L 430,470.96 Z" fill="#2C1E17" />
+    <path d="M 430,469.04 L 431.92,470 L 430,470.96 L 428.08,470 Z" fill="#4E3629" />
   
-          <path d="M 427,482 L 481,482 L 454,458.6 Z" fill="url(#leaves-lvl4)" />
-          <path d="M 454,482 L 481,482 L 454,458.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 403,470 L 457,470 L 430,446.6 Z" fill="url(#leaves-lvl4)" />
+          <path d="M 430,470 L 457,470 L 430,446.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 436,471.2 L 472,471.2 L 454,447.8 Z" fill="url(#leaves-lvl4)" />
-          <path d="M 454,471.2 L 472,471.2 L 454,447.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 412,459.2 L 448,459.2 L 430,435.8 Z" fill="url(#leaves-lvl4)" />
+          <path d="M 430,459.2 L 448,459.2 L 430,435.8 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 445,460.4 L 463,460.4 L 454,437 Z" fill="url(#leaves-lvl4)" />
-          <path d="M 454,460.4 L 463,460.4 L 454,437 Z" fill="#000000" opacity="0.12" />
+          <path d="M 421,448.4 L 439,448.4 L 430,425 Z" fill="url(#leaves-lvl4)" />
+          <path d="M 430,448.4 L 439,448.4 L 430,425 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="430" cy="514" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 428.08,512 L 430,512.96 L 430,494.96000000000004 L 428.08,494 Z" fill="#3D2A20" />
-    <path d="M 430,512.96 L 431.92,512 L 431.92,494 L 430,494.96000000000004 Z" fill="#2C1E17" />
-    <path d="M 430,493.04 L 431.92,494 L 430,494.96000000000004 L 428.08,494 Z" fill="#4E3629" />
+    <ellipse cx="406" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 404.08,500 L 406,500.96 L 406,482.96 L 404.08,482 Z" fill="#3D2A20" />
+    <path d="M 406,500.96 L 407.92,500 L 407.92,482 L 406,482.96 Z" fill="#2C1E17" />
+    <path d="M 406,481.04 L 407.92,482 L 406,482.96 L 404.08,482 Z" fill="#4E3629" />
   
-          <path d="M 408.4,494 L 451.6,494 L 430,470.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 430,494 L 451.6,494 L 430,470.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 384.4,482 L 427.6,482 L 406,458.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 406,482 L 427.6,482 L 406,458.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 419.2,483.2 L 440.8,483.2 L 430,459.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 430,483.2 L 440.8,483.2 L 430,459.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 395.2,471.2 L 416.8,471.2 L 406,447.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 406,471.2 L 416.8,471.2 L 406,447.8 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="574" cy="466" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
-    <path d="M 570.16,464 L 574,465.92 L 574,446.48 L 570.16,444.56 Z" fill="url(#redwood-trunk)" />
-    <path d="M 574,465.92 L 577.84,464 L 577.84,444.56 L 574,446.48 Z" fill="#5D3320" />
-    <path d="M 574,442.64 L 577.84,444.56 L 574,446.48 L 570.16,444.56 Z" fill="#8C4F35" />
+    <ellipse cx="550" cy="454" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
+    <path d="M 546.16,452 L 550,453.92 L 550,434.48 L 546.16,432.56 Z" fill="url(#redwood-trunk)" />
+    <path d="M 550,453.92 L 553.84,452 L 553.84,432.56 L 550,434.48 Z" fill="#5D3320" />
+    <path d="M 550,430.64 L 553.84,432.56 L 550,434.48 L 546.16,432.56 Z" fill="#8C4F35" />
   
-    <ellipse cx="526" cy="490" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 522.16,488 L 526,489.92 L 526,457.52000000000004 L 522.16,455.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 526,489.92 L 529.84,488 L 529.84,455.6 L 526,457.52000000000004 Z" fill="#5D3320" />
-    <path d="M 526,453.68 L 529.84,455.6 L 526,457.52000000000004 L 522.16,455.6 Z" fill="#8C4F35" />
+    <ellipse cx="502" cy="478" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 498.16,476 L 502,477.92 L 502,445.52000000000004 L 498.16,443.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 502,477.92 L 505.84,476 L 505.84,443.6 L 502,445.52000000000004 Z" fill="#5D3320" />
+    <path d="M 502,441.68 L 505.84,443.6 L 502,445.52000000000004 L 498.16,443.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="478" cy="514" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 474.16,512 L 478,513.92 L 478,481.52 L 474.16,479.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 478,513.92 L 481.84,512 L 481.84,479.6 L 478,481.52 Z" fill="#5D3320" />
-    <path d="M 478,477.68 L 481.84,479.6 L 478,481.52 L 474.16,479.6 Z" fill="#8C4F35" />
+    <ellipse cx="454" cy="502" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 450.16,500 L 454,501.92 L 454,469.52000000000004 L 450.16,467.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 454,501.92 L 457.84,500 L 457.84,467.6 L 454,469.52000000000004 Z" fill="#5D3320" />
+    <path d="M 454,465.68 L 457.84,467.6 L 454,469.52000000000004 L 450.16,467.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="454" cy="526" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 450.16,524 L 454,525.92 L 454,493.52 L 450.16,491.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 454,525.92 L 457.84,524 L 457.84,491.6 L 454,493.52 Z" fill="#5D3320" />
-    <path d="M 454,489.68000000000006 L 457.84,491.6 L 454,493.52 L 450.16,491.6 Z" fill="#8C4F35" />
+    <ellipse cx="430" cy="514" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 426.16,512 L 430,513.92 L 430,481.52 L 426.16,479.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 430,513.92 L 433.84,512 L 433.84,479.6 L 430,481.52 Z" fill="#5D3320" />
+    <path d="M 430,477.68 L 433.84,479.6 L 430,481.52 L 426.16,479.6 Z" fill="#8C4F35" />
   
+    <ellipse cx="526" cy="490" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
+    <path d="M 522.16,488 L 526,489.92 L 526,467.6 L 522.16,465.68 Z" fill="url(#redwood-trunk)" />
+    <path d="M 526,489.92 L 529.84,488 L 529.84,465.68 L 526,467.6 Z" fill="#5D3320" />
+    <path d="M 526,463.76 L 529.84,465.68 L 526,467.6 L 522.16,465.68 Z" fill="#8C4F35" />
+  
+    <ellipse cx="502" cy="502" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="502" cy="494" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="478" cy="514" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="478" cy="506" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="620" cy="465" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 619,464 C 619,462 623,461 624,464 C 624,465 621,465 619,464 Z" fill="#78716c" />
         
-    <ellipse cx="550" cy="502" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
-    <path d="M 546.16,500 L 550,501.92 L 550,479.6 L 546.16,477.68 Z" fill="url(#redwood-trunk)" />
-    <path d="M 550,501.92 L 553.84,500 L 553.84,477.68 L 550,479.6 Z" fill="#5D3320" />
-    <path d="M 550,475.76 L 553.84,477.68 L 550,479.6 L 546.16,477.68 Z" fill="#8C4F35" />
-  
-    <ellipse cx="526" cy="514" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="526" cy="506" r="5.8" fill="url(#leaves-lvl2)" />
-    <ellipse cx="502" cy="526" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="502" cy="518" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
+    <ellipse cx="550" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="550" cy="494" r="9" fill="url(#leaves-lvl2)" />
     
-          <ellipse cx="620" cy="489" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 619,488 C 619,486 623,485 624,488 C 624,489 621,489 619,488 Z" fill="#78716c" />
+          <ellipse cx="500" cy="525" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 499,524 C 499,522 503,521 504,524 C 504,525 501,525 499,524 Z" fill="#78716c" />
         
-    
-          <ellipse cx="596" cy="501" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 595,500 C 595,498 599,497 600,500 C 600,501 597,501 595,500 Z" fill="#78716c" />
-        
-    <ellipse cx="574" cy="514" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="574" cy="506" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="646" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 644.08,500 L 646,500.96 L 646,482.96 L 644.08,482 Z" fill="#3D2A20" />
-    <path d="M 646,500.96 L 647.92,500 L 647.92,482 L 646,482.96 Z" fill="#2C1E17" />
-    <path d="M 646,481.04 L 647.92,482 L 646,482.96 L 644.08,482 Z" fill="#4E3629" />
+    <ellipse cx="622" cy="490" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 620.08,488 L 622,488.96 L 622,470.96 L 620.08,470 Z" fill="#3D2A20" />
+    <path d="M 622,488.96 L 623.92,488 L 623.92,470 L 622,470.96 Z" fill="#2C1E17" />
+    <path d="M 622,469.04 L 623.92,470 L 622,470.96 L 620.08,470 Z" fill="#4E3629" />
   
-          <path d="M 624.4,482 L 667.6,482 L 646,458.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 646,482 L 667.6,482 L 646,458.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 600.4,470 L 643.6,470 L 622,446.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 622,470 L 643.6,470 L 622,446.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 635.2,471.2 L 656.8,471.2 L 646,447.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 646,471.2 L 656.8,471.2 L 646,447.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 611.2,459.2 L 632.8,459.2 L 622,435.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 622,459.2 L 632.8,459.2 L 622,435.8 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="598" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 596.08,500 L 598,500.96 L 598,482.96 L 596.08,482 Z" fill="#3D2A20" />
+    <path d="M 598,500.96 L 599.92,500 L 599.92,482 L 598,482.96 Z" fill="#2C1E17" />
+    <path d="M 598,481.04 L 599.92,482 L 598,482.96 L 596.08,482 Z" fill="#4E3629" />
+  
+          <path d="M 576.4,482 L 619.6,482 L 598,458.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 598,482 L 619.6,482 L 598,458.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 587.2,471.2 L 608.8,471.2 L 598,447.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 598,471.2 L 608.8,471.2 L 598,447.8 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="574" cy="514" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" />
+    <path d="M 572.08,512 L 574,512.96 L 574,496.56000000000006 L 572.08,495.6 Z" fill="#3D2A20" />
+    <path d="M 574,512.96 L 575.92,512 L 575.92,495.6 L 574,496.56000000000006 Z" fill="#2C1E17" />
+    <path d="M 574,494.64000000000004 L 575.92,495.6 L 574,496.56000000000006 L 572.08,495.6 Z" fill="#4E3629" />
+  
+          <path d="M 560.88,495.6 L 587.12,495.6 L 574,474.28000000000003 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 574,495.6 L 587.12,495.6 L 574,474.28000000000003 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="550" cy="526" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
+    <path d="M 548.08,524 L 550,524.96 L 550,511.76000000000005 L 548.08,510.8 Z" fill="#3D2A20" />
+    <path d="M 550,524.96 L 551.92,524 L 551.92,510.8 L 550,511.76000000000005 Z" fill="#2C1E17" />
+    <path d="M 550,509.84 L 551.92,510.8 L 550,511.76000000000005 L 548.08,510.8 Z" fill="#4E3629" />
+  
+          <path d="M 539.44,510.8 L 560.56,510.8 L 550,493.64 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 550,510.8 L 560.56,510.8 L 550,493.64 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="526" cy="538" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
+    <path d="M 524.08,536 L 526,536.96 L 526,526.1600000000001 L 524.08,525.2 Z" fill="#3D2A20" />
+    <path d="M 526,536.96 L 527.92,536 L 527.92,525.2 L 526,526.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 526,524.24 L 527.92,525.2 L 526,526.1600000000001 L 524.08,525.2 Z" fill="#4E3629" />
+  
+          <path d="M 517.36,525.2 L 534.64,525.2 L 526,511.16 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 526,525.2 L 534.64,525.2 L 526,511.16 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="502" cy="550" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 500.08,548 L 502,548.96 L 502,530.96 L 500.08,530 Z" fill="#3D2A20" />
+    <path d="M 502,548.96 L 503.92,548 L 503.92,530 L 502,530.96 Z" fill="#2C1E17" />
+    <path d="M 502,529.04 L 503.92,530 L 502,530.96 L 500.08,530 Z" fill="#4E3629" />
+  
+          <path d="M 487.6,530 L 516.4,530 L 502,506.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 502,530 L 516.4,530 L 502,506.6 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="670" cy="490" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 668.08,488 L 670,488.96 L 670,470.96 L 668.08,470 Z" fill="#3D2A20" />
+    <path d="M 670,488.96 L 671.92,488 L 671.92,470 L 670,470.96 Z" fill="#2C1E17" />
+    <path d="M 670,469.04 L 671.92,470 L 670,470.96 L 668.08,470 Z" fill="#4E3629" />
+  
+          <path d="M 648.4,470 L 691.6,470 L 670,446.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 670,470 L 691.6,470 L 670,446.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 659.2,459.2 L 680.8,459.2 L 670,435.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 670,459.2 L 680.8,459.2 L 670,435.8 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="646" cy="502" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
+    <path d="M 644.08,500 L 646,500.96 L 646,483.76 L 644.08,482.8 Z" fill="#3D2A20" />
+    <path d="M 646,500.96 L 647.92,500 L 647.92,482.8 L 646,483.76 Z" fill="#2C1E17" />
+    <path d="M 646,481.84000000000003 L 647.92,482.8 L 646,483.76 L 644.08,482.8 Z" fill="#4E3629" />
+  
+          <path d="M 632.24,482.8 L 659.76,482.8 L 646,460.44 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 646,482.8 L 659.76,482.8 L 646,460.44 Z" fill="#000000" opacity="0.12" />
         
     <ellipse cx="622" cy="514" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
     <path d="M 620.08,512 L 622,512.96 L 622,494.96000000000004 L 620.08,494 Z" fill="#3D2A20" />
     <path d="M 622,512.96 L 623.92,512 L 623.92,494 L 622,494.96000000000004 Z" fill="#2C1E17" />
     <path d="M 622,493.04 L 623.92,494 L 622,494.96000000000004 L 620.08,494 Z" fill="#4E3629" />
   
-          <path d="M 600.4,494 L 643.6,494 L 622,470.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 622,494 L 643.6,494 L 622,470.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 607.6,494 L 636.4,494 L 622,470.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 622,494 L 636.4,494 L 622,470.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 611.2,483.2 L 632.8,483.2 L 622,459.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 622,483.2 L 632.8,483.2 L 622,459.8 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="598" cy="526" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" />
-    <path d="M 596.08,524 L 598,524.96 L 598,508.56000000000006 L 596.08,507.6 Z" fill="#3D2A20" />
-    <path d="M 598,524.96 L 599.92,524 L 599.92,507.6 L 598,508.56000000000006 Z" fill="#2C1E17" />
-    <path d="M 598,506.64 L 599.92,507.6 L 598,508.56000000000006 L 596.08,507.6 Z" fill="#4E3629" />
+    <ellipse cx="598" cy="526" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 594.16,524 L 598,525.92 L 598,493.52 L 594.16,491.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 598,525.92 L 601.84,524 L 601.84,491.6 L 598,493.52 Z" fill="#5D3320" />
+    <path d="M 598,489.68000000000006 L 601.84,491.6 L 598,493.52 L 594.16,491.6 Z" fill="#8C4F35" />
   
-          <path d="M 584.88,507.6 L 611.12,507.6 L 598,486.28000000000003 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 598,507.6 L 611.12,507.6 L 598,486.28000000000003 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="574" cy="538" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
-    <path d="M 572.08,536 L 574,536.96 L 574,523.76 L 572.08,522.8 Z" fill="#3D2A20" />
-    <path d="M 574,536.96 L 575.92,536 L 575.92,522.8 L 574,523.76 Z" fill="#2C1E17" />
-    <path d="M 574,521.8399999999999 L 575.92,522.8 L 574,523.76 L 572.08,522.8 Z" fill="#4E3629" />
+    <ellipse cx="574" cy="538" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 570.16,536 L 574,537.92 L 574,505.52 L 570.16,503.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 574,537.92 L 577.84,536 L 577.84,503.6 L 574,505.52 Z" fill="#5D3320" />
+    <path d="M 574,501.68000000000006 L 577.84,503.6 L 574,505.52 L 570.16,503.6 Z" fill="#8C4F35" />
   
-          <path d="M 563.44,522.8 L 584.56,522.8 L 574,505.63999999999993 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 574,522.8 L 584.56,522.8 L 574,505.63999999999993 Z" fill="#000000" opacity="0.12" />
+    
+          <ellipse cx="692" cy="501" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 691,500 C 691,498 695,497 696,500 C 696,501 693,501 691,500 Z" fill="#78716c" />
         
-    <ellipse cx="550" cy="550" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
-    <path d="M 548.08,548 L 550,548.96 L 550,538.1600000000001 L 548.08,537.2 Z" fill="#3D2A20" />
-    <path d="M 550,548.96 L 551.92,548 L 551.92,537.2 L 550,538.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 550,536.24 L 551.92,537.2 L 550,538.1600000000001 L 548.08,537.2 Z" fill="#4E3629" />
-  
-          <path d="M 541.36,537.2 L 558.64,537.2 L 550,523.1600000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 550,537.2 L 558.64,537.2 L 550,523.1600000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="526" cy="562" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 524.08,560 L 526,560.96 L 526,542.96 L 524.08,542 Z" fill="#3D2A20" />
-    <path d="M 526,560.96 L 527.92,560 L 527.92,542 L 526,542.96 Z" fill="#2C1E17" />
-    <path d="M 526,541.04 L 527.92,542 L 526,542.96 L 524.08,542 Z" fill="#4E3629" />
-  
-          <path d="M 511.6,542 L 540.4,542 L 526,518.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 526,542 L 540.4,542 L 526,518.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="694" cy="502" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 692.08,500 L 694,500.96 L 694,482.96 L 692.08,482 Z" fill="#3D2A20" />
-    <path d="M 694,500.96 L 695.92,500 L 695.92,482 L 694,482.96 Z" fill="#2C1E17" />
-    <path d="M 694,481.04 L 695.92,482 L 694,482.96 L 692.08,482 Z" fill="#4E3629" />
-  
-          <path d="M 672.4,482 L 715.6,482 L 694,458.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 694,482 L 715.6,482 L 694,458.6 Z" fill="#000000" opacity="0.12" />
-        
-          <path d="M 683.2,471.2 L 704.8,471.2 L 694,447.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 694,471.2 L 704.8,471.2 L 694,447.8 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="670" cy="514" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
-    <path d="M 668.08,512 L 670,512.96 L 670,495.76000000000005 L 668.08,494.8 Z" fill="#3D2A20" />
-    <path d="M 670,512.96 L 671.92,512 L 671.92,494.8 L 670,495.76000000000005 Z" fill="#2C1E17" />
-    <path d="M 670,493.84000000000003 L 671.92,494.8 L 670,495.76000000000005 L 668.08,494.8 Z" fill="#4E3629" />
-  
-          <path d="M 656.24,494.8 L 683.76,494.8 L 670,472.44 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 670,494.8 L 683.76,494.8 L 670,472.44 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="646" cy="526" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 644.08,524 L 646,524.96 L 646,506.96000000000004 L 644.08,506 Z" fill="#3D2A20" />
-    <path d="M 646,524.96 L 647.92,524 L 647.92,506 L 646,506.96000000000004 Z" fill="#2C1E17" />
-    <path d="M 646,505.03999999999996 L 647.92,506 L 646,506.96000000000004 L 644.08,506 Z" fill="#4E3629" />
-  
-          <path d="M 631.6,506 L 660.4,506 L 646,482.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 646,506 L 660.4,506 L 646,482.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="622" cy="538" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 618.16,536 L 622,537.92 L 622,505.52 L 618.16,503.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 622,537.92 L 625.84,536 L 625.84,503.6 L 622,505.52 Z" fill="#5D3320" />
-    <path d="M 622,501.68000000000006 L 625.84,503.6 L 622,505.52 L 618.16,503.6 Z" fill="#8C4F35" />
-  
     <ellipse cx="598" cy="550" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 594.16,548 L 598,549.92 L 598,517.52 L 594.16,515.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 598,549.92 L 601.84,548 L 601.84,515.6 L 598,517.52 Z" fill="#5D3320" />
@@ -878,720 +860,725 @@
           <ellipse cx="572" cy="561" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 571,560 C 571,558 575,557 576,560 C 576,561 573,561 571,560 Z" fill="#78716c" />
         
-    
-          <ellipse cx="548" cy="573" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 547,572 C 547,570 551,569 552,572 C 552,573 549,573 547,572 Z" fill="#78716c" />
+    <ellipse cx="550" cy="574" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="550" cy="566" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="694" cy="526" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 691.6,524 L 694,525.2 L 694,503.6 L 691.6,502.4 Z" fill="#452E1D" />
+    <path d="M 694,525.2 L 696.4,524 L 696.4,502.4 L 694,503.6 Z" fill="#372417" />
+    <path d="M 694,501.19999999999993 L 696.4,502.4 L 694,503.6 L 691.6,502.4 Z" fill="#5A3D28" />
+  
+          <circle cx="683.2" cy="498.79999999999995" r="12.96" fill="url(#leaves-lvl2)" />
+          <circle cx="704.8" cy="500.59999999999997" r="12.96" fill="url(#leaves-lvl2)" />
+          <circle cx="694" cy="484.4" r="16.2" fill="url(#leaves-lvl2)" />
+          <circle cx="694" cy="502.4" r="16.2" fill="url(#leaves-lvl2)" />
+          <circle cx="690.4" cy="495.2" r="11.339999999999998" fill="#ffffff" opacity="0.08" />
         
     
           <ellipse cx="668" cy="537" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 667,536 C 667,534 671,533 672,536 C 672,537 669,537 667,536 Z" fill="#78716c" />
         
-    <ellipse cx="622" cy="562" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 618.16,560 L 622,561.92 L 622,529.52 L 618.16,527.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 622,561.92 L 625.84,560 L 625.84,527.6 L 622,529.52 Z" fill="#5D3320" />
-    <path d="M 622,525.6800000000001 L 625.84,527.6 L 622,529.52 L 618.16,527.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="574" cy="586" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="574" cy="578" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="718" cy="538" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 715.6,536 L 718,537.2 L 718,515.6 L 715.6,514.4 Z" fill="#452E1D" />
-    <path d="M 718,537.2 L 720.4,536 L 720.4,514.4 L 718,515.6 Z" fill="#372417" />
-    <path d="M 718,513.1999999999999 L 720.4,514.4 L 718,515.6 L 715.6,514.4 Z" fill="#5A3D28" />
-  
-          <circle cx="707.2" cy="510.79999999999995" r="12.96" fill="url(#leaves-lvl2)" />
-          <circle cx="728.8" cy="512.6" r="12.96" fill="url(#leaves-lvl2)" />
-          <circle cx="718" cy="496.4" r="16.2" fill="url(#leaves-lvl2)" />
-          <circle cx="718" cy="514.4" r="16.2" fill="url(#leaves-lvl2)" />
-          <circle cx="714.4" cy="507.2" r="11.339999999999998" fill="#ffffff" opacity="0.08" />
-        
-    
-          <ellipse cx="644" cy="573" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 643,572 C 643,570 647,569 648,572 C 648,573 645,573 643,572 Z" fill="#78716c" />
-        
-    
-          <ellipse cx="764" cy="537" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 763,536 C 763,534 767,533 768,536 C 768,537 765,537 763,536 Z" fill="#78716c" />
-        
-    
-          <ellipse cx="740" cy="549" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 739,548 C 739,546 743,545 744,548 C 744,549 741,549 739,548 Z" fill="#78716c" />
-        
-    <ellipse cx="670" cy="586" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="670" cy="578" r="7" fill="url(#leaves-lvl2)" />
-    <ellipse cx="646" cy="598" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="646" cy="590" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="646" cy="574" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="646" cy="566" r="7" fill="url(#leaves-lvl2)" />
+    <ellipse cx="622" cy="586" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="622" cy="578" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="766" cy="538" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="766" cy="530" r="6.2" fill="url(#leaves-lvl2)" />
+    <ellipse cx="742" cy="550" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="742" cy="542" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="718" cy="562" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="718" cy="554" r="7" fill="url(#leaves-lvl2)" />
+    <ellipse cx="694" cy="574" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="694" cy="566" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="646" cy="598" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" /><circle cx="646" cy="590" r="8.200000000000001" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="620" cy="609" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 619,608 C 619,606 623,605 624,608 C 624,609 621,609 619,608 Z" fill="#78716c" />
         
-    <ellipse cx="790" cy="550" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="790" cy="542" r="6.2" fill="url(#leaves-lvl2)" />
-    <ellipse cx="766" cy="562" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="766" cy="554" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="742" cy="574" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="742" cy="566" r="7" fill="url(#leaves-lvl2)" />
-    <ellipse cx="718" cy="586" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="718" cy="578" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="670" cy="610" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" /><circle cx="670" cy="602" r="8.200000000000001" fill="url(#leaves-lvl2)" />
-    <ellipse cx="814" cy="562" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 812.08,560 L 814,560.96 L 814,542.96 L 812.08,542 Z" fill="#3D2A20" />
-    <path d="M 814,560.96 L 815.92,560 L 815.92,542 L 814,542.96 Z" fill="#2C1E17" />
-    <path d="M 814,541.04 L 815.92,542 L 814,542.96 L 812.08,542 Z" fill="#4E3629" />
+    <ellipse cx="790" cy="550" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 788.08,548 L 790,548.96 L 790,530.96 L 788.08,530 Z" fill="#3D2A20" />
+    <path d="M 790,548.96 L 791.92,548 L 791.92,530 L 790,530.96 Z" fill="#2C1E17" />
+    <path d="M 790,529.04 L 791.92,530 L 790,530.96 L 788.08,530 Z" fill="#4E3629" />
   
-          <path d="M 799.6,542 L 828.4,542 L 814,518.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 814,542 L 828.4,542 L 814,518.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 775.6,530 L 804.4,530 L 790,506.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 790,530 L 804.4,530 L 790,506.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="790" cy="574" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
-    <path d="M 788.08,572 L 790,572.96 L 790,558.96 L 788.08,558 Z" fill="#3D2A20" />
-    <path d="M 790,572.96 L 791.92,572 L 791.92,558 L 790,558.96 Z" fill="#2C1E17" />
-    <path d="M 790,557.04 L 791.92,558 L 790,558.96 L 788.08,558 Z" fill="#4E3629" />
+    <ellipse cx="766" cy="562" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
+    <path d="M 764.08,560 L 766,560.96 L 766,546.96 L 764.08,546 Z" fill="#3D2A20" />
+    <path d="M 766,560.96 L 767.92,560 L 767.92,546 L 766,546.96 Z" fill="#2C1E17" />
+    <path d="M 766,545.04 L 767.92,546 L 766,546.96 L 764.08,546 Z" fill="#4E3629" />
   
-          <path d="M 778.8,558 L 801.2,558 L 790,539.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 790,558 L 801.2,558 L 790,539.8 Z" fill="#000000" opacity="0.12" />
+          <path d="M 754.8,546 L 777.2,546 L 766,527.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 766,546 L 777.2,546 L 766,527.8 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="742" cy="598" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
-    <path d="M 740.08,596 L 742,596.96 L 742,586.1600000000001 L 740.08,585.2 Z" fill="#3D2A20" />
-    <path d="M 742,596.96 L 743.92,596 L 743.92,585.2 L 742,586.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 742,584.24 L 743.92,585.2 L 742,586.1600000000001 L 740.08,585.2 Z" fill="#4E3629" />
+    
+          <ellipse cx="740" cy="573" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 739,572 C 739,570 743,569 744,572 C 744,573 741,573 739,572 Z" fill="#78716c" />
+        
+    <ellipse cx="718" cy="586" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
+    <path d="M 716.08,584 L 718,584.96 L 718,574.1600000000001 L 716.08,573.2 Z" fill="#3D2A20" />
+    <path d="M 718,584.96 L 719.92,584 L 719.92,573.2 L 718,574.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 718,572.24 L 719.92,573.2 L 718,574.1600000000001 L 716.08,573.2 Z" fill="#4E3629" />
   
-          <path d="M 733.36,585.2 L 750.64,585.2 L 742,571.1600000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 742,585.2 L 750.64,585.2 L 742,571.1600000000001 Z" fill="#000000" opacity="0.12" />
+          <path d="M 709.36,573.2 L 726.64,573.2 L 718,559.1600000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 718,573.2 L 726.64,573.2 L 718,559.1600000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="670" cy="610" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 668.08,608 L 670,608.96 L 670,597.36 L 668.08,596.4 Z" fill="#3D2A20" />
+    <path d="M 670,608.96 L 671.92,608 L 671.92,596.4 L 670,597.36 Z" fill="#2C1E17" />
+    <path d="M 670,595.4399999999999 L 671.92,596.4 L 670,597.36 L 668.08,596.4 Z" fill="#4E3629" />
+  
+          <path d="M 660.72,596.4 L 679.28,596.4 L 670,581.3199999999999 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 670,596.4 L 679.28,596.4 L 670,581.3199999999999 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="790" cy="574" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
+    <path d="M 788.08,572 L 790,572.96 L 790,558.1600000000001 L 788.08,557.2 Z" fill="#3D2A20" />
+    <path d="M 790,572.96 L 791.92,572 L 791.92,557.2 L 790,558.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 790,556.24 L 791.92,557.2 L 790,558.1600000000001 L 788.08,557.2 Z" fill="#4E3629" />
+  
+          <path d="M 778.16,557.2 L 801.84,557.2 L 790,537.96 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 790,557.2 L 801.84,557.2 L 790,537.96 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="766" cy="586" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 760.24,584 L 766,586.88 L 766,518.48 L 760.24,515.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 766,586.88 L 771.76,584 L 771.76,515.6 L 766,518.48 Z" fill="#5D3320" />
+    <path d="M 766,512.72 L 771.76,515.6 L 766,518.48 L 760.24,515.6 Z" fill="#8C4F35" />
+  
+          <path d="M 744.4,524.6 C 744.4,493.1 766,470.6 766,470.6 C 766,470.6 787.6,493.1 787.6,524.6 C 787.6,542.6 744.4,542.6 744.4,524.6 Z" 
+                fill="url(#leaves-sequoia)" />
+          <path d="M 766,470.6 C 766,470.6 787.6,493.1 787.6,524.6 C 787.6,542.6 766,542.6 L 766,470.6 Z" 
+                fill="#000000" opacity="0.18" />
         
     
           <ellipse cx="716" cy="609" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 715,608 C 715,606 719,605 720,608 C 720,609 717,609 715,608 Z" fill="#78716c" />
         
-    <ellipse cx="694" cy="622" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 692.08,620 L 694,620.96 L 694,609.36 L 692.08,608.4 Z" fill="#3D2A20" />
-    <path d="M 694,620.96 L 695.92,620 L 695.92,608.4 L 694,609.36 Z" fill="#2C1E17" />
-    <path d="M 694,607.4399999999999 L 695.92,608.4 L 694,609.36 L 692.08,608.4 Z" fill="#4E3629" />
+    <ellipse cx="694" cy="622" rx="20.64" ry="10.32" fill="url(#tree-shadow)" />
+    <path d="M 690.16,620 L 694,621.92 L 694,590.9599999999999 L 690.16,589.04 Z" fill="url(#redwood-trunk)" />
+    <path d="M 694,621.92 L 697.84,620 L 697.84,589.04 L 694,590.9599999999999 Z" fill="#5D3320" />
+    <path d="M 694,587.12 L 697.84,589.04 L 694,590.9599999999999 L 690.16,589.04 Z" fill="#8C4F35" />
   
-          <path d="M 684.72,608.4 L 703.28,608.4 L 694,593.3199999999999 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 694,608.4 L 703.28,608.4 L 694,593.3199999999999 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="814" cy="586" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
-    <path d="M 812.08,584 L 814,584.96 L 814,570.1600000000001 L 812.08,569.2 Z" fill="#3D2A20" />
-    <path d="M 814,584.96 L 815.92,584 L 815.92,569.2 L 814,570.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 814,568.24 L 815.92,569.2 L 814,570.1600000000001 L 812.08,569.2 Z" fill="#4E3629" />
+    <ellipse cx="670" cy="634" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 666.16,632 L 670,633.92 L 670,601.52 L 666.16,599.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 670,633.92 L 673.84,632 L 673.84,599.6 L 670,601.52 Z" fill="#5D3320" />
+    <path d="M 670,597.6800000000001 L 673.84,599.6 L 670,601.52 L 666.16,599.6 Z" fill="#8C4F35" />
   
-          <path d="M 802.16,569.2 L 825.84,569.2 L 814,549.96 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 814,569.2 L 825.84,569.2 L 814,549.96 Z" fill="#000000" opacity="0.12" />
+    
+          <ellipse cx="812" cy="585" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 811,584 C 811,582 815,581 816,584 C 816,585 813,585 811,584 Z" fill="#78716c" />
         
     <ellipse cx="790" cy="598" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 784.24,596 L 790,598.88 L 790,530.48 L 784.24,527.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 790,598.88 L 795.76,596 L 795.76,527.6 L 790,530.48 Z" fill="#5D3320" />
-    <path d="M 790,524.72 L 795.76,527.6 L 790,530.48 L 784.24,527.6 Z" fill="#8C4F35" />
+    <path d="M 786.16,596 L 790,597.92 L 790,565.52 L 786.16,563.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 790,597.92 L 793.84,596 L 793.84,563.6 L 790,565.52 Z" fill="#5D3320" />
+    <path d="M 790,561.6800000000001 L 793.84,563.6 L 790,565.52 L 786.16,563.6 Z" fill="#8C4F35" />
   
-          <path d="M 768.4,536.6 C 768.4,505.1 790,482.6 790,482.6 C 790,482.6 811.6,505.1 811.6,536.6 C 811.6,554.6 768.4,554.6 768.4,536.6 Z" 
-                fill="url(#leaves-sequoia)" />
-          <path d="M 790,482.6 C 790,482.6 811.6,505.1 811.6,536.6 C 811.6,554.6 790,554.6 L 790,482.6 Z" 
-                fill="#000000" opacity="0.18" />
-        
-    <ellipse cx="718" cy="634" rx="20.64" ry="10.32" fill="url(#tree-shadow)" />
-    <path d="M 714.16,632 L 718,633.92 L 718,602.9599999999999 L 714.16,601.04 Z" fill="url(#redwood-trunk)" />
-    <path d="M 718,633.92 L 721.84,632 L 721.84,601.04 L 718,602.9599999999999 Z" fill="#5D3320" />
-    <path d="M 718,599.12 L 721.84,601.04 L 718,602.9599999999999 L 714.16,601.04 Z" fill="#8C4F35" />
-  
-    <ellipse cx="694" cy="646" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 690.16,644 L 694,645.92 L 694,613.52 L 690.16,611.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 694,645.92 L 697.84,644 L 697.84,611.6 L 694,613.52 Z" fill="#5D3320" />
-    <path d="M 694,609.6800000000001 L 697.84,611.6 L 694,613.52 L 690.16,611.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="814" cy="610" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 810.16,608 L 814,609.92 L 814,577.52 L 810.16,575.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 814,609.92 L 817.84,608 L 817.84,575.6 L 814,577.52 Z" fill="#5D3320" />
-    <path d="M 814,573.6800000000001 L 817.84,575.6 L 814,577.52 L 810.16,575.6 Z" fill="#8C4F35" />
-  
+    <ellipse cx="694" cy="646" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="694" cy="638" r="5" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="788" cy="621" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 787,620 C 787,618 791,617 792,620 C 792,621 789,621 787,620 Z" fill="#78716c" />
         
+    <ellipse cx="766" cy="634" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="766" cy="626" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
     <ellipse cx="718" cy="658" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="718" cy="650" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="790" cy="646" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="790" cy="638" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
-    
-          <ellipse cx="764" cy="657" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 763,656 C 763,654 767,653 768,656 C 768,657 765,657 763,656 Z" fill="#78716c" />
+    <ellipse cx="862" cy="610" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="862" cy="602" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="838" cy="622" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 836.08,620 L 838,620.96 L 838,602.96 L 836.08,602 Z" fill="#3D2A20" />
+    <path d="M 838,620.96 L 839.92,620 L 839.92,602 L 838,602.96 Z" fill="#2C1E17" />
+    <path d="M 838,601.04 L 839.92,602 L 838,602.96 L 836.08,602 Z" fill="#4E3629" />
+  
+          <path d="M 823.6,602 L 852.4,602 L 838,578.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 838,602 L 852.4,602 L 838,578.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="742" cy="670" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="742" cy="662" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="886" cy="622" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="886" cy="614" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="814" cy="634" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 812.08,632 L 814,632.96 L 814,614.96 L 812.08,614 Z" fill="#3D2A20" />
+    <path d="M 814,632.96 L 815.92,632 L 815.92,614 L 814,614.96 Z" fill="#2C1E17" />
+    <path d="M 814,613.04 L 815.92,614 L 814,614.96 L 812.08,614 Z" fill="#4E3629" />
+  
+          <path d="M 792.4,614 L 835.6,614 L 814,590.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 814,614 L 835.6,614 L 814,590.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 803.2,603.2 L 824.8,603.2 L 814,579.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 814,603.2 L 824.8,603.2 L 814,579.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="766" cy="658" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 764.08,656 L 766,656.96 L 766,638.96 L 764.08,638 Z" fill="#3D2A20" />
+    <path d="M 766,656.96 L 767.92,656 L 767.92,638 L 766,638.96 Z" fill="#2C1E17" />
+    <path d="M 766,637.04 L 767.92,638 L 766,638.96 L 764.08,638 Z" fill="#4E3629" />
+  
+          <path d="M 744.4,638 L 787.6,638 L 766,614.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 766,638 L 787.6,638 L 766,614.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 755.2,627.2 L 776.8,627.2 L 766,603.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 766,627.2 L 776.8,627.2 L 766,603.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="742" cy="670" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
+    <path d="M 740.08,668 L 742,668.96 L 742,656.5600000000001 L 740.08,655.6 Z" fill="#3D2A20" />
+    <path d="M 742,668.96 L 743.92,668 L 743.92,655.6 L 742,656.5600000000001 Z" fill="#2C1E17" />
+    <path d="M 742,654.64 L 743.92,655.6 L 742,656.5600000000001 L 740.08,655.6 Z" fill="#4E3629" />
+  
+          <path d="M 732.08,655.6 L 751.92,655.6 L 742,639.48 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 742,655.6 L 751.92,655.6 L 742,639.48 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="910" cy="610" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 908.08,608 L 910,608.96 L 910,590.96 L 908.08,590 Z" fill="#3D2A20" />
+    <path d="M 910,608.96 L 911.92,608 L 911.92,590 L 910,590.96 Z" fill="#2C1E17" />
+    <path d="M 910,589.04 L 911.92,590 L 910,590.96 L 908.08,590 Z" fill="#4E3629" />
+  
+          <path d="M 888.4,590 L 931.6,590 L 910,566.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 910,590 L 931.6,590 L 910,566.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 899.2,579.2 L 920.8,579.2 L 910,555.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 910,579.2 L 920.8,579.2 L 910,555.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    
+          <ellipse cx="884" cy="621" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 883,620 C 883,618 887,617 888,620 C 888,621 885,621 883,620 Z" fill="#78716c" />
+        
     <ellipse cx="862" cy="634" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
     <path d="M 860.08,632 L 862,632.96 L 862,614.96 L 860.08,614 Z" fill="#3D2A20" />
     <path d="M 862,632.96 L 863.92,632 L 863.92,614 L 862,614.96 Z" fill="#2C1E17" />
     <path d="M 862,613.04 L 863.92,614 L 862,614.96 L 860.08,614 Z" fill="#4E3629" />
   
-          <path d="M 847.6,614 L 876.4,614 L 862,590.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 862,614 L 876.4,614 L 862,590.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 840.4,614 L 883.6,614 L 862,590.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 862,614 L 883.6,614 L 862,590.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="838" cy="646" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 836.08,644 L 838,644.96 L 838,626.96 L 836.08,626 Z" fill="#3D2A20" />
-    <path d="M 838,644.96 L 839.92,644 L 839.92,626 L 838,626.96 Z" fill="#2C1E17" />
-    <path d="M 838,625.04 L 839.92,626 L 838,626.96 L 836.08,626 Z" fill="#4E3629" />
+          <path d="M 851.2,603.2 L 872.8,603.2 L 862,579.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 862,603.2 L 872.8,603.2 L 862,579.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="838" cy="646" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
+    <path d="M 836.08,644 L 838,644.96 L 838,630.96 L 836.08,630 Z" fill="#3D2A20" />
+    <path d="M 838,644.96 L 839.92,644 L 839.92,630 L 838,630.96 Z" fill="#2C1E17" />
+    <path d="M 838,629.04 L 839.92,630 L 838,630.96 L 836.08,630 Z" fill="#4E3629" />
   
-          <path d="M 816.4,626 L 859.6,626 L 838,602.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 838,626 L 859.6,626 L 838,602.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 826.8,630 L 849.2,630 L 838,611.8 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 838,630 L 849.2,630 L 838,611.8 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 827.2,615.2 L 848.8,615.2 L 838,591.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 838,615.2 L 848.8,615.2 L 838,591.8000000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="790" cy="670" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 788.08,668 L 790,668.96 L 790,650.96 L 788.08,650 Z" fill="#3D2A20" />
-    <path d="M 790,668.96 L 791.92,668 L 791.92,650 L 790,650.96 Z" fill="#2C1E17" />
-    <path d="M 790,649.04 L 791.92,650 L 790,650.96 L 788.08,650 Z" fill="#4E3629" />
+    <ellipse cx="814" cy="658" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 812.08,656 L 814,656.96 L 814,638.96 L 812.08,638 Z" fill="#3D2A20" />
+    <path d="M 814,656.96 L 815.92,656 L 815.92,638 L 814,638.96 Z" fill="#2C1E17" />
+    <path d="M 814,637.04 L 815.92,638 L 814,638.96 L 812.08,638 Z" fill="#4E3629" />
   
-          <path d="M 768.4,650 L 811.6,650 L 790,626.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 790,650 L 811.6,650 L 790,626.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 792.4,638 L 835.6,638 L 814,614.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 814,638 L 835.6,638 L 814,614.6 Z" fill="#000000" opacity="0.12" />
         
-          <path d="M 779.2,639.2 L 800.8,639.2 L 790,615.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 790,639.2 L 800.8,639.2 L 790,615.8000000000001 Z" fill="#000000" opacity="0.12" />
+          <path d="M 803.2,627.2 L 824.8,627.2 L 814,603.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 814,627.2 L 824.8,627.2 L 814,603.8000000000001 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="766" cy="682" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
-    <path d="M 764.08,680 L 766,680.96 L 766,668.5600000000001 L 764.08,667.6 Z" fill="#3D2A20" />
-    <path d="M 766,680.96 L 767.92,680 L 767.92,667.6 L 766,668.5600000000001 Z" fill="#2C1E17" />
-    <path d="M 766,666.64 L 767.92,667.6 L 766,668.5600000000001 L 764.08,667.6 Z" fill="#4E3629" />
+    <ellipse cx="790" cy="670" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 786.16,668 L 790,669.92 L 790,637.52 L 786.16,635.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 790,669.92 L 793.84,668 L 793.84,635.6 L 790,637.52 Z" fill="#5D3320" />
+    <path d="M 790,633.6800000000001 L 793.84,635.6 L 790,637.52 L 786.16,635.6 Z" fill="#8C4F35" />
   
-          <path d="M 756.08,667.6 L 775.92,667.6 L 766,651.48 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 766,667.6 L 775.92,667.6 L 766,651.48 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="934" cy="622" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 932.08,620 L 934,620.96 L 934,602.96 L 932.08,602 Z" fill="#3D2A20" />
-    <path d="M 934,620.96 L 935.92,620 L 935.92,602 L 934,602.96 Z" fill="#2C1E17" />
-    <path d="M 934,601.04 L 935.92,602 L 934,602.96 L 932.08,602 Z" fill="#4E3629" />
+    <ellipse cx="766" cy="682" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 762.16,680 L 766,681.92 L 766,631.52 L 762.16,629.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 766,681.92 L 769.84,680 L 769.84,629.6 L 766,631.52 Z" fill="#5D3320" />
+    <path d="M 766,627.6800000000001 L 769.84,629.6 L 766,631.52 L 762.16,629.6 Z" fill="#8C4F35" />
   
-          <path d="M 912.4,602 L 955.6,602 L 934,578.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 934,602 L 955.6,602 L 934,578.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 751.6,635.36 C 751.6,615.2 766,600.8000000000001 766,600.8000000000001 C 766,600.8000000000001 780.4,615.2 780.4,635.36 C 780.4,646.88 751.6,646.88 751.6,635.36 Z" 
+                fill="url(#leaves-sequoia)" />
+          <path d="M 766,600.8000000000001 C 766,600.8000000000001 780.4,615.2 780.4,635.36 C 780.4,646.88 766,646.88 L 766,600.8000000000001 Z" 
+                fill="#000000" opacity="0.18" />
         
-          <path d="M 923.2,591.2 L 944.8,591.2 L 934,567.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 934,591.2 L 944.8,591.2 L 934,567.8000000000001 Z" fill="#000000" opacity="0.12" />
+    
+          <ellipse cx="860" cy="657" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 859,656 C 859,654 863,653 864,656 C 864,657 861,657 859,656 Z" fill="#78716c" />
         
-    <ellipse cx="886" cy="646" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 884.08,644 L 886,644.96 L 886,626.96 L 884.08,626 Z" fill="#3D2A20" />
-    <path d="M 886,644.96 L 887.92,644 L 887.92,626 L 886,626.96 Z" fill="#2C1E17" />
-    <path d="M 886,625.04 L 887.92,626 L 886,626.96 L 884.08,626 Z" fill="#4E3629" />
+    <ellipse cx="838" cy="670" rx="15.84" ry="7.92" fill="url(#tree-shadow)" />
+    <path d="M 834.16,668 L 838,669.92 L 838,646.16 L 834.16,644.24 Z" fill="url(#redwood-trunk)" />
+    <path d="M 838,669.92 L 841.84,668 L 841.84,644.24 L 838,646.16 Z" fill="#5D3320" />
+    <path d="M 838,642.32 L 841.84,644.24 L 838,646.16 L 834.16,644.24 Z" fill="#8C4F35" />
   
-          <path d="M 864.4,626 L 907.6,626 L 886,602.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 886,626 L 907.6,626 L 886,602.6 Z" fill="#000000" opacity="0.12" />
-        
-          <path d="M 875.2,615.2 L 896.8,615.2 L 886,591.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 886,615.2 L 896.8,615.2 L 886,591.8000000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="862" cy="658" rx="11.2" ry="5.6" fill="url(#tree-shadow)" />
-    <path d="M 860.08,656 L 862,656.96 L 862,642.96 L 860.08,642 Z" fill="#3D2A20" />
-    <path d="M 862,656.96 L 863.92,656 L 863.92,642 L 862,642.96 Z" fill="#2C1E17" />
-    <path d="M 862,641.04 L 863.92,642 L 862,642.96 L 860.08,642 Z" fill="#4E3629" />
-  
-          <path d="M 850.8,642 L 873.2,642 L 862,623.8 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 862,642 L 873.2,642 L 862,623.8 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="838" cy="670" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 836.08,668 L 838,668.96 L 838,650.96 L 836.08,650 Z" fill="#3D2A20" />
-    <path d="M 838,668.96 L 839.92,668 L 839.92,650 L 838,650.96 Z" fill="#2C1E17" />
-    <path d="M 838,649.04 L 839.92,650 L 838,650.96 L 836.08,650 Z" fill="#4E3629" />
-  
-          <path d="M 816.4,650 L 859.6,650 L 838,626.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 838,650 L 859.6,650 L 838,626.6 Z" fill="#000000" opacity="0.12" />
-        
-          <path d="M 827.2,639.2 L 848.8,639.2 L 838,615.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 838,639.2 L 848.8,639.2 L 838,615.8000000000001 Z" fill="#000000" opacity="0.12" />
-        
     <ellipse cx="814" cy="682" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 810.16,680 L 814,681.92 L 814,649.52 L 810.16,647.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 814,681.92 L 817.84,680 L 817.84,647.6 L 814,649.52 Z" fill="#5D3320" />
     <path d="M 814,645.6800000000001 L 817.84,647.6 L 814,649.52 L 810.16,647.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="790" cy="694" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 786.16,692 L 790,693.92 L 790,643.52 L 786.16,641.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 790,693.92 L 793.84,692 L 793.84,641.6 L 790,643.52 Z" fill="#5D3320" />
-    <path d="M 790,639.6800000000001 L 793.84,641.6 L 790,643.52 L 786.16,641.6 Z" fill="#8C4F35" />
+    <ellipse cx="958" cy="634" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="958" cy="626" r="7.4" fill="url(#leaves-lvl2)" />
+    
+          <ellipse cx="836" cy="693" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 835,692 C 835,690 839,689 840,692 C 840,693 837,693 835,692 Z" fill="#78716c" />
+        
+    <ellipse cx="814" cy="706" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="814" cy="698" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="934" cy="670" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 932.08,668 L 934,668.96 L 934,658.96 L 932.08,658 Z" fill="#3D2A20" />
+    <path d="M 934,668.96 L 935.92,668 L 935.92,658 L 934,658.96 Z" fill="#2C1E17" />
+    <path d="M 934,657.04 L 935.92,658 L 934,658.96 L 932.08,658 Z" fill="#4E3629" />
   
-          <path d="M 775.6,647.36 C 775.6,627.2 790,612.8000000000001 790,612.8000000000001 C 790,612.8000000000001 804.4,627.2 804.4,647.36 C 804.4,658.88 775.6,658.88 775.6,647.36 Z" 
+          <path d="M 926,658 L 942,658 L 934,645 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 934,658 L 942,658 L 934,645 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="862" cy="706" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 860.08,704 L 862,704.96 L 862,694.96 L 860.08,694 Z" fill="#3D2A20" />
+    <path d="M 862,704.96 L 863.92,704 L 863.92,694 L 862,694.96 Z" fill="#2C1E17" />
+    <path d="M 862,693.04 L 863.92,694 L 862,694.96 L 860.08,694 Z" fill="#4E3629" />
+  
+          <path d="M 854,694 L 870,694 L 862,681 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 862,694 L 870,694 L 862,681 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="838" cy="718" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 836.08,716 L 838,716.96 L 838,698.96 L 836.08,698 Z" fill="#3D2A20" />
+    <path d="M 838,716.96 L 839.92,716 L 839.92,698 L 838,698.96 Z" fill="#2C1E17" />
+    <path d="M 838,697.04 L 839.92,698 L 838,698.96 L 836.08,698 Z" fill="#4E3629" />
+  
+          <path d="M 823.6,698 L 852.4,698 L 838,674.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 838,698 L 852.4,698 L 838,674.6 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1006" cy="658" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1004.08,656 L 1006,656.96 L 1006,638.96 L 1004.08,638 Z" fill="#3D2A20" />
+    <path d="M 1006,656.96 L 1007.92,656 L 1007.92,638 L 1006,638.96 Z" fill="#2C1E17" />
+    <path d="M 1006,637.04 L 1007.92,638 L 1006,638.96 L 1004.08,638 Z" fill="#4E3629" />
+  
+          <path d="M 991.6,638 L 1020.4,638 L 1006,614.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1006,638 L 1020.4,638 L 1006,614.6 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="958" cy="682" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" />
+    <path d="M 956.08,680 L 958,680.96 L 958,664.5600000000001 L 956.08,663.6 Z" fill="#3D2A20" />
+    <path d="M 958,680.96 L 959.92,680 L 959.92,663.6 L 958,664.5600000000001 Z" fill="#2C1E17" />
+    <path d="M 958,662.64 L 959.92,663.6 L 958,664.5600000000001 L 956.08,663.6 Z" fill="#4E3629" />
+  
+          <path d="M 944.88,663.6 L 971.12,663.6 L 958,642.28 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 958,663.6 L 971.12,663.6 L 958,642.28 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="910" cy="706" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 908.08,704 L 910,704.96 L 910,686.96 L 908.08,686 Z" fill="#3D2A20" />
+    <path d="M 910,704.96 L 911.92,704 L 911.92,686 L 910,686.96 Z" fill="#2C1E17" />
+    <path d="M 910,685.04 L 911.92,686 L 910,686.96 L 908.08,686 Z" fill="#4E3629" />
+  
+          <path d="M 895.6,686 L 924.4,686 L 910,662.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 910,686 L 924.4,686 L 910,662.6 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="862" cy="730" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
+    <path d="M 858.16,728 L 862,729.92 L 862,707.5999999999999 L 858.16,705.68 Z" fill="url(#redwood-trunk)" />
+    <path d="M 862,729.92 L 865.84,728 L 865.84,705.68 L 862,707.5999999999999 Z" fill="#5D3320" />
+    <path d="M 862,703.76 L 865.84,705.68 L 862,707.5999999999999 L 858.16,705.68 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1030" cy="670" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1026.16,668 L 1030,669.92 L 1030,637.52 L 1026.16,635.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1030,669.92 L 1033.84,668 L 1033.84,635.6 L 1030,637.52 Z" fill="#5D3320" />
+    <path d="M 1030,633.6800000000001 L 1033.84,635.6 L 1030,637.52 L 1026.16,635.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1006" cy="682" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
+    <path d="M 1002.16,680 L 1006,681.92 L 1006,659.5999999999999 L 1002.16,657.68 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1006,681.92 L 1009.84,680 L 1009.84,657.68 L 1006,659.5999999999999 Z" fill="#5D3320" />
+    <path d="M 1006,655.76 L 1009.84,657.68 L 1006,659.5999999999999 L 1002.16,657.68 Z" fill="#8C4F35" />
+  
+    <ellipse cx="958" cy="706" rx="20.64" ry="10.32" fill="url(#tree-shadow)" />
+    <path d="M 954.16,704 L 958,705.92 L 958,674.9599999999999 L 954.16,673.04 Z" fill="url(#redwood-trunk)" />
+    <path d="M 958,705.92 L 961.84,704 L 961.84,673.04 L 958,674.9599999999999 Z" fill="#5D3320" />
+    <path d="M 958,671.12 L 961.84,673.04 L 958,674.9599999999999 L 954.16,673.04 Z" fill="#8C4F35" />
+  
+    <ellipse cx="934" cy="718" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 930.16,716 L 934,717.92 L 934,685.52 L 930.16,683.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 934,717.92 L 937.84,716 L 937.84,683.6 L 934,685.52 Z" fill="#5D3320" />
+    <path d="M 934,681.6800000000001 L 937.84,683.6 L 934,685.52 L 930.16,683.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="910" cy="730" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 906.16,728 L 910,729.92 L 910,679.52 L 906.16,677.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 910,729.92 L 913.84,728 L 913.84,677.6 L 910,679.52 Z" fill="#5D3320" />
+    <path d="M 910,675.6800000000001 L 913.84,677.6 L 910,679.52 L 906.16,677.6 Z" fill="#8C4F35" />
+  
+          <path d="M 895.6,683.36 C 895.6,663.2 910,648.8000000000001 910,648.8000000000001 C 910,648.8000000000001 924.4,663.2 924.4,683.36 C 924.4,694.88 895.6,694.88 895.6,683.36 Z" 
                 fill="url(#leaves-sequoia)" />
-          <path d="M 790,612.8000000000001 C 790,612.8000000000001 804.4,627.2 804.4,647.36 C 804.4,658.88 790,658.88 L 790,612.8000000000001 Z" 
+          <path d="M 910,648.8000000000001 C 910,648.8000000000001 924.4,663.2 924.4,683.36 C 924.4,694.88 910,694.88 L 910,648.8000000000001 Z" 
                 fill="#000000" opacity="0.18" />
         
-    
-          <ellipse cx="956" cy="633" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 955,632 C 955,630 959,629 960,632 C 960,633 957,633 955,632 Z" fill="#78716c" />
-        
-    <ellipse cx="862" cy="682" rx="15.84" ry="7.92" fill="url(#tree-shadow)" />
-    <path d="M 858.16,680 L 862,681.92 L 862,658.16 L 858.16,656.24 Z" fill="url(#redwood-trunk)" />
-    <path d="M 862,681.92 L 865.84,680 L 865.84,656.24 L 862,658.16 Z" fill="#5D3320" />
-    <path d="M 862,654.32 L 865.84,656.24 L 862,658.16 L 858.16,656.24 Z" fill="#8C4F35" />
+    <ellipse cx="886" cy="742" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 880.24,740 L 886,742.88 L 886,652.88 L 880.24,650 Z" fill="url(#redwood-trunk)" />
+    <path d="M 886,742.88 L 891.76,740 L 891.76,650 L 886,652.88 Z" fill="#5D3320" />
+    <path d="M 886,647.12 L 891.76,650 L 886,652.88 L 880.24,650 Z" fill="#8C4F35" />
   
-    <ellipse cx="838" cy="694" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 834.16,692 L 838,693.92 L 838,661.52 L 834.16,659.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 838,693.92 L 841.84,692 L 841.84,659.6 L 838,661.52 Z" fill="#5D3320" />
-    <path d="M 838,657.6800000000001 L 841.84,659.6 L 838,661.52 L 834.16,659.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="982" cy="646" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="982" cy="638" r="7.4" fill="url(#leaves-lvl2)" />
-    
-          <ellipse cx="932" cy="669" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 931,668 C 931,666 935,665 936,668 C 936,669 933,669 931,668 Z" fill="#78716c" />
+          <path d="M 859,662.6 C 859,618.5 886,587 886,587 C 886,587 913,618.5 913,662.6 C 913,687.8 859,687.8 859,662.6 Z" 
+                fill="url(#leaves-sequoia)" />
+          <path d="M 886,587 C 886,587 913,618.5 913,662.6 C 913,687.8 886,687.8 L 886,587 Z" 
+                fill="#000000" opacity="0.18" />
         
-    <ellipse cx="838" cy="718" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="838" cy="710" r="5.8" fill="url(#leaves-lvl2)" />
-    <ellipse cx="958" cy="682" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 956.08,680 L 958,680.96 L 958,670.96 L 956.08,670 Z" fill="#3D2A20" />
-    <path d="M 958,680.96 L 959.92,680 L 959.92,670 L 958,670.96 Z" fill="#2C1E17" />
-    <path d="M 958,669.04 L 959.92,670 L 958,670.96 L 956.08,670 Z" fill="#4E3629" />
-  
-          <path d="M 950,670 L 966,670 L 958,657 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 958,670 L 966,670 L 958,657 Z" fill="#000000" opacity="0.12" />
-        
-    
-          <ellipse cx="908" cy="705" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 907,704 C 907,702 911,701 912,704 C 912,705 909,705 907,704 Z" fill="#78716c" />
-        
-    <ellipse cx="886" cy="718" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 884.08,716 L 886,716.96 L 886,706.96 L 884.08,706 Z" fill="#3D2A20" />
-    <path d="M 886,716.96 L 887.92,716 L 887.92,706 L 886,706.96 Z" fill="#2C1E17" />
-    <path d="M 886,705.04 L 887.92,706 L 886,706.96 L 884.08,706 Z" fill="#4E3629" />
-  
-          <path d="M 878,706 L 894,706 L 886,693 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 886,706 L 894,706 L 886,693 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="862" cy="730" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 860.08,728 L 862,728.96 L 862,710.96 L 860.08,710 Z" fill="#3D2A20" />
-    <path d="M 862,728.96 L 863.92,728 L 863.92,710 L 862,710.96 Z" fill="#2C1E17" />
-    <path d="M 862,709.04 L 863.92,710 L 862,710.96 L 860.08,710 Z" fill="#4E3629" />
-  
-          <path d="M 847.6,710 L 876.4,710 L 862,686.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 862,710 L 876.4,710 L 862,686.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1030" cy="670" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1028.08,668 L 1030,668.96 L 1030,650.96 L 1028.08,650 Z" fill="#3D2A20" />
-    <path d="M 1030,668.96 L 1031.92,668 L 1031.92,650 L 1030,650.96 Z" fill="#2C1E17" />
-    <path d="M 1030,649.04 L 1031.92,650 L 1030,650.96 L 1028.08,650 Z" fill="#4E3629" />
-  
-          <path d="M 1015.6,650 L 1044.4,650 L 1030,626.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1030,650 L 1044.4,650 L 1030,626.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="982" cy="694" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" />
-    <path d="M 980.08,692 L 982,692.96 L 982,676.5600000000001 L 980.08,675.6 Z" fill="#3D2A20" />
-    <path d="M 982,692.96 L 983.92,692 L 983.92,675.6 L 982,676.5600000000001 Z" fill="#2C1E17" />
-    <path d="M 982,674.64 L 983.92,675.6 L 982,676.5600000000001 L 980.08,675.6 Z" fill="#4E3629" />
-  
-          <path d="M 968.88,675.6 L 995.12,675.6 L 982,654.28 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 982,675.6 L 995.12,675.6 L 982,654.28 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="934" cy="718" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 932.08,716 L 934,716.96 L 934,698.96 L 932.08,698 Z" fill="#3D2A20" />
-    <path d="M 934,716.96 L 935.92,716 L 935.92,698 L 934,698.96 Z" fill="#2C1E17" />
-    <path d="M 934,697.04 L 935.92,698 L 934,698.96 L 932.08,698 Z" fill="#4E3629" />
-  
-          <path d="M 919.6,698 L 948.4,698 L 934,674.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 934,698 L 948.4,698 L 934,674.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="886" cy="742" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
-    <path d="M 882.16,740 L 886,741.92 L 886,719.5999999999999 L 882.16,717.68 Z" fill="url(#redwood-trunk)" />
-    <path d="M 886,741.92 L 889.84,740 L 889.84,717.68 L 886,719.5999999999999 Z" fill="#5D3320" />
-    <path d="M 886,715.76 L 889.84,717.68 L 886,719.5999999999999 L 882.16,717.68 Z" fill="#8C4F35" />
-  
     <ellipse cx="1054" cy="682" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 1050.16,680 L 1054,681.92 L 1054,649.52 L 1050.16,647.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 1054,681.92 L 1057.84,680 L 1057.84,647.6 L 1054,649.52 Z" fill="#5D3320" />
     <path d="M 1054,645.6800000000001 L 1057.84,647.6 L 1054,649.52 L 1050.16,647.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="1030" cy="694" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
-    <path d="M 1026.16,692 L 1030,693.92 L 1030,671.5999999999999 L 1026.16,669.68 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1030,693.92 L 1033.84,692 L 1033.84,669.68 L 1030,671.5999999999999 Z" fill="#5D3320" />
-    <path d="M 1030,667.76 L 1033.84,669.68 L 1030,671.5999999999999 L 1026.16,669.68 Z" fill="#8C4F35" />
-  
     
           <ellipse cx="1004" cy="705" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1003,704 C 1003,702 1007,701 1008,704 C 1008,705 1005,705 1003,704 Z" fill="#78716c" />
         
-    <ellipse cx="982" cy="718" rx="20.64" ry="10.32" fill="url(#tree-shadow)" />
-    <path d="M 978.16,716 L 982,717.92 L 982,686.9599999999999 L 978.16,685.04 Z" fill="url(#redwood-trunk)" />
-    <path d="M 982,717.92 L 985.84,716 L 985.84,685.04 L 982,686.9599999999999 Z" fill="#5D3320" />
-    <path d="M 982,683.12 L 985.84,685.04 L 982,686.9599999999999 L 978.16,685.04 Z" fill="#8C4F35" />
-  
-    <ellipse cx="958" cy="730" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 954.16,728 L 958,729.92 L 958,697.52 L 954.16,695.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 958,729.92 L 961.84,728 L 961.84,695.6 L 958,697.52 Z" fill="#5D3320" />
-    <path d="M 958,693.6800000000001 L 961.84,695.6 L 958,697.52 L 954.16,695.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="934" cy="742" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 930.16,740 L 934,741.92 L 934,691.52 L 930.16,689.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 934,741.92 L 937.84,740 L 937.84,689.6 L 934,691.52 Z" fill="#5D3320" />
-    <path d="M 934,687.6800000000001 L 937.84,689.6 L 934,691.52 L 930.16,689.6 Z" fill="#8C4F35" />
-  
-          <path d="M 919.6,695.36 C 919.6,675.2 934,660.8000000000001 934,660.8000000000001 C 934,660.8000000000001 948.4,675.2 948.4,695.36 C 948.4,706.88 919.6,706.88 919.6,695.36 Z" 
-                fill="url(#leaves-sequoia)" />
-          <path d="M 934,660.8000000000001 C 934,660.8000000000001 948.4,675.2 948.4,695.36 C 948.4,706.88 934,706.88 L 934,660.8000000000001 Z" 
-                fill="#000000" opacity="0.18" />
-        
-    <ellipse cx="910" cy="754" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 904.24,752 L 910,754.88 L 910,664.88 L 904.24,662 Z" fill="url(#redwood-trunk)" />
-    <path d="M 910,754.88 L 915.76,752 L 915.76,662 L 910,664.88 Z" fill="#5D3320" />
-    <path d="M 910,659.12 L 915.76,662 L 910,664.88 L 904.24,662 Z" fill="#8C4F35" />
-  
-          <path d="M 883,674.6 C 883,630.5 910,599 910,599 C 910,599 937,630.5 937,674.6 C 937,699.8 883,699.8 883,674.6 Z" 
-                fill="url(#leaves-sequoia)" />
-          <path d="M 910,599 C 910,599 937,630.5 937,674.6 C 937,699.8 910,699.8 L 910,599 Z" 
-                fill="#000000" opacity="0.18" />
-        
-    <ellipse cx="1078" cy="694" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1074.16,692 L 1078,693.92 L 1078,661.52 L 1074.16,659.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1078,693.92 L 1081.84,692 L 1081.84,659.6 L 1078,661.52 Z" fill="#5D3320" />
-    <path d="M 1078,657.6800000000001 L 1081.84,659.6 L 1078,661.52 L 1074.16,659.6 Z" fill="#8C4F35" />
-  
+    <ellipse cx="910" cy="754" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="910" cy="746" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1078" cy="694" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1078" cy="686" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1030" cy="718" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="1030" cy="710" r="6.2" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="980" cy="741" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 979,740 C 979,738 983,737 984,740 C 984,741 981,741 979,740 Z" fill="#78716c" />
         
-    <ellipse cx="934" cy="766" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="934" cy="758" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1102" cy="706" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1102" cy="698" r="9" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="1076" cy="717" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1075,716 C 1075,714 1079,713 1080,716 C 1080,717 1077,717 1075,716 Z" fill="#78716c" />
         
-    <ellipse cx="1054" cy="730" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="1054" cy="722" r="6.2" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1030" cy="742" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
+    <path d="M 1028.08,740 L 1030,740.96 L 1030,726.1600000000001 L 1028.08,725.2 Z" fill="#3D2A20" />
+    <path d="M 1030,740.96 L 1031.92,740 L 1031.92,725.2 L 1030,726.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 1030,724.24 L 1031.92,725.2 L 1030,726.1600000000001 L 1028.08,725.2 Z" fill="#4E3629" />
+  
+          <path d="M 1018.16,725.2 L 1041.84,725.2 L 1030,705.96 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1030,725.2 L 1041.84,725.2 L 1030,705.96 Z" fill="#000000" opacity="0.12" />
+        
     
           <ellipse cx="956" cy="777" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 955,776 C 955,774 959,773 960,776 C 960,777 957,777 955,776 Z" fill="#78716c" />
         
-    <ellipse cx="1054" cy="754" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
-    <path d="M 1052.08,752 L 1054,752.96 L 1054,738.1600000000001 L 1052.08,737.2 Z" fill="#3D2A20" />
-    <path d="M 1054,752.96 L 1055.92,752 L 1055.92,737.2 L 1054,738.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 1054,736.24 L 1055.92,737.2 L 1054,738.1600000000001 L 1052.08,737.2 Z" fill="#4E3629" />
+    <ellipse cx="1078" cy="742" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1074.16,740 L 1078,741.92 L 1078,723.92 L 1074.16,722 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1078,741.92 L 1081.84,740 L 1081.84,722 L 1078,723.92 Z" fill="#5D3320" />
+    <path d="M 1078,720.08 L 1081.84,722 L 1078,723.92 L 1074.16,722 Z" fill="#8C4F35" />
   
-          <path d="M 1042.16,737.2 L 1065.84,737.2 L 1054,717.96 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1054,737.2 L 1065.84,737.2 L 1054,717.96 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1102" cy="754" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1098.16,752 L 1102,753.92 L 1102,735.92 L 1098.16,734 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1102,753.92 L 1105.84,752 L 1105.84,734 L 1102,735.92 Z" fill="#5D3320" />
-    <path d="M 1102,732.08 L 1105.84,734 L 1102,735.92 L 1098.16,734 Z" fill="#8C4F35" />
+    <ellipse cx="1054" cy="754" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1050.16,752 L 1054,753.92 L 1054,735.92 L 1050.16,734 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1054,753.92 L 1057.84,752 L 1057.84,734 L 1054,735.92 Z" fill="#5D3320" />
+    <path d="M 1054,732.08 L 1057.84,734 L 1054,735.92 L 1050.16,734 Z" fill="#8C4F35" />
   
-    <ellipse cx="1078" cy="766" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1074.16,764 L 1078,765.92 L 1078,747.92 L 1074.16,746 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1078,765.92 L 1081.84,764 L 1081.84,746 L 1078,747.92 Z" fill="#5D3320" />
-    <path d="M 1078,744.08 L 1081.84,746 L 1078,747.92 L 1074.16,746 Z" fill="#8C4F35" />
+    <ellipse cx="982" cy="790" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 978.16,788 L 982,789.92 L 982,771.92 L 978.16,770 Z" fill="url(#redwood-trunk)" />
+    <path d="M 982,789.92 L 985.84,788 L 985.84,770 L 982,771.92 Z" fill="#5D3320" />
+    <path d="M 982,768.08 L 985.84,770 L 982,771.92 L 978.16,770 Z" fill="#8C4F35" />
   
     
           <ellipse cx="1028" cy="789" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1027,788 C 1027,786 1031,785 1032,788 C 1032,789 1029,789 1027,788 Z" fill="#78716c" />
         
-    <ellipse cx="1006" cy="802" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1002.16,800 L 1006,801.92 L 1006,783.92 L 1002.16,782 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1006,801.92 L 1009.84,800 L 1009.84,782 L 1006,783.92 Z" fill="#5D3320" />
-    <path d="M 1006,780.08 L 1009.84,782 L 1006,783.92 L 1002.16,782 Z" fill="#8C4F35" />
-  
     
           <ellipse cx="1148" cy="753" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1147,752 C 1147,750 1151,749 1152,752 C 1152,753 1149,753 1147,752 Z" fill="#78716c" />
         
-    <ellipse cx="1126" cy="790" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="1126" cy="782" r="7.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1102" cy="802" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="1102" cy="794" r="7" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1078" cy="814" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1078" cy="806" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1102" cy="778" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="1102" cy="770" r="7.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1078" cy="790" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="1078" cy="782" r="7" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1054" cy="802" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1054" cy="794" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1174" cy="766" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 1172.08,764 L 1174,764.96 L 1174,754.96 L 1172.08,754 Z" fill="#3D2A20" />
+    <path d="M 1174,764.96 L 1175.92,764 L 1175.92,754 L 1174,754.96 Z" fill="#2C1E17" />
+    <path d="M 1174,753.04 L 1175.92,754 L 1174,754.96 L 1172.08,754 Z" fill="#4E3629" />
+  
+          <path d="M 1166,754 L 1182,754 L 1174,741 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1174,754 L 1182,754 L 1174,741 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1150" cy="778" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
+    <path d="M 1148.08,776 L 1150,776.96 L 1150,764.5600000000001 L 1148.08,763.6 Z" fill="#3D2A20" />
+    <path d="M 1150,776.96 L 1151.92,776 L 1151.92,763.6 L 1150,764.5600000000001 Z" fill="#2C1E17" />
+    <path d="M 1150,762.64 L 1151.92,763.6 L 1150,764.5600000000001 L 1148.08,763.6 Z" fill="#4E3629" />
+  
+          <path d="M 1140.08,763.6 L 1159.92,763.6 L 1150,747.48 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1150,763.6 L 1159.92,763.6 L 1150,747.48 Z" fill="#000000" opacity="0.12" />
+        
+    
+          <ellipse cx="1124" cy="789" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1123,788 C 1123,786 1127,785 1128,788 C 1128,789 1125,789 1123,788 Z" fill="#78716c" />
+        
     
           <ellipse cx="1220" cy="765" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1219,764 C 1219,762 1223,761 1224,764 C 1224,765 1221,765 1219,764 Z" fill="#78716c" />
         
-    <ellipse cx="1198" cy="778" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 1196.08,776 L 1198,776.96 L 1198,766.96 L 1196.08,766 Z" fill="#3D2A20" />
-    <path d="M 1198,776.96 L 1199.92,776 L 1199.92,766 L 1198,766.96 Z" fill="#2C1E17" />
-    <path d="M 1198,765.04 L 1199.92,766 L 1198,766.96 L 1196.08,766 Z" fill="#4E3629" />
+    <ellipse cx="1174" cy="790" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
+    <path d="M 1172.08,788 L 1174,788.96 L 1174,778.1600000000001 L 1172.08,777.2 Z" fill="#3D2A20" />
+    <path d="M 1174,788.96 L 1175.92,788 L 1175.92,777.2 L 1174,778.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 1174,776.24 L 1175.92,777.2 L 1174,778.1600000000001 L 1172.08,777.2 Z" fill="#4E3629" />
   
-          <path d="M 1190,766 L 1206,766 L 1198,753 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1198,766 L 1206,766 L 1198,753 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1165.36,777.2 L 1182.64,777.2 L 1174,763.1600000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1174,777.2 L 1182.64,777.2 L 1174,763.1600000000001 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1174" cy="790" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
-    <path d="M 1172.08,788 L 1174,788.96 L 1174,776.5600000000001 L 1172.08,775.6 Z" fill="#3D2A20" />
-    <path d="M 1174,788.96 L 1175.92,788 L 1175.92,775.6 L 1174,776.5600000000001 Z" fill="#2C1E17" />
-    <path d="M 1174,774.64 L 1175.92,775.6 L 1174,776.5600000000001 L 1172.08,775.6 Z" fill="#4E3629" />
+    <ellipse cx="1150" cy="802" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1146.16,800 L 1150,801.92 L 1150,769.52 L 1146.16,767.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1150,801.92 L 1153.84,800 L 1153.84,767.6 L 1150,769.52 Z" fill="#5D3320" />
+    <path d="M 1150,765.6800000000001 L 1153.84,767.6 L 1150,769.52 L 1146.16,767.6 Z" fill="#8C4F35" />
   
-          <path d="M 1164.08,775.6 L 1183.92,775.6 L 1174,759.48 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1174,775.6 L 1183.92,775.6 L 1174,759.48 Z" fill="#000000" opacity="0.12" />
+    <ellipse cx="1126" cy="814" rx="17.759999999999998" ry="8.879999999999999" fill="url(#tree-shadow)" />
+    <path d="M 1122.16,812 L 1126,813.92 L 1126,787.28 L 1122.16,785.36 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1126,813.92 L 1129.84,812 L 1129.84,785.36 L 1126,787.28 Z" fill="#5D3320" />
+    <path d="M 1126,783.44 L 1129.84,785.36 L 1126,787.28 L 1122.16,785.36 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1102" cy="826" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
+    <path d="M 1098.16,824 L 1102,825.92 L 1102,805.04 L 1098.16,803.12 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1102,825.92 L 1105.84,824 L 1105.84,803.12 L 1102,805.04 Z" fill="#5D3320" />
+    <path d="M 1102,801.2 L 1105.84,803.12 L 1102,805.04 L 1098.16,803.12 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1078" cy="838" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1074.16,836 L 1078,837.92 L 1078,819.92 L 1074.16,818 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1078,837.92 L 1081.84,836 L 1081.84,818 L 1078,819.92 Z" fill="#5D3320" />
+    <path d="M 1078,816.08 L 1081.84,818 L 1078,819.92 L 1074.16,818 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1246" cy="778" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1242.16,776 L 1246,777.92 L 1246,745.52 L 1242.16,743.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1246,777.92 L 1249.84,776 L 1249.84,743.6 L 1246,745.52 Z" fill="#5D3320" />
+    <path d="M 1246,741.6800000000001 L 1249.84,743.6 L 1246,745.52 L 1242.16,743.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1222" cy="790" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
+    <path d="M 1218.16,788 L 1222,789.92 L 1222,767.5999999999999 L 1218.16,765.68 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1222,789.92 L 1225.84,788 L 1225.84,765.68 L 1222,767.5999999999999 Z" fill="#5D3320" />
+    <path d="M 1222,763.76 L 1225.84,765.68 L 1222,767.5999999999999 L 1218.16,765.68 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1198" cy="802" rx="15.84" ry="7.92" fill="url(#tree-shadow)" />
+    <path d="M 1194.16,800 L 1198,801.92 L 1198,778.16 L 1194.16,776.24 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1198,801.92 L 1201.84,800 L 1201.84,776.24 L 1198,778.16 Z" fill="#5D3320" />
+    <path d="M 1198,774.32 L 1201.84,776.24 L 1198,778.16 L 1194.16,776.24 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1174" cy="814" rx="18.72" ry="9.36" fill="url(#tree-shadow)" />
+    <path d="M 1170.16,812 L 1174,813.92 L 1174,785.8399999999999 L 1170.16,783.92 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1174,813.92 L 1177.84,812 L 1177.84,783.92 L 1174,785.8399999999999 Z" fill="#5D3320" />
+    <path d="M 1174,782 L 1177.84,783.92 L 1174,785.8399999999999 L 1170.16,783.92 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1150" cy="826" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1146.16,824 L 1150,825.92 L 1150,807.92 L 1146.16,806 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1150,825.92 L 1153.84,824 L 1153.84,806 L 1150,807.92 Z" fill="#5D3320" />
+    <path d="M 1150,804.08 L 1153.84,806 L 1150,807.92 L 1146.16,806 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1126" cy="838" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
+    <path d="M 1122.16,836 L 1126,837.92 L 1126,818.4799999999999 L 1122.16,816.56 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1126,837.92 L 1129.84,836 L 1129.84,816.56 L 1126,818.4799999999999 Z" fill="#5D3320" />
+    <path d="M 1126,814.64 L 1129.84,816.56 L 1126,818.4799999999999 L 1122.16,816.56 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1270" cy="790" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1270" cy="782" r="5.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1246" cy="802" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1246" cy="794" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1222" cy="814" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1219.6,812 L 1222,813.2 L 1222,773.6 L 1219.6,772.4 Z" fill="#452E1D" />
+    <path d="M 1222,813.2 L 1224.4,812 L 1224.4,772.4 L 1222,773.6 Z" fill="#372417" />
+    <path d="M 1222,771.1999999999999 L 1224.4,772.4 L 1222,773.6 L 1219.6,772.4 Z" fill="#5A3D28" />
+  
+          <circle cx="1211.2" cy="768.8" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1232.8" cy="770.6" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1222" cy="754.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1222" cy="772.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1218.4" cy="765.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
+        
+    <ellipse cx="1198" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1195.6,824 L 1198,825.2 L 1198,785.6 L 1195.6,784.4 Z" fill="#452E1D" />
+    <path d="M 1198,825.2 L 1200.4,824 L 1200.4,784.4 L 1198,785.6 Z" fill="#372417" />
+    <path d="M 1198,783.1999999999999 L 1200.4,784.4 L 1198,785.6 L 1195.6,784.4 Z" fill="#5A3D28" />
+  
+          <circle cx="1187.2" cy="780.8" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1208.8" cy="782.6" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1198" cy="766.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1198" cy="784.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1194.4" cy="777.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
         
     
-          <ellipse cx="1100" cy="825" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1099,824 C 1099,822 1103,821 1104,824 C 1104,825 1101,825 1099,824 Z" fill="#78716c" />
+          <ellipse cx="1172" cy="837" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1171,836 C 1171,834 1175,833 1176,836 C 1176,837 1173,837 1171,836 Z" fill="#78716c" />
         
+    <ellipse cx="1150" cy="850" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="1150" cy="842" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1126" cy="862" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="1126" cy="854" r="7" fill="url(#leaves-lvl2)" />
     
-          <ellipse cx="1220" cy="789" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1219,788 C 1219,786 1223,785 1224,788 C 1224,789 1221,789 1219,788 Z" fill="#78716c" />
+          <ellipse cx="1292" cy="801" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1291,800 C 1291,798 1295,797 1296,800 C 1296,801 1293,801 1291,800 Z" fill="#78716c" />
         
-    <ellipse cx="1198" cy="802" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
-    <path d="M 1196.08,800 L 1198,800.96 L 1198,790.1600000000001 L 1196.08,789.2 Z" fill="#3D2A20" />
-    <path d="M 1198,800.96 L 1199.92,800 L 1199.92,789.2 L 1198,790.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 1198,788.24 L 1199.92,789.2 L 1198,790.1600000000001 L 1196.08,789.2 Z" fill="#4E3629" />
-  
-          <path d="M 1189.36,789.2 L 1206.64,789.2 L 1198,775.1600000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1198,789.2 L 1206.64,789.2 L 1198,775.1600000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1174" cy="814" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1170.16,812 L 1174,813.92 L 1174,781.52 L 1170.16,779.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1174,813.92 L 1177.84,812 L 1177.84,779.6 L 1174,781.52 Z" fill="#5D3320" />
-    <path d="M 1174,777.6800000000001 L 1177.84,779.6 L 1174,781.52 L 1170.16,779.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1150" cy="826" rx="17.759999999999998" ry="8.879999999999999" fill="url(#tree-shadow)" />
-    <path d="M 1146.16,824 L 1150,825.92 L 1150,799.28 L 1146.16,797.36 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1150,825.92 L 1153.84,824 L 1153.84,797.36 L 1150,799.28 Z" fill="#5D3320" />
-    <path d="M 1150,795.44 L 1153.84,797.36 L 1150,799.28 L 1146.16,797.36 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1126" cy="838" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
-    <path d="M 1122.16,836 L 1126,837.92 L 1126,817.04 L 1122.16,815.12 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1126,837.92 L 1129.84,836 L 1129.84,815.12 L 1126,817.04 Z" fill="#5D3320" />
-    <path d="M 1126,813.2 L 1129.84,815.12 L 1126,817.04 L 1122.16,815.12 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1102" cy="850" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1098.16,848 L 1102,849.92 L 1102,831.92 L 1098.16,830 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1102,849.92 L 1105.84,848 L 1105.84,830 L 1102,831.92 Z" fill="#5D3320" />
-    <path d="M 1102,828.08 L 1105.84,830 L 1102,831.92 L 1098.16,830 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1270" cy="790" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1266.16,788 L 1270,789.92 L 1270,757.52 L 1266.16,755.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1270,789.92 L 1273.84,788 L 1273.84,755.6 L 1270,757.52 Z" fill="#5D3320" />
-    <path d="M 1270,753.6800000000001 L 1273.84,755.6 L 1270,757.52 L 1266.16,755.6 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1246" cy="802" rx="14.879999999999999" ry="7.4399999999999995" fill="url(#tree-shadow)" />
-    <path d="M 1242.16,800 L 1246,801.92 L 1246,779.5999999999999 L 1242.16,777.68 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1246,801.92 L 1249.84,800 L 1249.84,777.68 L 1246,779.5999999999999 Z" fill="#5D3320" />
-    <path d="M 1246,775.76 L 1249.84,777.68 L 1246,779.5999999999999 L 1242.16,777.68 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1222" cy="814" rx="15.84" ry="7.92" fill="url(#tree-shadow)" />
-    <path d="M 1218.16,812 L 1222,813.92 L 1222,790.16 L 1218.16,788.24 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1222,813.92 L 1225.84,812 L 1225.84,788.24 L 1222,790.16 Z" fill="#5D3320" />
-    <path d="M 1222,786.32 L 1225.84,788.24 L 1222,790.16 L 1218.16,788.24 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1198" cy="826" rx="18.72" ry="9.36" fill="url(#tree-shadow)" />
-    <path d="M 1194.16,824 L 1198,825.92 L 1198,797.8399999999999 L 1194.16,795.92 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1198,825.92 L 1201.84,824 L 1201.84,795.92 L 1198,797.8399999999999 Z" fill="#5D3320" />
-    <path d="M 1198,794 L 1201.84,795.92 L 1198,797.8399999999999 L 1194.16,795.92 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1174" cy="838" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1170.16,836 L 1174,837.92 L 1174,819.92 L 1170.16,818 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1174,837.92 L 1177.84,836 L 1177.84,818 L 1174,819.92 Z" fill="#5D3320" />
-    <path d="M 1174,816.08 L 1177.84,818 L 1174,819.92 L 1170.16,818 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1150" cy="850" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
-    <path d="M 1146.16,848 L 1150,849.92 L 1150,830.4799999999999 L 1146.16,828.56 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1150,849.92 L 1153.84,848 L 1153.84,828.56 L 1150,830.4799999999999 Z" fill="#5D3320" />
-    <path d="M 1150,826.64 L 1153.84,828.56 L 1150,830.4799999999999 L 1146.16,828.56 Z" fill="#8C4F35" />
-  
-    <ellipse cx="1294" cy="802" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1294" cy="794" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1270" cy="814" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1270" cy="806" r="5.8" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1246" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1243.6,824 L 1246,825.2 L 1246,785.6 L 1243.6,784.4 Z" fill="#452E1D" />
-    <path d="M 1246,825.2 L 1248.4,824 L 1248.4,784.4 L 1246,785.6 Z" fill="#372417" />
-    <path d="M 1246,783.1999999999999 L 1248.4,784.4 L 1246,785.6 L 1243.6,784.4 Z" fill="#5A3D28" />
-  
-          <circle cx="1235.2" cy="780.8" r="21.6" fill="url(#leaves-lvl4)" />
-          <circle cx="1256.8" cy="782.6" r="21.6" fill="url(#leaves-lvl4)" />
-          <circle cx="1246" cy="766.4" r="27" fill="url(#leaves-lvl4)" />
-          <circle cx="1246" cy="784.4" r="27" fill="url(#leaves-lvl4)" />
-          <circle cx="1242.4" cy="777.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
-        
+    <ellipse cx="1270" cy="814" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1270" cy="806" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1246" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1246" cy="818" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="1222" cy="838" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1219.6,836 L 1222,837.2 L 1222,797.6 L 1219.6,796.4 Z" fill="#452E1D" />
-    <path d="M 1222,837.2 L 1224.4,836 L 1224.4,796.4 L 1222,797.6 Z" fill="#372417" />
-    <path d="M 1222,795.1999999999999 L 1224.4,796.4 L 1222,797.6 L 1219.6,796.4 Z" fill="#5A3D28" />
+    <path d="M 1220.08,836 L 1222,836.96 L 1222,818.96 L 1220.08,818 Z" fill="#3D2A20" />
+    <path d="M 1222,836.96 L 1223.92,836 L 1223.92,818 L 1222,818.96 Z" fill="#2C1E17" />
+    <path d="M 1222,817.04 L 1223.92,818 L 1222,818.96 L 1220.08,818 Z" fill="#4E3629" />
   
-          <circle cx="1211.2" cy="792.8" r="21.6" fill="url(#leaves-lvl4)" />
-          <circle cx="1232.8" cy="794.6" r="21.6" fill="url(#leaves-lvl4)" />
-          <circle cx="1222" cy="778.4" r="27" fill="url(#leaves-lvl4)" />
-          <circle cx="1222" cy="796.4" r="27" fill="url(#leaves-lvl4)" />
-          <circle cx="1218.4" cy="789.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
+          <path d="M 1207.6,818 L 1236.4,818 L 1222,794.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1222,818 L 1236.4,818 L 1222,794.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1174" cy="862" rx="10.56" ry="5.28" fill="url(#tree-shadow)" /><circle cx="1174" cy="854" r="6.6000000000000005" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1150" cy="874" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="1150" cy="866" r="7" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1294" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1294" cy="818" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1270" cy="838" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1270" cy="830" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1198" cy="850" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
+    <path d="M 1196.08,848 L 1198,848.96 L 1198,838.1600000000001 L 1196.08,837.2 Z" fill="#3D2A20" />
+    <path d="M 1198,848.96 L 1199.92,848 L 1199.92,837.2 L 1198,838.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 1198,836.24 L 1199.92,837.2 L 1198,838.1600000000001 L 1196.08,837.2 Z" fill="#4E3629" />
+  
+          <path d="M 1189.36,837.2 L 1206.64,837.2 L 1198,823.1600000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1198,837.2 L 1206.64,837.2 L 1198,823.1600000000001 Z" fill="#000000" opacity="0.12" />
+        
+    
+          <ellipse cx="1172" cy="861" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1171,860 C 1171,858 1175,857 1176,860 C 1176,861 1173,861 1171,860 Z" fill="#78716c" />
+        
+    <ellipse cx="1150" cy="874" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
+    <path d="M 1148.08,872 L 1150,872.96 L 1150,859.76 L 1148.08,858.8 Z" fill="#3D2A20" />
+    <path d="M 1150,872.96 L 1151.92,872 L 1151.92,858.8 L 1150,859.76 Z" fill="#2C1E17" />
+    <path d="M 1150,857.8399999999999 L 1151.92,858.8 L 1150,859.76 L 1148.08,858.8 Z" fill="#4E3629" />
+  
+          <path d="M 1139.44,858.8 L 1160.56,858.8 L 1150,841.64 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1150,858.8 L 1160.56,858.8 L 1150,841.64 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1318" cy="814" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1316.08,812 L 1318,812.96 L 1318,794.96 L 1316.08,794 Z" fill="#3D2A20" />
+    <path d="M 1318,812.96 L 1319.92,812 L 1319.92,794 L 1318,794.96 Z" fill="#2C1E17" />
+    <path d="M 1318,793.04 L 1319.92,794 L 1318,794.96 L 1316.08,794 Z" fill="#4E3629" />
+  
+          <path d="M 1296.4,794 L 1339.6,794 L 1318,770.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1318,794 L 1339.6,794 L 1318,770.6 Z" fill="#000000" opacity="0.12" />
+        
+          <path d="M 1307.2,783.2 L 1328.8,783.2 L 1318,759.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1318,783.2 L 1328.8,783.2 L 1318,759.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1294" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1292.08,824 L 1294,824.96 L 1294,806.96 L 1292.08,806 Z" fill="#3D2A20" />
+    <path d="M 1294,824.96 L 1295.92,824 L 1295.92,806 L 1294,806.96 Z" fill="#2C1E17" />
+    <path d="M 1294,805.04 L 1295.92,806 L 1294,806.96 L 1292.08,806 Z" fill="#4E3629" />
+  
+          <path d="M 1279.6,806 L 1308.4,806 L 1294,782.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1294,806 L 1308.4,806 L 1294,782.6 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1270" cy="838" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
+    <path d="M 1268.08,836 L 1270,836.96 L 1270,822.1600000000001 L 1268.08,821.2 Z" fill="#3D2A20" />
+    <path d="M 1270,836.96 L 1271.92,836 L 1271.92,821.2 L 1270,822.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 1270,820.24 L 1271.92,821.2 L 1270,822.1600000000001 L 1268.08,821.2 Z" fill="#4E3629" />
+  
+          <path d="M 1258.16,821.2 L 1281.84,821.2 L 1270,801.96 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1270,821.2 L 1281.84,821.2 L 1270,801.96 Z" fill="#000000" opacity="0.12" />
+        
     <ellipse cx="1246" cy="850" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
     <path d="M 1244.08,848 L 1246,848.96 L 1246,830.96 L 1244.08,830 Z" fill="#3D2A20" />
     <path d="M 1246,848.96 L 1247.92,848 L 1247.92,830 L 1246,830.96 Z" fill="#2C1E17" />
     <path d="M 1246,829.04 L 1247.92,830 L 1246,830.96 L 1244.08,830 Z" fill="#4E3629" />
   
-          <path d="M 1231.6,830 L 1260.4,830 L 1246,806.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1246,830 L 1260.4,830 L 1246,806.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1224.4,830 L 1267.6,830 L 1246,806.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1246,830 L 1267.6,830 L 1246,806.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1222" cy="862" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
-    <path d="M 1220.08,860 L 1222,860.96 L 1222,850.1600000000001 L 1220.08,849.2 Z" fill="#3D2A20" />
-    <path d="M 1222,860.96 L 1223.92,860 L 1223.92,849.2 L 1222,850.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 1222,848.24 L 1223.92,849.2 L 1222,850.1600000000001 L 1220.08,849.2 Z" fill="#4E3629" />
+          <path d="M 1235.2,819.2 L 1256.8,819.2 L 1246,795.8000000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1246,819.2 L 1256.8,819.2 L 1246,795.8000000000001 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1222" cy="862" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
+    <path d="M 1220.08,860 L 1222,860.96 L 1222,843.76 L 1220.08,842.8 Z" fill="#3D2A20" />
+    <path d="M 1222,860.96 L 1223.92,860 L 1223.92,842.8 L 1222,843.76 Z" fill="#2C1E17" />
+    <path d="M 1222,841.8399999999999 L 1223.92,842.8 L 1222,843.76 L 1220.08,842.8 Z" fill="#4E3629" />
   
-          <path d="M 1213.36,849.2 L 1230.64,849.2 L 1222,835.1600000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1222,849.2 L 1230.64,849.2 L 1222,835.1600000000001 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1208.24,842.8 L 1235.76,842.8 L 1222,820.4399999999999 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1222,842.8 L 1235.76,842.8 L 1222,820.4399999999999 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1174" cy="886" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
-    <path d="M 1172.08,884 L 1174,884.96 L 1174,871.76 L 1172.08,870.8 Z" fill="#3D2A20" />
-    <path d="M 1174,884.96 L 1175.92,884 L 1175.92,870.8 L 1174,871.76 Z" fill="#2C1E17" />
-    <path d="M 1174,869.8399999999999 L 1175.92,870.8 L 1174,871.76 L 1172.08,870.8 Z" fill="#4E3629" />
+    <ellipse cx="1198" cy="874" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
+    <path d="M 1196.08,872 L 1198,872.96 L 1198,860.5600000000001 L 1196.08,859.6 Z" fill="#3D2A20" />
+    <path d="M 1198,872.96 L 1199.92,872 L 1199.92,859.6 L 1198,860.5600000000001 Z" fill="#2C1E17" />
+    <path d="M 1198,858.64 L 1199.92,859.6 L 1198,860.5600000000001 L 1196.08,859.6 Z" fill="#4E3629" />
   
-          <path d="M 1163.44,870.8 L 1184.56,870.8 L 1174,853.64 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1174,870.8 L 1184.56,870.8 L 1174,853.64 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1188.08,859.6 L 1207.92,859.6 L 1198,843.48 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1198,859.6 L 1207.92,859.6 L 1198,843.48 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1342" cy="826" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1340.08,824 L 1342,824.96 L 1342,806.96 L 1340.08,806 Z" fill="#3D2A20" />
-    <path d="M 1342,824.96 L 1343.92,824 L 1343.92,806 L 1342,806.96 Z" fill="#2C1E17" />
-    <path d="M 1342,805.04 L 1343.92,806 L 1342,806.96 L 1340.08,806 Z" fill="#4E3629" />
+    <ellipse cx="1174" cy="886" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1170.16,884 L 1174,885.92 L 1174,835.52 L 1170.16,833.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1174,885.92 L 1177.84,884 L 1177.84,833.6 L 1174,835.52 Z" fill="#5D3320" />
+    <path d="M 1174,831.6800000000001 L 1177.84,833.6 L 1174,835.52 L 1170.16,833.6 Z" fill="#8C4F35" />
   
-          <path d="M 1320.4,806 L 1363.6,806 L 1342,782.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1342,806 L 1363.6,806 L 1342,782.6 Z" fill="#000000" opacity="0.12" />
-        
-          <path d="M 1331.2,795.2 L 1352.8,795.2 L 1342,771.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1342,795.2 L 1352.8,795.2 L 1342,771.8000000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1318" cy="838" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1316.08,836 L 1318,836.96 L 1318,818.96 L 1316.08,818 Z" fill="#3D2A20" />
-    <path d="M 1318,836.96 L 1319.92,836 L 1319.92,818 L 1318,818.96 Z" fill="#2C1E17" />
-    <path d="M 1318,817.04 L 1319.92,818 L 1318,818.96 L 1316.08,818 Z" fill="#4E3629" />
-  
-          <path d="M 1303.6,818 L 1332.4,818 L 1318,794.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1318,818 L 1332.4,818 L 1318,794.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1294" cy="850" rx="11.84" ry="5.92" fill="url(#tree-shadow)" />
-    <path d="M 1292.08,848 L 1294,848.96 L 1294,834.1600000000001 L 1292.08,833.2 Z" fill="#3D2A20" />
-    <path d="M 1294,848.96 L 1295.92,848 L 1295.92,833.2 L 1294,834.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 1294,832.24 L 1295.92,833.2 L 1294,834.1600000000001 L 1292.08,833.2 Z" fill="#4E3629" />
-  
-          <path d="M 1282.16,833.2 L 1305.84,833.2 L 1294,813.96 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1294,833.2 L 1305.84,833.2 L 1294,813.96 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1270" cy="862" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1268.08,860 L 1270,860.96 L 1270,842.96 L 1268.08,842 Z" fill="#3D2A20" />
-    <path d="M 1270,860.96 L 1271.92,860 L 1271.92,842 L 1270,842.96 Z" fill="#2C1E17" />
-    <path d="M 1270,841.04 L 1271.92,842 L 1270,842.96 L 1268.08,842 Z" fill="#4E3629" />
-  
-          <path d="M 1248.4,842 L 1291.6,842 L 1270,818.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1270,842 L 1291.6,842 L 1270,818.6 Z" fill="#000000" opacity="0.12" />
-        
-          <path d="M 1259.2,831.2 L 1280.8,831.2 L 1270,807.8000000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1270,831.2 L 1280.8,831.2 L 1270,807.8000000000001 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1246" cy="874" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
-    <path d="M 1244.08,872 L 1246,872.96 L 1246,855.76 L 1244.08,854.8 Z" fill="#3D2A20" />
-    <path d="M 1246,872.96 L 1247.92,872 L 1247.92,854.8 L 1246,855.76 Z" fill="#2C1E17" />
-    <path d="M 1246,853.8399999999999 L 1247.92,854.8 L 1246,855.76 L 1244.08,854.8 Z" fill="#4E3629" />
-  
-          <path d="M 1232.24,854.8 L 1259.76,854.8 L 1246,832.4399999999999 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1246,854.8 L 1259.76,854.8 L 1246,832.4399999999999 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1222" cy="886" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
-    <path d="M 1220.08,884 L 1222,884.96 L 1222,872.5600000000001 L 1220.08,871.6 Z" fill="#3D2A20" />
-    <path d="M 1222,884.96 L 1223.92,884 L 1223.92,871.6 L 1222,872.5600000000001 Z" fill="#2C1E17" />
-    <path d="M 1222,870.64 L 1223.92,871.6 L 1222,872.5600000000001 L 1220.08,871.6 Z" fill="#4E3629" />
-  
-          <path d="M 1212.08,871.6 L 1231.92,871.6 L 1222,855.48 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1222,871.6 L 1231.92,871.6 L 1222,855.48 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1198" cy="898" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1194.16,896 L 1198,897.92 L 1198,847.52 L 1194.16,845.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1198,897.92 L 1201.84,896 L 1201.84,845.6 L 1198,847.52 Z" fill="#5D3320" />
-    <path d="M 1198,843.6800000000001 L 1201.84,845.6 L 1198,847.52 L 1194.16,845.6 Z" fill="#8C4F35" />
-  
-          <path d="M 1183.6,851.36 C 1183.6,831.2 1198,816.8000000000001 1198,816.8000000000001 C 1198,816.8000000000001 1212.4,831.2 1212.4,851.36 C 1212.4,862.88 1183.6,862.88 1183.6,851.36 Z" 
+          <path d="M 1159.6,839.36 C 1159.6,819.2 1174,804.8000000000001 1174,804.8000000000001 C 1174,804.8000000000001 1188.4,819.2 1188.4,839.36 C 1188.4,850.88 1159.6,850.88 1159.6,839.36 Z" 
                 fill="url(#leaves-sequoia)" />
-          <path d="M 1198,816.8000000000001 C 1198,816.8000000000001 1212.4,831.2 1212.4,851.36 C 1212.4,862.88 1198,862.88 L 1198,816.8000000000001 Z" 
+          <path d="M 1174,804.8000000000001 C 1174,804.8000000000001 1188.4,819.2 1188.4,839.36 C 1188.4,850.88 1174,850.88 L 1174,804.8000000000001 Z" 
                 fill="#000000" opacity="0.18" />
         
-    <ellipse cx="1366" cy="838" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1362.16,836 L 1366,837.92 L 1366,819.92 L 1362.16,818 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1366,837.92 L 1369.84,836 L 1369.84,818 L 1366,819.92 Z" fill="#5D3320" />
-    <path d="M 1366,816.08 L 1369.84,818 L 1366,819.92 L 1362.16,818 Z" fill="#8C4F35" />
+    <ellipse cx="1342" cy="826" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1338.16,824 L 1342,825.92 L 1342,807.92 L 1338.16,806 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1342,825.92 L 1345.84,824 L 1345.84,806 L 1342,807.92 Z" fill="#5D3320" />
+    <path d="M 1342,804.08 L 1345.84,806 L 1342,807.92 L 1338.16,806 Z" fill="#8C4F35" />
   
-    <ellipse cx="1342" cy="850" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
-    <path d="M 1338.16,848 L 1342,849.92 L 1342,830.4799999999999 L 1338.16,828.56 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1342,849.92 L 1345.84,848 L 1345.84,828.56 L 1342,830.4799999999999 Z" fill="#5D3320" />
-    <path d="M 1342,826.64 L 1345.84,828.56 L 1342,830.4799999999999 L 1338.16,828.56 Z" fill="#8C4F35" />
+    <ellipse cx="1318" cy="838" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
+    <path d="M 1314.16,836 L 1318,837.92 L 1318,818.4799999999999 L 1314.16,816.56 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1318,837.92 L 1321.84,836 L 1321.84,816.56 L 1318,818.4799999999999 Z" fill="#5D3320" />
+    <path d="M 1318,814.64 L 1321.84,816.56 L 1318,818.4799999999999 L 1314.16,816.56 Z" fill="#8C4F35" />
   
-    <ellipse cx="1270" cy="886" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1266.16,884 L 1270,885.92 L 1270,867.92 L 1266.16,866 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1270,885.92 L 1273.84,884 L 1273.84,866 L 1270,867.92 Z" fill="#5D3320" />
-    <path d="M 1270,864.08 L 1273.84,866 L 1270,867.92 L 1266.16,866 Z" fill="#8C4F35" />
+    <ellipse cx="1246" cy="874" rx="12" ry="6" fill="url(#tree-shadow)" />
+    <path d="M 1242.16,872 L 1246,873.92 L 1246,855.92 L 1242.16,854 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1246,873.92 L 1249.84,872 L 1249.84,854 L 1246,855.92 Z" fill="#5D3320" />
+    <path d="M 1246,852.08 L 1249.84,854 L 1246,855.92 L 1242.16,854 Z" fill="#8C4F35" />
   
     
-          <ellipse cx="1220" cy="909" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1219,908 C 1219,906 1223,905 1224,908 C 1224,909 1221,909 1219,908 Z" fill="#78716c" />
+          <ellipse cx="1364" cy="837" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1363,836 C 1363,834 1367,833 1368,836 C 1368,837 1365,837 1363,836 Z" fill="#78716c" />
         
-    <ellipse cx="1366" cy="862" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1362.16,860 L 1366,861.92 L 1366,829.52 L 1362.16,827.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1366,861.92 L 1369.84,860 L 1369.84,827.6 L 1366,829.52 Z" fill="#5D3320" />
-    <path d="M 1366,825.6800000000001 L 1369.84,827.6 L 1366,829.52 L 1362.16,827.6 Z" fill="#8C4F35" />
+    <ellipse cx="1342" cy="850" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1338.16,848 L 1342,849.92 L 1342,817.52 L 1338.16,815.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1342,849.92 L 1345.84,848 L 1345.84,815.6 L 1342,817.52 Z" fill="#5D3320" />
+    <path d="M 1342,813.6800000000001 L 1345.84,815.6 L 1342,817.52 L 1338.16,815.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="1342" cy="874" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="1342" cy="866" r="7.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1318" cy="886" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="1318" cy="878" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1294" cy="898" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1294" cy="890" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1270" cy="910" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1270" cy="902" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1246" cy="922" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="1246" cy="914" r="6.2" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1414" cy="862" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1414" cy="854" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1390" cy="874" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1390" cy="866" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1366" cy="886" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" /><circle cx="1366" cy="878" r="8.200000000000001" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1342" cy="898" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1342" cy="890" r="5.8" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1318" cy="910" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1318" cy="902" r="9" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1294" cy="922" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 1292.08,920 L 1294,920.96 L 1294,910.96 L 1292.08,910 Z" fill="#3D2A20" />
-    <path d="M 1294,920.96 L 1295.92,920 L 1295.92,910 L 1294,910.96 Z" fill="#2C1E17" />
-    <path d="M 1294,909.04 L 1295.92,910 L 1294,910.96 L 1292.08,910 Z" fill="#4E3629" />
+    <ellipse cx="1318" cy="862" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="1318" cy="854" r="7.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1294" cy="874" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="1294" cy="866" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1270" cy="886" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1270" cy="878" r="5.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1246" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1246" cy="890" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1222" cy="910" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="1222" cy="902" r="6.2" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1390" cy="850" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1390" cy="842" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1366" cy="862" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="1366" cy="854" r="5.4" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1342" cy="874" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" /><circle cx="1342" cy="866" r="8.200000000000001" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1318" cy="886" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1318" cy="878" r="5.8" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1294" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1294" cy="890" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1270" cy="910" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 1268.08,908 L 1270,908.96 L 1270,898.96 L 1268.08,898 Z" fill="#3D2A20" />
+    <path d="M 1270,908.96 L 1271.92,908 L 1271.92,898 L 1270,898.96 Z" fill="#2C1E17" />
+    <path d="M 1270,897.04 L 1271.92,898 L 1270,898.96 L 1268.08,898 Z" fill="#4E3629" />
   
-          <path d="M 1286,910 L 1302,910 L 1294,897 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1294,910 L 1302,910 L 1294,897 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1262,898 L 1278,898 L 1270,885 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1270,898 L 1278,898 L 1270,885 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1270" cy="934" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 1268.08,932 L 1270,932.96 L 1270,921.36 L 1268.08,920.4 Z" fill="#3D2A20" />
-    <path d="M 1270,932.96 L 1271.92,932 L 1271.92,920.4 L 1270,921.36 Z" fill="#2C1E17" />
-    <path d="M 1270,919.4399999999999 L 1271.92,920.4 L 1270,921.36 L 1268.08,920.4 Z" fill="#4E3629" />
+    <ellipse cx="1246" cy="922" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 1244.08,920 L 1246,920.96 L 1246,909.36 L 1244.08,908.4 Z" fill="#3D2A20" />
+    <path d="M 1246,920.96 L 1247.92,920 L 1247.92,908.4 L 1246,909.36 Z" fill="#2C1E17" />
+    <path d="M 1246,907.4399999999999 L 1247.92,908.4 L 1246,909.36 L 1244.08,908.4 Z" fill="#4E3629" />
   
-          <path d="M 1260.72,920.4 L 1279.28,920.4 L 1270,905.3199999999999 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1270,920.4 L 1279.28,920.4 L 1270,905.3199999999999 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1236.72,908.4 L 1255.28,908.4 L 1246,893.3199999999999 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1246,908.4 L 1255.28,908.4 L 1246,893.3199999999999 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1438" cy="874" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
-    <path d="M 1436.08,872 L 1438,872.96 L 1438,859.76 L 1436.08,858.8 Z" fill="#3D2A20" />
-    <path d="M 1438,872.96 L 1439.92,872 L 1439.92,858.8 L 1438,859.76 Z" fill="#2C1E17" />
-    <path d="M 1438,857.8399999999999 L 1439.92,858.8 L 1438,859.76 L 1436.08,858.8 Z" fill="#4E3629" />
+    <ellipse cx="1414" cy="862" rx="10.56" ry="5.28" fill="url(#tree-shadow)" />
+    <path d="M 1412.08,860 L 1414,860.96 L 1414,847.76 L 1412.08,846.8 Z" fill="#3D2A20" />
+    <path d="M 1414,860.96 L 1415.92,860 L 1415.92,846.8 L 1414,847.76 Z" fill="#2C1E17" />
+    <path d="M 1414,845.8399999999999 L 1415.92,846.8 L 1414,847.76 L 1412.08,846.8 Z" fill="#4E3629" />
   
-          <path d="M 1427.44,858.8 L 1448.56,858.8 L 1438,841.64 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1438,858.8 L 1448.56,858.8 L 1438,841.64 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1403.44,846.8 L 1424.56,846.8 L 1414,829.64 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1414,846.8 L 1424.56,846.8 L 1414,829.64 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1414" cy="886" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
-    <path d="M 1412.08,884 L 1414,884.96 L 1414,872.5600000000001 L 1412.08,871.6 Z" fill="#3D2A20" />
-    <path d="M 1414,884.96 L 1415.92,884 L 1415.92,871.6 L 1414,872.5600000000001 Z" fill="#2C1E17" />
-    <path d="M 1414,870.64 L 1415.92,871.6 L 1414,872.5600000000001 L 1412.08,871.6 Z" fill="#4E3629" />
+    <ellipse cx="1390" cy="874" rx="9.92" ry="4.96" fill="url(#tree-shadow)" />
+    <path d="M 1388.08,872 L 1390,872.96 L 1390,860.5600000000001 L 1388.08,859.6 Z" fill="#3D2A20" />
+    <path d="M 1390,872.96 L 1391.92,872 L 1391.92,859.6 L 1390,860.5600000000001 Z" fill="#2C1E17" />
+    <path d="M 1390,858.64 L 1391.92,859.6 L 1390,860.5600000000001 L 1388.08,859.6 Z" fill="#4E3629" />
   
-          <path d="M 1404.08,871.6 L 1423.92,871.6 L 1414,855.48 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1414,871.6 L 1423.92,871.6 L 1414,855.48 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1380.08,859.6 L 1399.92,859.6 L 1390,843.48 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1390,859.6 L 1399.92,859.6 L 1390,843.48 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1390" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1388.08,896 L 1390,896.96 L 1390,878.96 L 1388.08,878 Z" fill="#3D2A20" />
-    <path d="M 1390,896.96 L 1391.92,896 L 1391.92,878 L 1390,878.96 Z" fill="#2C1E17" />
-    <path d="M 1390,877.04 L 1391.92,878 L 1390,878.96 L 1388.08,878 Z" fill="#4E3629" />
+    <ellipse cx="1366" cy="886" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1364.08,884 L 1366,884.96 L 1366,866.96 L 1364.08,866 Z" fill="#3D2A20" />
+    <path d="M 1366,884.96 L 1367.92,884 L 1367.92,866 L 1366,866.96 Z" fill="#2C1E17" />
+    <path d="M 1366,865.04 L 1367.92,866 L 1366,866.96 L 1364.08,866 Z" fill="#4E3629" />
   
-          <path d="M 1375.6,878 L 1404.4,878 L 1390,854.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1390,878 L 1404.4,878 L 1390,854.6 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1351.6,866 L 1380.4,866 L 1366,842.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1366,866 L 1380.4,866 L 1366,842.6 Z" fill="#000000" opacity="0.12" />
         
-    <ellipse cx="1366" cy="910" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
-    <path d="M 1364.08,908 L 1366,908.96 L 1366,890.96 L 1364.08,890 Z" fill="#3D2A20" />
-    <path d="M 1366,908.96 L 1367.92,908 L 1367.92,890 L 1366,890.96 Z" fill="#2C1E17" />
-    <path d="M 1366,889.04 L 1367.92,890 L 1366,890.96 L 1364.08,890 Z" fill="#4E3629" />
+    <ellipse cx="1342" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1340.08,896 L 1342,896.96 L 1342,878.96 L 1340.08,878 Z" fill="#3D2A20" />
+    <path d="M 1342,896.96 L 1343.92,896 L 1343.92,878 L 1342,878.96 Z" fill="#2C1E17" />
+    <path d="M 1342,877.04 L 1343.92,878 L 1342,878.96 L 1340.08,878 Z" fill="#4E3629" />
   
-          <path d="M 1351.6,890 L 1380.4,890 L 1366,866.6 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1366,890 L 1380.4,890 L 1366,866.6 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1318" cy="934" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
-    <path d="M 1316.08,932 L 1318,932.96 L 1318,921.36 L 1316.08,920.4 Z" fill="#3D2A20" />
-    <path d="M 1318,932.96 L 1319.92,932 L 1319.92,920.4 L 1318,921.36 Z" fill="#2C1E17" />
-    <path d="M 1318,919.4399999999999 L 1319.92,920.4 L 1318,921.36 L 1316.08,920.4 Z" fill="#4E3629" />
-  
-          <path d="M 1308.72,920.4 L 1327.28,920.4 L 1318,905.3199999999999 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1318,920.4 L 1327.28,920.4 L 1318,905.3199999999999 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1294" cy="946" rx="8" ry="4" fill="url(#tree-shadow)" />
-    <path d="M 1292.08,944 L 1294,944.96 L 1294,934.96 L 1292.08,934 Z" fill="#3D2A20" />
-    <path d="M 1294,944.96 L 1295.92,944 L 1295.92,934 L 1294,934.96 Z" fill="#2C1E17" />
-    <path d="M 1294,933.04 L 1295.92,934 L 1294,934.96 L 1292.08,934 Z" fill="#4E3629" />
-  
-          <path d="M 1286,934 L 1302,934 L 1294,921 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1294,934 L 1302,934 L 1294,921 Z" fill="#000000" opacity="0.12" />
-        
-    <ellipse cx="1462" cy="886" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
-    <path d="M 1460.08,884 L 1462,884.96 L 1462,874.1600000000001 L 1460.08,873.2 Z" fill="#3D2A20" />
-    <path d="M 1462,884.96 L 1463.92,884 L 1463.92,873.2 L 1462,874.1600000000001 Z" fill="#2C1E17" />
-    <path d="M 1462,872.24 L 1463.92,873.2 L 1462,874.1600000000001 L 1460.08,873.2 Z" fill="#4E3629" />
-  
-          <path d="M 1453.36,873.2 L 1470.64,873.2 L 1462,859.1600000000001 Z" fill="url(#leaves-lvl3)" />
-          <path d="M 1462,873.2 L 1470.64,873.2 L 1462,859.1600000000001 Z" fill="#000000" opacity="0.12" />
+          <path d="M 1327.6,878 L 1356.4,878 L 1342,854.6 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1342,878 L 1356.4,878 L 1342,854.6 Z" fill="#000000" opacity="0.12" />
         
     
-          <ellipse cx="1388" cy="921" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1387,920 C 1387,918 1391,917 1392,920 C 1392,921 1389,921 1387,920 Z" fill="#78716c" />
+          <ellipse cx="1316" cy="909" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1315,908 C 1315,906 1319,905 1320,908 C 1320,909 1317,909 1315,908 Z" fill="#78716c" />
         
-    <ellipse cx="1342" cy="946" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1338.16,944 L 1342,945.92 L 1342,913.52 L 1338.16,911.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1342,945.92 L 1345.84,944 L 1345.84,911.6 L 1342,913.52 Z" fill="#5D3320" />
-    <path d="M 1342,909.6800000000001 L 1345.84,911.6 L 1342,913.52 L 1338.16,911.6 Z" fill="#8C4F35" />
+    <ellipse cx="1294" cy="922" rx="9.28" ry="4.64" fill="url(#tree-shadow)" />
+    <path d="M 1292.08,920 L 1294,920.96 L 1294,909.36 L 1292.08,908.4 Z" fill="#3D2A20" />
+    <path d="M 1294,920.96 L 1295.92,920 L 1295.92,908.4 L 1294,909.36 Z" fill="#2C1E17" />
+    <path d="M 1294,907.4399999999999 L 1295.92,908.4 L 1294,909.36 L 1292.08,908.4 Z" fill="#4E3629" />
+  
+          <path d="M 1284.72,908.4 L 1303.28,908.4 L 1294,893.3199999999999 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1294,908.4 L 1303.28,908.4 L 1294,893.3199999999999 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1270" cy="934" rx="8" ry="4" fill="url(#tree-shadow)" />
+    <path d="M 1268.08,932 L 1270,932.96 L 1270,922.96 L 1268.08,922 Z" fill="#3D2A20" />
+    <path d="M 1270,932.96 L 1271.92,932 L 1271.92,922 L 1270,922.96 Z" fill="#2C1E17" />
+    <path d="M 1270,921.04 L 1271.92,922 L 1270,922.96 L 1268.08,922 Z" fill="#4E3629" />
+  
+          <path d="M 1262,922 L 1278,922 L 1270,909 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1270,922 L 1278,922 L 1270,909 Z" fill="#000000" opacity="0.12" />
+        
+    <ellipse cx="1438" cy="874" rx="8.64" ry="4.32" fill="url(#tree-shadow)" />
+    <path d="M 1436.08,872 L 1438,872.96 L 1438,862.1600000000001 L 1436.08,861.2 Z" fill="#3D2A20" />
+    <path d="M 1438,872.96 L 1439.92,872 L 1439.92,861.2 L 1438,862.1600000000001 Z" fill="#2C1E17" />
+    <path d="M 1438,860.24 L 1439.92,861.2 L 1438,862.1600000000001 L 1436.08,861.2 Z" fill="#4E3629" />
+  
+          <path d="M 1429.36,861.2 L 1446.64,861.2 L 1438,847.1600000000001 Z" fill="url(#leaves-lvl3)" />
+          <path d="M 1438,861.2 L 1446.64,861.2 L 1438,847.1600000000001 Z" fill="#000000" opacity="0.12" />
+        
+    
+          <ellipse cx="1412" cy="885" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1411,884 C 1411,882 1415,881 1416,884 C 1416,885 1413,885 1411,884 Z" fill="#78716c" />
+        
+    <ellipse cx="1318" cy="934" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1314.16,932 L 1318,933.92 L 1318,901.52 L 1314.16,899.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1318,933.92 L 1321.84,932 L 1321.84,899.6 L 1318,901.52 Z" fill="#5D3320" />
+    <path d="M 1318,897.6800000000001 L 1321.84,899.6 L 1318,901.52 L 1314.16,899.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1294" cy="946" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1290.16,944 L 1294,945.92 L 1294,913.52 L 1290.16,911.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1294,945.92 L 1297.84,944 L 1297.84,911.6 L 1294,913.52 Z" fill="#5D3320" />
+    <path d="M 1294,909.6800000000001 L 1297.84,911.6 L 1294,913.52 L 1290.16,911.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1462" cy="886" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1458.16,884 L 1462,885.92 L 1462,853.52 L 1458.16,851.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1462,885.92 L 1465.84,884 L 1465.84,851.6 L 1462,853.52 Z" fill="#5D3320" />
+    <path d="M 1462,849.6800000000001 L 1465.84,851.6 L 1462,853.52 L 1458.16,851.6 Z" fill="#8C4F35" />
   
   </g>
 
