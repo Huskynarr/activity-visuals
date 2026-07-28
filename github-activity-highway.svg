@@ -88,7 +88,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 2,294 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 2,308 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -2241,9 +2241,14 @@
         <line x1="1474" y1="878" x2="1474" y2="871" stroke="#475569" stroke-width="1.5" />
         <line x1="1462" y1="867" x2="1486" y2="879" stroke="url(#guardrail-grad)" stroke-width="2.5" />
       
-    <use href="#tile-0" x="1438" y="896" />
+    <use href="#tile-1" x="1438" y="896" />
     
           <line x1="1414" y1="896" x2="1438" y2="908" 
+                stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
+        
+    <use href="#tile-0" x="1414" y="908" />
+    
+          <line x1="1390" y1="908" x2="1414" y2="920" 
                 stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
         
     <g transform="translate(3.84, -1.92)">
@@ -4121,6 +4126,15 @@
         <polygon points="1454.32,870.32 1450.82,876.32 1457.82,876.32" 
                  fill="#ef4444" stroke="#ffffff" stroke-width="0.6" />
         <circle cx="1454.32" cy="874.32" r="0.8" fill="#ffffff" />
+      
+    
+        
+    <path d="M 1433.92,894.44 L 1441.12,898.04 L 1441.12,896.04 L 1433.92,892.44 Z" fill="#991b1b" />
+    <path d="M 1441.12,898.04 L 1442.08,897.56 L 1442.08,895.56 L 1441.12,896.04 Z" fill="#7f1d1d" />
+    <path d="M 1434.88,891.96 L 1442.08,895.56 L 1441.12,896.04 L 1433.92,892.44 Z" fill="#10b981" />
+  
+        <line x1="1440.4" y1="895.2" x2="1440.4" y2="888.2" stroke="#cbd5e1" stroke-width="1.5" />
+        <circle cx="1440.4" cy="888.2" r="1" fill="#fef08a" />
       
   </g>
 
