@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 2,309 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 2,312 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -488,7 +488,8 @@
     <use href="#tile-1" x="1462" y="884" />
     <use href="#tile-1" x="1438" y="896" />
     <use href="#tile-1" x="1414" y="908" />
-    <use href="#tile-0" x="1390" y="920" />
+    <use href="#tile-1" x="1390" y="920" />
+    <use href="#tile-0" x="1366" y="932" />
     <ellipse cx="214" cy="262" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 210.16,260 L 214,261.92 L 214,229.52 L 210.16,227.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 214,261.92 L 217.84,260 L 217.84,227.6 L 214,229.52 Z" fill="#5D3320" />
@@ -1593,10 +1594,11 @@
     <path d="M 1414,909.92 L 1417.84,908 L 1417.84,890 L 1414,891.92 Z" fill="#5D3320" />
     <path d="M 1414,888.08 L 1417.84,890 L 1414,891.92 L 1410.16,890 Z" fill="#8C4F35" />
   
-    
-          <ellipse cx="1388" cy="921" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1387,920 C 1387,918 1391,917 1392,920 C 1392,921 1389,921 1387,920 Z" fill="#78716c" />
-        
+    <ellipse cx="1390" cy="922" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
+    <path d="M 1386.16,920 L 1390,921.92 L 1390,901.04 L 1386.16,899.12 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1390,921.92 L 1393.84,920 L 1393.84,899.12 L 1390,901.04 Z" fill="#5D3320" />
+    <path d="M 1390,897.2 L 1393.84,899.12 L 1390,901.04 L 1386.16,899.12 Z" fill="#8C4F35" />
+  
   </g>
 
   <!-- Legend (Activity Level) -->
