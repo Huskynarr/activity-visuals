@@ -491,6 +491,7 @@
     <use href="#tile-1" x="1390" y="920" />
     <use href="#tile-0" x="1366" y="932" />
     <use href="#tile-0" x="1342" y="944" />
+    <use href="#tile-0" x="1318" y="956" />
     <ellipse cx="214" cy="262" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 210.16,260 L 214,261.92 L 214,229.52 L 210.16,227.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 214,261.92 L 217.84,260 L 217.84,227.6 L 214,229.52 Z" fill="#5D3320" />
