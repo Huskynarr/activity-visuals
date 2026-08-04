@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 2,726 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 3,075 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -486,7 +486,8 @@
     <use href="#tile-0" x="1318" y="932" />
     <use href="#tile-3" x="1294" y="944" />
     <use href="#tile-4" x="1462" y="884" />
-    <use href="#tile-1" x="1438" y="896" />
+    <use href="#tile-4" x="1438" y="896" />
+    <use href="#tile-0" x="1414" y="908" />
     <ellipse cx="214" cy="262" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="214" cy="254" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
@@ -1532,7 +1533,17 @@
           <circle cx="1462" cy="844.4" r="27" fill="url(#leaves-lvl4)" />
           <circle cx="1458.4" cy="837.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
         
-    <ellipse cx="1438" cy="898" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="1438" cy="890" r="5" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1438" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1435.6,896 L 1438,897.2 L 1438,857.6 L 1435.6,856.4 Z" fill="#452E1D" />
+    <path d="M 1438,897.2 L 1440.4,896 L 1440.4,856.4 L 1438,857.6 Z" fill="#372417" />
+    <path d="M 1438,855.1999999999999 L 1440.4,856.4 L 1438,857.6 L 1435.6,856.4 Z" fill="#5A3D28" />
+  
+          <circle cx="1427.2" cy="852.8" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1448.8" cy="854.6" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1438" cy="838.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1438" cy="856.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1434.4" cy="849.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
+        
   </g>
 
   <!-- Legend (Activity Level) -->
