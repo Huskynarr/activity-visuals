@@ -488,6 +488,7 @@
     <use href="#tile-4" x="1462" y="884" />
     <use href="#tile-4" x="1438" y="896" />
     <use href="#tile-0" x="1414" y="908" />
+    <use href="#tile-0" x="1390" y="920" />
     <ellipse cx="214" cy="262" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="214" cy="254" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
@@ -1543,6 +1544,10 @@
           <circle cx="1438" cy="838.4" r="27" fill="url(#leaves-lvl4)" />
           <circle cx="1438" cy="856.4" r="27" fill="url(#leaves-lvl4)" />
           <circle cx="1434.4" cy="849.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
+        
+    
+          <ellipse cx="1388" cy="921" rx="4" ry="2" fill="url(#tree-shadow)" />
+          <path d="M 1387,920 C 1387,918 1391,917 1392,920 C 1392,921 1389,921 1387,920 Z" fill="#78716c" />
         
   </g>
 
