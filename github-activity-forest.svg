@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 3,075 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 3,076 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -489,7 +489,8 @@
     <use href="#tile-4" x="1438" y="896" />
     <use href="#tile-0" x="1414" y="908" />
     <use href="#tile-0" x="1390" y="920" />
-    <use href="#tile-0" x="1366" y="932" />
+    <use href="#tile-1" x="1366" y="932" />
+    <use href="#tile-0" x="1342" y="944" />
     <ellipse cx="214" cy="262" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="214" cy="254" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
@@ -1550,6 +1551,7 @@
           <ellipse cx="1388" cy="921" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1387,920 C 1387,918 1391,917 1392,920 C 1392,921 1389,921 1387,920 Z" fill="#78716c" />
         
+    <ellipse cx="1366" cy="934" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="1366" cy="926" r="5" fill="url(#leaves-lvl2)" />
   </g>
 
   <!-- Legend (Activity Level) -->
