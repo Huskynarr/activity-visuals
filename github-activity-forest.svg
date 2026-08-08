@@ -491,6 +491,7 @@
     <use href="#tile-0" x="1390" y="920" />
     <use href="#tile-1" x="1366" y="932" />
     <use href="#tile-0" x="1342" y="944" />
+    <use href="#tile-0" x="1318" y="956" />
     <ellipse cx="214" cy="262" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="214" cy="254" r="5.8" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
