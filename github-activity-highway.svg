@@ -2266,6 +2266,12 @@
           <line x1="1318" y1="944" x2="1342" y2="956" 
                 stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
         
+    <use href="#tile-0" x="1318" y="956" />
+    
+        <line x1="1294" y1="956" x2="1294" y2="949" stroke="#475569" stroke-width="1.5" />
+        <line x1="1306" y1="962" x2="1306" y2="955" stroke="#475569" stroke-width="1.5" />
+        <line x1="1294" y1="951" x2="1318" y2="963" stroke="url(#guardrail-grad)" stroke-width="2.5" />
+      
     
         
     <path d="M 209.92,354.44 L 217.12,358.04 L 217.12,356.04 L 209.92,352.44 Z" fill="#991b1b" />
