@@ -476,6 +476,7 @@
     <use href="#tile-1" x="1294" y="944" />
     <use href="#tile-1" x="1462" y="884" />
     <use href="#tile-0" x="1438" y="896" />
+    <use href="#tile-0" x="1414" y="908" />
     
           <path d="M 139.6,292.4 C 142.6,290.4 145.6,290.4 148.6,292.4 M 142,298.4 C 145,296.4 148,296.4 151,298.4" 
                 stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
