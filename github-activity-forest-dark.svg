@@ -486,6 +486,7 @@
     <use href="#tile-1" x="1318" y="932" />
     <use href="#tile-1" x="1294" y="944" />
     <use href="#tile-0" x="1462" y="884" />
+    <use href="#tile-0" x="1438" y="896" />
     <ellipse cx="118" cy="310" rx="13.76" ry="6.88" fill="url(#tree-shadow)" />
     <path d="M 116.08,308 L 118,308.96 L 118,291.76 L 116.08,290.8 Z" fill="#3D2A20" />
     <path d="M 118,308.96 L 119.92,308 L 119.92,290.8 L 118,291.76 Z" fill="#2C1E17" />
