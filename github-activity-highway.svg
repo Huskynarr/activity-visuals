@@ -88,7 +88,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 3,796 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 3,978 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -2261,11 +2261,17 @@
           <line x1="1342" y1="932" x2="1366" y2="944" 
                 stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
         
-    <use href="#tile-0" x="1342" y="944" />
+    <use href="#tile-2" x="1342" y="944" />
     
           <line x1="1318" y1="944" x2="1342" y2="956" 
                 stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
         
+    <use href="#tile-0" x="1318" y="956" />
+    
+        <line x1="1294" y1="956" x2="1294" y2="949" stroke="#475569" stroke-width="1.5" />
+        <line x1="1306" y1="962" x2="1306" y2="955" stroke="#475569" stroke-width="1.5" />
+        <line x1="1294" y1="951" x2="1318" y2="963" stroke="url(#guardrail-grad)" stroke-width="2.5" />
+      
     
         
     <path d="M 113.92,306.44 L 121.12,310.04 L 121.12,308.04 L 113.92,304.44 Z" fill="#991b1b" />
@@ -4417,6 +4423,18 @@
   
         <line x1="1368.4" y1="931.2" x2="1368.4" y2="924.2" stroke="#cbd5e1" stroke-width="1.5" />
         <circle cx="1368.4" cy="924.2" r="1" fill="#fef08a" />
+      
+    <ellipse cx="1342" cy="945" rx="11" ry="5.5" fill="#020617" opacity="0.45" />
+    <path d="M 1332.88,941.84 L 1344.88,947.84 L 1344.88,941.5400000000001 L 1332.88,935.5400000000001 Z" fill="url(#car-body-silver)" />
+    <path d="M 1344.88,947.84 L 1349.68,945.44 L 1349.68,939.1400000000001 L 1344.88,941.5400000000001 Z" fill="url(#car-body-silver)" />
+    <path d="M 1337.68,933.1400000000001 L 1349.68,939.1400000000001 L 1344.88,941.5400000000001 L 1332.88,935.5400000000001 Z" fill="url(#car-body-silver)" />
+  
+    <path d="M 1336.72,943.28 L 1342.48,946.16 L 1342.48,934.9599999999999 L 1336.72,932.0799999999999 Z" fill="#0f172a" />
+    <path d="M 1342.48,946.16 L 1346.32,944.24 L 1346.32,933.04 L 1342.48,934.9599999999999 Z" fill="#1e293b" />
+    <path d="M 1340.56,930.16 L 1346.32,933.04 L 1342.48,934.9599999999999 L 1336.72,932.0799999999999 Z" fill="url(#car-body-silver)" />
+  
+        <circle cx="1346.08" cy="944.44" r="0.8" fill="#fef08a" />
+        <circle cx="1348.48" cy="943.24" r="0.8" fill="#fef08a" />
       
   </g>
 
