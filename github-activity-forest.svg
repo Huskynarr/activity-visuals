@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 4,074 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 4,130 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -488,8 +488,9 @@
     <use href="#tile-1" x="1462" y="884" />
     <use href="#tile-0" x="1438" y="896" />
     <use href="#tile-1" x="1414" y="908" />
-    <use href="#tile-0" x="1390" y="920" />
-    <use href="#tile-0" x="1366" y="932" />
+    <use href="#tile-1" x="1390" y="920" />
+    <use href="#tile-1" x="1366" y="932" />
+    <use href="#tile-0" x="1342" y="944" />
     <ellipse cx="190" cy="274" rx="13.919999999999998" ry="6.959999999999999" fill="url(#tree-shadow)" />
     <path d="M 186.16,272 L 190,273.92 L 190,253.04000000000002 L 186.16,251.12 Z" fill="url(#redwood-trunk)" />
     <path d="M 190,273.92 L 193.84,272 L 193.84,251.12 L 190,253.04000000000002 Z" fill="#5D3320" />
@@ -1673,10 +1674,16 @@
     <path d="M 1414,909.92 L 1417.84,908 L 1417.84,875.6 L 1414,877.52 Z" fill="#5D3320" />
     <path d="M 1414,873.6800000000001 L 1417.84,875.6 L 1414,877.52 L 1410.16,875.6 Z" fill="#8C4F35" />
   
-    
-          <ellipse cx="1388" cy="921" rx="4" ry="2" fill="url(#tree-shadow)" />
-          <path d="M 1387,920 C 1387,918 1391,917 1392,920 C 1392,921 1389,921 1387,920 Z" fill="#78716c" />
-        
+    <ellipse cx="1390" cy="922" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1386.16,920 L 1390,921.92 L 1390,889.52 L 1386.16,887.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1390,921.92 L 1393.84,920 L 1393.84,887.6 L 1390,889.52 Z" fill="#5D3320" />
+    <path d="M 1390,885.6800000000001 L 1393.84,887.6 L 1390,889.52 L 1386.16,887.6 Z" fill="#8C4F35" />
+  
+    <ellipse cx="1366" cy="934" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
+    <path d="M 1362.16,932 L 1366,933.92 L 1366,901.52 L 1362.16,899.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1366,933.92 L 1369.84,932 L 1369.84,899.6 L 1366,901.52 Z" fill="#5D3320" />
+    <path d="M 1366,897.6800000000001 L 1369.84,899.6 L 1366,901.52 L 1362.16,899.6 Z" fill="#8C4F35" />
+  
   </g>
 
   <!-- Legend (Activity Level) -->
