@@ -480,6 +480,7 @@
     <use href="#tile-1" x="1390" y="920" />
     <use href="#tile-1" x="1366" y="932" />
     <use href="#tile-0" x="1342" y="944" />
+    <use href="#tile-0" x="1318" y="956" />
     <path d="M 166,282 L 167,284 L 169,284 L 167.5,285.2 L 168,287 L 166,285.8 L 164,287 L 164.5,285.2 L 163,284 L 165,284 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
     <path d="M 142,294 L 143,296 L 145,296 L 143.5,297.2 L 144,299 L 142,297.8 L 140,299 L 140.5,297.2 L 139,296 L 141,296 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
     
