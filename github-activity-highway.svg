@@ -88,7 +88,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 4,430 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Highway • Total Contributions: 4,476 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -2256,10 +2256,15 @@
           <line x1="1366" y1="920" x2="1390" y2="932" 
                 stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
         
-    <use href="#tile-0" x="1366" y="932" />
+    <use href="#tile-1" x="1366" y="932" />
     
           <line x1="1342" y1="932" x2="1366" y2="944" 
                 stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.7" />
+        
+    <use href="#tile-1" x="1342" y="944" />
+    
+          <line x1="1318" y1="944" x2="1342" y2="956" 
+                stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
         
     
         
@@ -4403,8 +4408,8 @@
         <line x1="1392.4" y1="847.2" x2="1392.4" y2="840.2" stroke="#cbd5e1" stroke-width="1.5" />
         <circle cx="1392.4" cy="840.2" r="1" fill="#fef08a" />
       </g>
-        <circle cx="1389.52" cy="837.1200000000001" r="1.5" fill="#f59e0b" opacity="0.85" />
-        <circle cx="1384.72" cy="839.5200000000001" r="1.5" fill="#f59e0b" opacity="0.85" />
+        <circle cx="1389.52" cy="837.32" r="1.5" fill="#f59e0b" opacity="0.85" />
+        <circle cx="1384.72" cy="839.72" r="1.5" fill="#f59e0b" opacity="0.85" />
       
         <polygon points="1382.32,834.32 1378.82,840.32 1385.82,840.32" 
                  fill="#ef4444" stroke="#ffffff" stroke-width="0.6" />
@@ -4567,6 +4572,24 @@
   
         <line x1="1392.4" y1="919.2" x2="1392.4" y2="912.2" stroke="#cbd5e1" stroke-width="1.5" />
         <circle cx="1392.4" cy="912.2" r="1" fill="#fef08a" />
+      
+    
+        
+    <path d="M 1361.92,930.44 L 1369.12,934.04 L 1369.12,932.04 L 1361.92,928.44 Z" fill="#991b1b" />
+    <path d="M 1369.12,934.04 L 1370.08,933.56 L 1370.08,931.56 L 1369.12,932.04 Z" fill="#7f1d1d" />
+    <path d="M 1362.88,927.96 L 1370.08,931.56 L 1369.12,932.04 L 1361.92,928.44 Z" fill="#10b981" />
+  
+        <line x1="1368.4" y1="931.2" x2="1368.4" y2="924.2" stroke="#cbd5e1" stroke-width="1.5" />
+        <circle cx="1368.4" cy="924.2" r="1" fill="#fef08a" />
+      
+    
+        
+    <path d="M 1337.92,942.44 L 1345.12,946.04 L 1345.12,944.04 L 1337.92,940.44 Z" fill="#991b1b" />
+    <path d="M 1345.12,946.04 L 1346.08,945.56 L 1346.08,943.56 L 1345.12,944.04 Z" fill="#7f1d1d" />
+    <path d="M 1338.88,939.96 L 1346.08,943.56 L 1345.12,944.04 L 1337.92,940.44 Z" fill="#10b981" />
+  
+        <line x1="1344.4" y1="943.2" x2="1344.4" y2="936.2" stroke="#cbd5e1" stroke-width="1.5" />
+        <circle cx="1344.4" cy="936.2" r="1" fill="#fef08a" />
       
   </g>
 
