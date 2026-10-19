@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 4,711 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 4,712 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -486,6 +486,7 @@
     <use href="#tile-1" x="1318" y="932" />
     <use href="#tile-1" x="1294" y="944" />
     <use href="#tile-1" x="1462" y="884" />
+    <use href="#tile-0" x="1438" y="896" />
     <ellipse cx="190" cy="274" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="190" cy="266" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="166" cy="286" rx="11.84" ry="5.92" fill="url(#tree-shadow)" /><circle cx="166" cy="278" r="7.4" fill="url(#leaves-lvl2)" />
     <ellipse cx="118" cy="310" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="118" cy="302" r="5.4" fill="url(#leaves-lvl2)" />
@@ -1706,10 +1707,10 @@
     <path d="M 1294,945.92 L 1297.84,944 L 1297.84,911.6 L 1294,913.52 Z" fill="#5D3320" />
     <path d="M 1294,909.6800000000001 L 1297.84,911.6 L 1294,913.52 L 1290.16,911.6 Z" fill="#8C4F35" />
   
-    <ellipse cx="1462" cy="886" rx="12" ry="6" fill="url(#tree-shadow)" />
-    <path d="M 1458.16,884 L 1462,885.92 L 1462,867.92 L 1458.16,866 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1462,885.92 L 1465.84,884 L 1465.84,866 L 1462,867.92 Z" fill="#5D3320" />
-    <path d="M 1462,864.08 L 1465.84,866 L 1462,867.92 L 1458.16,866 Z" fill="#8C4F35" />
+    <ellipse cx="1462" cy="886" rx="12.96" ry="6.48" fill="url(#tree-shadow)" />
+    <path d="M 1458.16,884 L 1462,885.92 L 1462,866.4799999999999 L 1458.16,864.56 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1462,885.92 L 1465.84,884 L 1465.84,864.56 L 1462,866.4799999999999 Z" fill="#5D3320" />
+    <path d="M 1462,862.64 L 1465.84,864.56 L 1462,866.4799999999999 L 1458.16,864.56 Z" fill="#8C4F35" />
   
   </g>
 
