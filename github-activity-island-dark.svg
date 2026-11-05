@@ -106,7 +106,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Island • Total Contributions: 5,801 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Island • Total Contributions: 5,803 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -477,7 +477,8 @@
     <use href="#tile-1" x="1462" y="884" />
     <use href="#tile-2" x="1438" y="896" />
     <use href="#tile-2" x="1414" y="908" />
-    <use href="#tile-0" x="1390" y="920" />
+    <use href="#tile-1" x="1390" y="920" />
+    <use href="#tile-0" x="1366" y="932" />
     <path d="M 166,282 L 167,284 L 169,284 L 167.5,285.2 L 168,287 L 166,285.8 L 164,287 L 164.5,285.2 L 163,284 L 165,284 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
     <path d="M 142,294 L 143,296 L 145,296 L 143.5,297.2 L 144,299 L 142,297.8 L 140,299 L 140.5,297.2 L 139,296 L 141,296 Z" fill="#ef4444" stroke="#ffffff" stroke-width="0.3" />
     <ellipse cx="94" cy="321" rx="8" ry="4" fill="url(#island-shadow)" opacity="0.3" />
@@ -1033,10 +1034,6 @@
           <path d="M 1406,884 Q 1420.4,880.8 1425.2,877.6" />
         </g>
       
-    
-          <path d="M 1387.6,916.4 C 1390.6,914.4 1393.6,914.4 1396.6,916.4 M 1390,922.4 C 1393,920.4 1396,920.4 1399,922.4" 
-                stroke="#ffffff" stroke-width="1.0" fill="none" opacity="0.4" />
-        
   </g>
 
   <!-- Legend (Activity Level) -->
