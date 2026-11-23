@@ -117,7 +117,7 @@
   <!-- Header -->
   <g transform="translate(60, 65)">
     <text x="0" y="0" class="title">HUSKYNARR'S GITHUB ACTIVITY</text>
-    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 6,192 in the last year</text>
+    <text x="0" y="24" class="subtitle">Theme: Forest • Total Contributions: 6,596 in the last year</text>
   </g>
   <!-- Isometric Grid Tiles & Objects -->
   <g>
@@ -446,7 +446,7 @@
     <use href="#tile-1" x="1318" y="812" />
     <use href="#tile-1" x="1294" y="824" />
     <use href="#tile-1" x="1270" y="836" />
-    <use href="#tile-1" x="1246" y="848" />
+    <use href="#tile-2" x="1246" y="848" />
     <use href="#tile-1" x="1222" y="860" />
     <use href="#tile-1" x="1198" y="872" />
     <use href="#tile-1" x="1174" y="884" />
@@ -485,7 +485,8 @@
     <use href="#tile-1" x="1342" y="920" />
     <use href="#tile-1" x="1318" y="932" />
     <use href="#tile-0" x="1294" y="944" />
-    <use href="#tile-1" x="1462" y="884" />
+    <use href="#tile-4" x="1462" y="884" />
+    <use href="#tile-1" x="1438" y="896" />
     <ellipse cx="142" cy="298" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="142" cy="290" r="9" fill="url(#leaves-lvl2)" />
     
           <ellipse cx="116" cy="309" rx="4" ry="2" fill="url(#tree-shadow)" />
@@ -1175,7 +1176,7 @@
     <ellipse cx="814" cy="706" rx="9.92" ry="4.96" fill="url(#tree-shadow)" /><circle cx="814" cy="698" r="6.2" fill="url(#leaves-lvl2)" />
     <ellipse cx="982" cy="646" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="982" cy="638" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="958" cy="658" rx="8.64" ry="4.32" fill="url(#tree-shadow)" /><circle cx="958" cy="650" r="5.4" fill="url(#leaves-lvl2)" />
-    <ellipse cx="934" cy="670" rx="13.120000000000001" ry="6.5600000000000005" fill="url(#tree-shadow)" /><circle cx="934" cy="662" r="8.200000000000001" fill="url(#leaves-lvl2)" />
+    <ellipse cx="934" cy="670" rx="13.76" ry="6.88" fill="url(#tree-shadow)" /><circle cx="934" cy="662" r="8.6" fill="url(#leaves-lvl2)" />
     <ellipse cx="910" cy="682" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="910" cy="674" r="5.8" fill="url(#leaves-lvl2)" />
     <ellipse cx="886" cy="694" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="886" cy="686" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="862" cy="706" rx="8" ry="4" fill="url(#tree-shadow)" />
@@ -1421,7 +1422,7 @@
     <ellipse cx="1054" cy="802" rx="9.28" ry="4.64" fill="url(#tree-shadow)" /><circle cx="1054" cy="794" r="5.8" fill="url(#leaves-lvl2)" />
     <ellipse cx="1030" cy="814" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1030" cy="806" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="1174" cy="766" rx="8" ry="4" fill="url(#tree-shadow)" /><circle cx="1174" cy="758" r="5" fill="url(#leaves-lvl2)" />
-    <ellipse cx="1150" cy="778" rx="13.76" ry="6.88" fill="url(#tree-shadow)" /><circle cx="1150" cy="770" r="8.6" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1150" cy="778" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1150" cy="770" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="1126" cy="790" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1126" cy="782" r="9" fill="url(#leaves-lvl2)" />
     <ellipse cx="1102" cy="802" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
     <path d="M 1100.08,800 L 1102,800.96 L 1102,782.96 L 1100.08,782 Z" fill="#3D2A20" />
@@ -1606,10 +1607,15 @@
     <path d="M 1270,801.6800000000001 L 1273.84,803.6 L 1270,805.52 L 1266.16,803.6 Z" fill="#8C4F35" />
   
     <ellipse cx="1246" cy="850" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
-    <path d="M 1242.16,848 L 1246,849.92 L 1246,817.52 L 1242.16,815.6 Z" fill="url(#redwood-trunk)" />
-    <path d="M 1246,849.92 L 1249.84,848 L 1249.84,815.6 L 1246,817.52 Z" fill="#5D3320" />
-    <path d="M 1246,813.6800000000001 L 1249.84,815.6 L 1246,817.52 L 1242.16,815.6 Z" fill="#8C4F35" />
+    <path d="M 1242.16,848 L 1246,849.92 L 1246,799.52 L 1242.16,797.6 Z" fill="url(#redwood-trunk)" />
+    <path d="M 1246,849.92 L 1249.84,848 L 1249.84,797.6 L 1246,799.52 Z" fill="#5D3320" />
+    <path d="M 1246,795.6800000000001 L 1249.84,797.6 L 1246,799.52 L 1242.16,797.6 Z" fill="#8C4F35" />
   
+          <path d="M 1231.6,803.36 C 1231.6,783.2 1246,768.8000000000001 1246,768.8000000000001 C 1246,768.8000000000001 1260.4,783.2 1260.4,803.36 C 1260.4,814.88 1231.6,814.88 1231.6,803.36 Z" 
+                fill="url(#leaves-sequoia)" />
+          <path d="M 1246,768.8000000000001 C 1246,768.8000000000001 1260.4,783.2 1260.4,803.36 C 1260.4,814.88 1246,814.88 L 1246,768.8000000000001 Z" 
+                fill="#000000" opacity="0.18" />
+        
     <ellipse cx="1222" cy="862" rx="21.6" ry="10.8" fill="url(#tree-shadow)" />
     <path d="M 1218.16,860 L 1222,861.92 L 1222,829.52 L 1218.16,827.6 Z" fill="url(#redwood-trunk)" />
     <path d="M 1222,861.92 L 1225.84,860 L 1225.84,827.6 L 1222,829.52 Z" fill="#5D3320" />
@@ -1674,7 +1680,7 @@
           <circle cx="1294" cy="850.4" r="16.2" fill="url(#leaves-lvl2)" />
           <circle cx="1290.4" cy="843.1999999999999" r="11.339999999999998" fill="#ffffff" opacity="0.08" />
         
-    <ellipse cx="1270" cy="886" rx="11.2" ry="5.6" fill="url(#tree-shadow)" /><circle cx="1270" cy="878" r="7" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1270" cy="886" rx="13.76" ry="6.88" fill="url(#tree-shadow)" /><circle cx="1270" cy="878" r="8.6" fill="url(#leaves-lvl2)" />
     <ellipse cx="1246" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
     <path d="M 1244.08,896 L 1246,896.96 L 1246,878.96 L 1244.08,878 Z" fill="#3D2A20" />
     <path d="M 1246,896.96 L 1247.92,896 L 1247.92,878 L 1246,878.96 Z" fill="#2C1E17" />
@@ -1800,7 +1806,18 @@
           <ellipse cx="1292" cy="945" rx="4" ry="2" fill="url(#tree-shadow)" />
           <path d="M 1291,944 C 1291,942 1295,941 1296,944 C 1296,945 1293,945 1291,944 Z" fill="#78716c" />
         
-    <ellipse cx="1462" cy="886" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1462" cy="878" r="9" fill="url(#leaves-lvl2)" />
+    <ellipse cx="1462" cy="886" rx="14.4" ry="7.2" fill="url(#tree-shadow)" />
+    <path d="M 1459.6,884 L 1462,885.2 L 1462,845.6 L 1459.6,844.4 Z" fill="#452E1D" />
+    <path d="M 1462,885.2 L 1464.4,884 L 1464.4,844.4 L 1462,845.6 Z" fill="#372417" />
+    <path d="M 1462,843.1999999999999 L 1464.4,844.4 L 1462,845.6 L 1459.6,844.4 Z" fill="#5A3D28" />
+  
+          <circle cx="1451.2" cy="840.8" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1472.8" cy="842.6" r="21.6" fill="url(#leaves-lvl4)" />
+          <circle cx="1462" cy="826.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1462" cy="844.4" r="27" fill="url(#leaves-lvl4)" />
+          <circle cx="1458.4" cy="837.1999999999999" r="18.9" fill="#ffffff" opacity="0.08" />
+        
+    <ellipse cx="1438" cy="898" rx="14.4" ry="7.2" fill="url(#tree-shadow)" /><circle cx="1438" cy="890" r="9" fill="url(#leaves-lvl2)" />
   </g>
 
   <!-- Legend (Activity Level) -->
